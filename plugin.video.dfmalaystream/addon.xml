@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.dfmalaystream"
        name="Malay Video Online"
-       version="3.0.6"
+       version="3.1.3"
        provider-name="TheOne">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

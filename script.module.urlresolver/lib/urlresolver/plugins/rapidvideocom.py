@@ -18,11 +18,11 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 """
 
 import re
+import urllib
 import random
 from lib import helpers
 from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
-
 
 class RapidVideoResolver(UrlResolver):
     name = "rapidvideo.com"
@@ -34,18 +34,31 @@ class RapidVideoResolver(UrlResolver):
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
+
         headers = {'User-Agent': common.FF_USER_AGENT}
+
         html = self.net.http_GET(web_url, headers=headers).content
+
         data = helpers.get_hidden(html)
         data['confirm.y'] = random.randint(0, 120)
         data['confirm.x'] = random.randint(0, 120)
+
         headers['Referer'] = web_url
+
         post_url = web_url + '#'
+
         html = self.net.http_POST(post_url, form_data=data, headers=headers).content.encode('utf-8')
-        sources = helpers.parse_sources_list(html)
-        try: sources.sort(key=lambda x: x[0], reverse=True)
-        except: pass
-        return helpers.pick_source(sources)
+
+        match = re.findall('''["']?sources['"]?\s*:\s*\[(.*?)\]''', html)
+
+        if match:
+            stream_url = re.findall('''['"]?file['"]?\s*:\s*['"]?([^'"]+)''', match[0])
+            if stream_url:
+                stream_url = stream_url[0].replace('\/', '/')
+                stream_url += '|' + urllib.urlencode({'User-Agent': common.FF_USER_AGENT, 'Referer': web_url})
+                return stream_url
+
+        raise ResolverError('File Not Found or removed')
 
     def get_url(self, host, media_id):
-        return self._default_get_url(host, media_id, 'https://www.rapidvideo.com/embed/{media_id}')
+        return 'https://www.rapidvideo.com/embed/%s' % media_id

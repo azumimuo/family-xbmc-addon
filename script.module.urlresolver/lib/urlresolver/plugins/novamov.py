@@ -18,7 +18,6 @@
 """
 
 import re
-from lib import helpers
 from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
 
@@ -37,7 +36,7 @@ class NovamovResolver(UrlResolver):
 
         try:
             r = re.search('flashvars.filekey=(.+?);', html)
-            if r is None: raise Exception()
+            if r == None: raise Exception()
 
             r = r.group(1)
     
@@ -49,15 +48,17 @@ class NovamovResolver(UrlResolver):
             html = self.net.http_GET(player_url).content
     
             r = re.search('url=(.+?)&', html)
-            if r:
-                stream_url = r.group(1)
-                return stream_url
+
         except:
-            sources = helpers.parse_html5_source_list(html)
-            source = helpers.pick_source(sources)
-            return source + helpers.append_headers({'User-Agent': common.FF_USER_AGENT})
+            r = re.search('source src="(.+?)"', html)
+            
+        if r:
+            stream_url = r.group(1)
+            return stream_url
+        
+        else:
+            raise ResolverError('File Not Found or removed')
 
-        raise ResolverError('File Not Found or removed')
-
+ 
     def get_url(self, host, media_id):
         return 'http://www.auroravid.to/embed/?v=%s' % media_id

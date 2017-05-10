@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<addon id="plugin.video.androidrepublica" 
+       name="Androidrepublica"
+       version="2.0.0"
+       provider-name="androidrepublica">
+
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />    
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  
+  <extension point="xbmc.addon.metadata">
+    <summary> Forked from livestreams addon - by shani, thanks to the original developer for their wonderfull code and to admin and moderator in androidrepublica team</summary>
+    <description>
+        Kodi IPTV Malaysia official addon untuk stream malaysia content. Addon ini adalah percuma untuk digunakan. 
+		Support kami di FB : Kodi IPTV Malaysia v2 , Website : androidrepublica.com dan Youtube Channel : Kodi IPTV Malaysia         
+    </description>
+	<disclaimer lang="en">The content provided in this addon is available free on public domain. We do not host any content.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>

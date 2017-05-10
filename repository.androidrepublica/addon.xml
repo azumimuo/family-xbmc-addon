@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.androidrepublica" name="[COLOR lime]Android[/COLOR][COLOR red]republica[/COLOR] Repository" version="3.0.0" provider-name="Androidrepublica">
+<extension point="xbmc.addon.repository" name="androidrepublica Repository">
+<info compressed="false">http://androidrepublica.website/Repo/addons.xml</info>
+<checksum>http://androidrepublica.website/Repo/addons.xml.md5</checksum>
+<datadir zip="true">http://androidrepublica.website/Zips/</datadir>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Install Addons From Kodi IPTV Malaysia</summary>
+<description lang="en">Androidrepublica Repository.</description>
+<disclaimer lang="en">Copyright of androidrepublica.com</disclaimer>
+<platform>all</platform>
+</extension>
+</addon>

@@ -16,10 +16,9 @@
 """
 
 import re
-from lib import helpers
+from lib import jsunpack
 from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
-
 
 class VidtoResolver(UrlResolver):
     name = "vidto"
@@ -31,18 +30,23 @@ class VidtoResolver(UrlResolver):
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-        headers = {'User-Agent': common.FF_USER_AGENT}
-        html = self.net.http_GET(web_url, headers=headers).content
-        html = helpers.add_packed_data(html)
-        sources = []
-        for match in re.finditer('label:\s*"([^"]+)"\s*,\s*file:\s*"([^"]+)', html):
-            label, stream_url = match.groups()
-            sources.append((label, stream_url))
 
-        sources = sorted(sources, key=lambda x: x[0])[::-1]
-        return helpers.pick_source(sources) + helpers.append_headers(headers)
+        html = self.net.http_GET(web_url).content
 
-        raise ResolverError("File Link Not Found")
+        if jsunpack.detect(html):
+            js_data = jsunpack.unpack(html)
+
+            max_label = 0
+            stream_url = ''
+            for match in re.finditer('label:\s*"(\d+)p"\s*,\s*file:\s*"([^"]+)', js_data):
+                label, link = match.groups()
+                if int(label) > max_label:
+                    stream_url = link
+                    max_label = int(label)
+            if stream_url:
+                return stream_url
+            else:
+                raise ResolverError("File Link Not Found")
 
     def get_url(self, host, media_id):
-        return self._default_get_url(host, media_id)
+        return 'http://vidto.me/embed-%s.html' % media_id

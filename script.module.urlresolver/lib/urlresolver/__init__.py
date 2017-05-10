@@ -33,6 +33,7 @@ import sys
 import os
 import xbmcgui
 import common
+import xml.dom.minidom
 from hmf import HostedMediaFile
 from urlresolver.resolver import UrlResolver
 from plugins import *
@@ -246,13 +247,12 @@ def _update_settings_xml():
         '<?xml version="1.0" encoding="utf-8" standalone="yes"?>',
         '<settings>',
         '\t<category label="URLResolver">',
-        '\t\t<setting default="true" id="allow_universal" label="%s" type="bool"/>' % (common.i18n('enable_universal')),
-        '\t\t<setting default="true" id="auto_pick" label="%s" type="bool"/>' % (common.i18n('auto_pick')),
-        '\t\t<setting default="true" id="use_cache" label="%s" type="bool"/>' % (common.i18n('use_function_cache')),
-        '\t\t<setting id="reset_cache" type="action" label="%s" action="RunPlugin(plugin://script.module.urlresolver/?mode=reset_cache)"/>' % (common.i18n('reset_function_cache')),
+        '\t\t<setting default="true" id="allow_universal" label="Enable Universal Resolvers" type="bool"/>',
+        '\t\t<setting default="true" id="use_cache" label="Use Function Cache" type="bool"/>',
+        '\t\t<setting id="reset_cache" type="action" label="Reset Function Cache" action="RunPlugin(plugin://script.module.urlresolver/?mode=reset_cache)"/>',
         '\t\t<setting id="personal_nid" label="Your NID" type="text" visible="false"/>',
         '\t</category>',
-        '\t<category label="%s">' % (common.i18n('universal_resolvers'))]
+        '\t<category label="Universal Resolvers">']
 
     resolvers = relevant_resolvers(include_universal=True, include_disabled=True)
     resolvers = sorted(resolvers, key=lambda x: x.name.upper())
@@ -261,7 +261,7 @@ def _update_settings_xml():
             new_xml.append('\t\t<setting label="%s" type="lsep"/>' % (resolver.name))
             new_xml += ['\t\t' + line for line in resolver.get_settings_xml()]
     new_xml.append('\t</category>')
-    new_xml.append('\t<category label="%s 1">' % (common.i18n('resolvers')))
+    new_xml.append('\t<category label="Resolvers 1">')
 
     i = 0
     cat_count = 2
@@ -269,7 +269,7 @@ def _update_settings_xml():
         if not resolver.isUniversal():
             if i > MAX_SETTINGS:
                 new_xml.append('\t</category>')
-                new_xml.append('\t<category label="%s %s">' % (common.i18n('resolvers'), cat_count))
+                new_xml.append('\t<category label="Resolvers %s">' % (cat_count))
                 cat_count += 1
                 i = 0
             new_xml.append('\t\t<setting label="%s" type="lsep"/>' % (resolver.name))

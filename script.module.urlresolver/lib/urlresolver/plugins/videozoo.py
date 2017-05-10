@@ -34,7 +34,8 @@ class VideoZooResolver(UrlResolver):
         self.net = common.Net()
 
     def get_url(self, host, media_id):
-        return self._default_get_url(host, media_id, 'http://{host}/embed?vid={media_id}')
+        if media_id: return 'http://%s?%s' % (host, media_id)
+        else: return 'http://%s' % host
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)

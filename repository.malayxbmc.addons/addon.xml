@@ -4,9 +4,9 @@
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
         <extension point="xbmc.addon.repository" name="Malaysia XBMC Addon Repository">
-            <info compressed="false">https://raw.githubusercontent.com/frodomaster/malay-video-online/master/_repo/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/frodomaster/malay-video-online/master/_repo/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/frodomaster/malay-video-online/master/_repo/</datadir>
+            <info compressed="false">http://selangit.org/master/repo/addons.xml</info>
+            <checksum>http://selangit.org/master/repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://selangit.org/master/repo/</datadir>
             <hashes>false</hashes>
         </extension>
         <extension point="xbmc.addon.metadata">

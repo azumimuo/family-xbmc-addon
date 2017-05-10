@@ -19,22 +19,16 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 import re
 import json
 import urlparse
-from t0mm0.common.net import Net
-from urlresolver.plugnplay.interfaces import UrlResolver
-from urlresolver.plugnplay.interfaces import PluginSettings
-from urlresolver.plugnplay import Plugin
+from urlresolver import common
+from urlresolver.resolver import UrlResolver, ResolverError
 
-
-class VideoTTResolver(Plugin, UrlResolver, PluginSettings):
-    implements = [UrlResolver, PluginSettings]
+class VideoTTResolver(UrlResolver):
     name = "videott"
     domains = ["video.tt"]
     pattern = '(?://|\.)(video\.tt)/(?:video\/|embed\/|watch_video\.php\?v=)(\w+)'
 
     def __init__(self):
-        p = self.get_setting('priority') or 100
-        self.priority = int(p)
-        self.net = Net()
+        self.net = common.Net()
 
     def get_media_url(self, host, media_id):
         json_url = 'http://www.video.tt/player_control/settings.php?v=%s' % media_id
@@ -71,23 +65,13 @@ class VideoTTResolver(Plugin, UrlResolver, PluginSettings):
             vUrl = vUrl[0][1]
             return vUrl
 
-        raise UrlResolver.ResolverError('The requested video was not found.')
+        raise ResolverError('The requested video was not found.')
 
     def get_url(self, host, media_id):
         return 'http://www.video.tt/watch_video.php?v=%s' % media_id
 
-    def get_host_and_id(self, url):
-        r = re.search(self.pattern, url)
-        if r:
-            return r.groups()
-        else:
-            return False
-
-    def valid_url(self, url, host):
-        return re.search(self.pattern, url) or self.name in host
-
-    def get_settings_xml(self):
-        xml = PluginSettings.get_settings_xml(self)
-        xml += '<setting label="Video Quality" id="%s_quality" ' % self.__class__.__name__
-        xml += 'type="enum" values="Low|Medium|High" default="2" />\n'
+    @classmethod
+    def get_settings_xml(cls):
+        xml = super(cls, cls).get_settings_xml()
+        xml.append('<setting label="Video Quality" id="%s_quality" type="enum" values="High|Medium|Low" default="0" />' % (cls.__name__))
         return xml

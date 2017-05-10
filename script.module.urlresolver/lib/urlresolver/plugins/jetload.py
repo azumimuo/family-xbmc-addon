@@ -17,7 +17,8 @@
     along with this program. If not, see <http://www.gnu.org/licenses/>.
 """
 
-from lib import helpers
+import re
+from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
 
 
@@ -27,7 +28,16 @@ class JetloadResolver(UrlResolver):
     pattern = '(?://|\.)(jetload\.tv)/(?:.+?embed\.php\?u=)?([0-9a-zA-Z]+)'
 
     def get_media_url(self, host, media_id):
-        return helpers.get_media_url(self.get_url(host, media_id))
+        net = common.Net()
+        web_url = self.get_url(host, media_id)
+
+        html = net.http_GET(web_url).content
+
+        stream_url = re.compile('file\s*:\s*"(http.+?)"').findall(html)
+        if stream_url:
+            return stream_url[-1] + '|User-Agent=%s' % common.FF_USER_AGENT
+
+        raise ResolverError('File Not Found or removed')
 
     def get_url(self, host, media_id):
-        return self._default_get_url(host, media_id, 'http://{host}/plugins/mediaplayer/site/_embed.php?u={media_id}')
+        return 'http://%s/plugins/mediaplayer/site/_embed.php?u=%s' % (host, media_id)

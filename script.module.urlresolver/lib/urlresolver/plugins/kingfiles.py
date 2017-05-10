@@ -19,6 +19,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
 from lib import captcha_lib
+from lib import jsunpack
 from lib import helpers
 import re
 
@@ -39,13 +40,16 @@ class KingFilesResolver(UrlResolver):
         tries = 0
         while tries < MAX_TRIES:
             data = helpers.get_hidden(html)
+            data['method_free'] = 'Free Download'
             data.update(captcha_lib.do_captcha(html))
 
             html = self.net.http_POST(web_url, form_data=data).content
-            html = helpers.add_packed_data(html)
-            match = re.search('name="src"\s*value="([^"]+)', html)
-            if match:
-                return match.group(1)
+            # try to find source in packed data
+            if jsunpack.detect(html):
+                js_data = jsunpack.unpack(html)
+                match = re.search('name="src"\s*value="([^"]+)', js_data)
+                if match:
+                    return match.group(1)
 
             # try to find source in html
             match = re.search('<span[^>]*>\s*<a\s+href="([^"]+)', html, re.DOTALL)

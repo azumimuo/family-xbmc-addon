@@ -16,16 +16,13 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 """
-import os
 import json
 from urlresolver import common
-from urlresolver.common import i18n
 from urlresolver.resolver import UrlResolver, ResolverError
 
 API_BASE_URL = 'https://api.openload.co/1'
 INFO_URL = API_BASE_URL + '/streaming/info'
 GET_URL = API_BASE_URL + '/streaming/get?file={media_id}'
-OL_PATH = os.path.join(common.plugins_path, 'ol_gmu.py')
 
 class OpenLoadResolver(UrlResolver):
     name = "openload"
@@ -36,24 +33,22 @@ class OpenLoadResolver(UrlResolver):
         self.net = common.Net()
 
     def get_media_url(self, host, media_id):
+        web_url = self.get_url(host, media_id)
+        html = self.net.http_GET(web_url).content
+        if '>We are sorry!<' in html:
+            raise ResolverError('File Not Found')
+
         try:
-            self._auto_update(self.get_setting('url'), OL_PATH, self.get_setting('key'))
-            common.log_file_hash(OL_PATH)
-            import ol_gmu
-            return ol_gmu.get_media_url(self.get_url(host, media_id))
-        except Exception as e:
-            common.log_utils.log_debug('Exception during openload resolve parse: %s' % (e))
-            try:
-                video_url = self.__check_auth(media_id)
-                if not video_url:
-                    video_url = self.__auth_ip(media_id)
-            except ResolverError:
-                raise
+            video_url = self.__check_auth(media_id)
+            if not video_url:
+                video_url = self.__auth_ip(media_id)
+        except ResolverError:
+            raise
             
-            if video_url:
-                return video_url
-            else:
-                raise ResolverError(i18n('no_ol_auth'))
+        if video_url:
+            return video_url
+        else:
+            raise ResolverError('No OpenLoad Authorization')
 
     def get_url(self, host, media_id):
         return 'http://openload.co/embed/%s' % (media_id)
@@ -63,10 +58,10 @@ class OpenLoadResolver(UrlResolver):
         pair_url = js_data.get('result', {}).get('auth_url', '')
         if pair_url:
             pair_url = pair_url.replace('\/', '/')
-            header = i18n('ol_auth_header')
-            line1 = i18n('auth_required')
-            line2 = i18n('visit_link')
-            line3 = i18n('click_pair') % (pair_url)
+            header = 'OpenLoad Stream Authorization'
+            line1 = 'To play this video, authorization is required'
+            line2 = 'Visit the link below to authorize the devices on your network:'
+            line3 = '[B][COLOR blue]%s[/COLOR][/B] then click "Pair"' % (pair_url)
             with common.kodi.CountdownDialog(header, line1, line2, line3) as cd:
                 return cd.start(self.__check_auth, [media_id])
         
@@ -89,12 +84,3 @@ class OpenLoadResolver(UrlResolver):
         if js_result['status'] != 200:
             raise ResolverError(js_result['status'], js_result['msg'])
         return js_result
-
-    @classmethod
-    def get_settings_xml(cls):
-        xml = super(cls, cls).get_settings_xml()
-        xml.append('<setting id="%s_auto_update" type="bool" label="%s" default="true"/>' % (cls.__name__, i18n('auto_update')))
-        xml.append('<setting id="%s_url" type="text" label="    %s" default="" visible="eq(-1,true)"/>' % (cls.__name__, i18n('update_url')))
-        xml.append('<setting id="%s_key" type="text" label="    %s" default="" option="hidden" visible="eq(-2,true)"/>' % (cls.__name__, i18n('decrypt_key')))
-        xml.append('<setting id="%s_etag" type="text" default="" visible="false"/>' % (cls.__name__))
-        return xml

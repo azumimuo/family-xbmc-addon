@@ -1,0 +1,9 @@
+v3.0.0
+-Bug Fix
+
+v2.0.0
+-Added Plugin androidrepublicawizard
+
+v1.0.0
+-Initial Released
+

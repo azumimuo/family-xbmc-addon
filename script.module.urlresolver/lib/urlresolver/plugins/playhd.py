@@ -16,17 +16,34 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-from lib import helpers
+import re
+import urllib
+from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
 
 
 class PlayHDResolver(UrlResolver):
     name = "playhd.video"
     domains = ["www.playhd.video", "www.playhd.fo"]
-    pattern = '(?://|\.)(playhd\.(?:video|fo))/(?:embed\.php?.*?vid=|video/)([0-9]+)'
+    pattern = '(?://|\.)(playhd\.(?:video|fo))/embed\.php?.*?vid=([0-9]+)[\?&]*'
+
+    def __init__(self):
+        self.net = common.Net()
 
     def get_media_url(self, host, media_id):
-        return helpers.get_media_url(self.get_url(host, media_id))
+        web_url = self.get_url(host, media_id)
+        resp = self.net.http_GET(web_url)
+        html = resp.content
+        headers = dict(self.net.get_cookies())
+        encoded_headers = urllib.urlencode({'Cookie': headers['www.playhd.video']['/']['AVS'], 
+                                            'Referer': 'http://www.playhd.video/embed.php'})
+        r = re.search('"content_video".*\n.*?src="(.*?)"', html)
+        if r:
+            stream_url = r.group(1) + '|' + encoded_headers
+        else:
+            raise ResolverError('no file located')
+
+        return stream_url
 
     def get_url(self, host, media_id):
-        return 'http://www.playhd.video/embed.php?vid=%s' % (media_id)
+        return 'http://www.playhd.video/embed.php?vid=%s' % media_id

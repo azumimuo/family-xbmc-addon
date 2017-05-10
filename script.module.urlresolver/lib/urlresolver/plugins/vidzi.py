@@ -16,17 +16,38 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
 
-from lib import helpers
+import re
+import urllib
+from lib import jsunpack
+from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
-
 
 class VidziResolver(UrlResolver):
     name = "vidzi"
     domains = ["vidzi.tv"]
     pattern = '(?://|\.)(vidzi\.tv)/(?:embed-)?([0-9a-zA-Z]+)'
 
+    def __init__(self):
+        self.net = common.Net()
+
     def get_media_url(self, host, media_id):
-        return helpers.get_media_url(self.get_url(host, media_id))
+        web_url = self.get_url(host, media_id)
+        html = self.net.http_GET(web_url).content
+
+        if '404 Not Found' in html:
+            raise ResolverError('File Not Found or removed')
+
+        r = re.search('file\s*:\s*"([^"]+)', html)
+        if r:
+            return r.group(1) + '|' + urllib.urlencode({'Referer': 'http://vidzi.tv/nplayer/jwplayer.flash.swf'})
+        else:
+            for match in re.finditer('(eval\(function.*?)</script>', html, re.DOTALL):
+                js_data = jsunpack.unpack(match.group(1))
+                r = re.search('file\s*:\s*"([^"]+)', js_data)
+                if r:
+                    return r.group(1)
+
+        raise ResolverError('Unable to locate link')
 
     def get_url(self, host, media_id):
-        return self._default_get_url(host, media_id)
+        return 'http://%s/embed-%s.html' % (host, media_id)

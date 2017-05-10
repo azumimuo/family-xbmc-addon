@@ -1,0 +1,7 @@
+[B]Version 2.0.0[/B]
+1.Fix bug
+2.Reroute Source
+3.Change Fanart
+
+[B]Version 1.0.0[/B]
+Initial release
