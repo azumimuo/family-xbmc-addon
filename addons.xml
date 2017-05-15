@@ -3267,6 +3267,22 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
+<addon id="repository.merlin" name=" [COLOR aqua]Merlin Repository[/COLOR]" version="2.0.0" provider-name="Merlin Project">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+		<extension point="xbmc.addon.repository" name="Merlin Repository">
+			<info compressed="false">http://mrepo.uk/merlinrepo/addons.xml</info>
+			<checksum>http://mrepo.uk/merlinrepo/addons.xml.md5</checksum>
+			<datadir zip="true">http://mrepo.uk/merlinrepo/addons/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>Host Of Add-Ons And Repositories</summary>
+			<description>Primary Function To Provide Updates To Merlin Builds! Any Other Add-Ons Or Repositories Within Are Provided At My Choice And Discretion, Will Provide Add-Ons And Repositories That Are Publicly Available, Permission Not Required To Do So! Hope You Find This Repository Useful, Enjoy!</description>
+			<platform>all</platform>
+		</extension>
+</addon>
+
 <addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="1.7.1" provider-name="MetalKettle">
 	<extension point="xbmc.addon.repository" name="MetalKettles Addon Repository">
 	<dir>
@@ -3801,6 +3817,22 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<description lang="en">Download and install add-ons from Raw Media repository.</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="resource.as" name="[COLOR red]Merlin Auto Cleaner[/COLOR]" version="2.0.0" provider-name="Merlin Project">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Auto Cleaner By Merlin!</summary>
+    <description lang="en"></description>
+	<disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="script.areswizard" name="[COLOR black].[/COLOR] Ares Wizard" provider-name="AresTeam" version="0.0.23">
