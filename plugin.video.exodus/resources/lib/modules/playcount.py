@@ -2,7 +2,7 @@
 
 '''
     Exodus Add-on
-    Copyright (C) 2016 lambda
+    Copyright (C) 2016 Exodus
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -25,7 +25,7 @@ from resources.lib.modules import control
 from resources.lib.modules import trakt
 
 
-def getMovieIndicators():
+def getMovieIndicators(refresh=False):
     try:
         if trakt.getTraktIndicatorsInfo() == True: raise Exception()
         from metahandler import metahandlers
@@ -35,13 +35,16 @@ def getMovieIndicators():
         pass
     try:
         if trakt.getTraktIndicatorsInfo() == False: raise Exception()
-        indicators = trakt.cachesyncMovies(timeout=720)
+        if refresh == False: timeout = 720
+        elif trakt.getWatchedActivity() < trakt.timeoutsyncMovies(): timeout = 720
+        else: timeout = 0
+        indicators = trakt.cachesyncMovies(timeout=timeout)
         return indicators
     except:
         pass
 
 
-def getTVShowIndicators():
+def getTVShowIndicators(refresh=False):
     try:
         if trakt.getTraktIndicatorsInfo() == True: raise Exception()
         from metahandler import metahandlers
@@ -51,7 +54,19 @@ def getTVShowIndicators():
         pass
     try:
         if trakt.getTraktIndicatorsInfo() == False: raise Exception()
-        indicators = trakt.cachesyncTVShows(timeout=720)
+        if refresh == False: timeout = 720
+        elif trakt.getWatchedActivity() < trakt.timeoutsyncTVShows(): timeout = 720
+        else: timeout = 0
+        indicators = trakt.cachesyncTVShows(timeout=timeout)
+        return indicators
+    except:
+        pass
+
+
+def getSeasonIndicators(imdb):
+    try:
+        if trakt.getTraktIndicatorsInfo() == False: raise Exception()
+        indicators = trakt.syncSeason(imdb)
         return indicators
     except:
         pass
@@ -191,22 +206,23 @@ def tvshows(tvshowtitle, imdb, tvdb, season, watched):
 
         metaget = metahandlers.MetaData(preparezip=False)
 
-        dialog = control.progressDialog
-        dialog.create(control.addonInfo('name'), str(tvshowtitle))
-        dialog.update(0, str(tvshowtitle), control.lang(30451).encode('utf-8') + '...')
+        name = control.addonInfo('name')
+
+        dialog = control.progressDialogBG
+        dialog.create(str(name), str(tvshowtitle))
+        dialog.update(0, str(name), str(tvshowtitle))
 
         metaget.get_meta('tvshow', name='', imdb_id=imdb)
 
-        items = episodes.episodes().get(tvshowtitle, '0', imdb, '0', tvdb, '0', idx=False)
+        items = episodes.episodes().get(tvshowtitle, '0', imdb, tvdb, '0', idx=False)
         try: items = [i for i in items if int('%01d' % int(season)) == int('%01d' % int(i['season']))]
         except: pass
         items = [{'label': '%s S%02dE%02d' % (tvshowtitle, int(i['season']), int(i['episode'])), 'season': int('%01d' % int(i['season'])), 'episode': int('%01d' % int(i['episode']))} for i in items]
 
         for i in range(len(items)):
             if xbmc.abortRequested == True: return sys.exit()
-            if dialog.iscanceled(): return dialog.close()
 
-            dialog.update(int((100 / float(len(items))) * i), str(tvshowtitle), str(items[i]['label']))
+            dialog.update(int((100 / float(len(items))) * i), str(name), str(items[i]['label']))
 
             season, episode = items[i]['season'], items[i]['episode']
             metaget.get_episode_meta('', imdb_id=imdb, season=season, episode=episode)

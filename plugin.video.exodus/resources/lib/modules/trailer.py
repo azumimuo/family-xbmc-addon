@@ -2,7 +2,7 @@
 
 '''
     Exodus Add-on
-    Copyright (C) 2016 lambda
+    Copyright (C) 2016 Exodus
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -40,8 +40,14 @@ class trailer:
             url = self.worker(name, url)
             if url == None: return
 
-            item = control.item(path=url)
-            item.setProperty('IsPlayable', 'true')
+            title = control.infoLabel('listitem.title')
+            if title == '': title = control.infoLabel('listitem.label')
+            icon = control.infoLabel('listitem.icon')
+
+            item = control.item(path=url, iconImage=icon, thumbnailImage=icon)
+            try: item.setArt({'icon': icon})
+            except: pass
+            item.setInfo(type='Video', infoLabels = {'title': title})
             control.player.play(url, item)
         except:
             pass
@@ -70,6 +76,11 @@ class trailer:
     def search(self, url):
         try:
             query = urlparse.parse_qs(urlparse.urlparse(url).query)['q'][0]
+
+            apiLang = control.apiLanguage()['youtube']
+
+            if apiLang != 'en':
+                url += "&relevanceLanguage=%s" % apiLang
 
             url = self.search_link % urllib.quote_plus(query) + self.key_link
 
