@@ -9,7 +9,7 @@ try: import json
 except ImportError: import simplejson as json
 try: from Crypto.Cipher import AES
 except ImportError: import pyaes as AES
-#import lib.common
+import lib.common
 
 def encryptDES_ECB(data, key):
     data = data.encode()
@@ -75,7 +75,10 @@ def zadd2(data):
                 tmp = re.findall(match+'\s*=\s*[\'\"](.*?)[\"\'];',data)
                 if len(tmp)>0:
                     jsall += tmp[0]
-            tmp_ = re.sub(r"jwplayer\(\'\w+.*eval\(\"\(\"\+\w+\+\"\)\"\);", jsall, data, count=1, flags=re.DOTALL)
+            if re.compile(r"jwplayer\(\'\w+.*eval\(\"\(\"\+\w+\+\"\)\"\);", flags=re.DOTALL).findall(data):
+                 tmp_ = re.sub(r"jwplayer\(\'\w+.*eval\(\"\(\"\+\w+\+\"\)\"\);", jsall, data, count=1, flags=re.DOTALL)
+            if re.compile(r"\w+\.\w+\({.*}\s+</script>(.*)</script>", flags=re.DOTALL).findall(data):
+                tmp_ = re.sub(r"\w+.\w+\({.*}\s+</script>(.*)</script>", jsall, data, count=1, flags=re.DOTALL)
             data = tmp_
         except:
             data = data

@@ -66,7 +66,7 @@ item_info_build=%s
 item_info_name=hls_url_1
 item_info_from=page0
 item_info_convert=getInfo('%s','.*?jwplayer\(.*?setup.*?file"\s*:\s*"(.*?)"','streamlive.to')
-item_info_convert=debug
+#item_info_convert=debug
 item_info_build=%s
 
 #item_info_name=hls_url_2
@@ -77,7 +77,7 @@ item_info_build=%s
 
 item_info_name=hls_url
 item_info_from=hls_url_1
-item_info_convert=debug
+#item_info_convert=debug
 item_info_build=http:%s
 
 item_info_name=url
