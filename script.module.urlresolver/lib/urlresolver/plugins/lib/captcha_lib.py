@@ -20,10 +20,10 @@
 from urlresolver import common
 import re
 import xbmcgui
-import xbmc
 import os
 import recaptcha_v2
 import helpers
+import urlresolver
 
 net = common.Net()
 IMG_FILE = 'captcha_img.gif'
@@ -34,17 +34,10 @@ def get_response(img):
         wdlg = xbmcgui.WindowDialog()
         wdlg.addControl(img)
         wdlg.show()
-        xbmc.sleep(3000)
-        kb = xbmc.Keyboard('', 'Type the letters in the image', False)
-        kb.doModal()
-        if (kb.isConfirmed()):
-            solution = kb.getText()
-            if solution == '':
-                raise Exception('You must enter text in the image to access video')
-            else:
-                return solution
-        else:
-            raise Exception('Captcha Error')
+        common.kodi.sleep(3000)
+        solution = common.kodi.get_keyboard(common.i18n('letters_image'))
+        if not solution:
+            raise Exception('captcha_error')
     finally:
         wdlg.close()
 
@@ -54,31 +47,34 @@ def do_captcha(html):
     recaptcha_v2 = re.search('data-sitekey="([^"]+)', html)
     xfilecaptcha = re.search('<img\s+src="([^"]+/captchas/[^"]+)', html)
 
-    if solvemedia:
-        return do_solvemedia_captcha(solvemedia.group(1))
-    elif recaptcha:
-        return do_recaptcha(recaptcha.group(1))
-    elif recaptcha_v2:
-        return do_recaptcha_v2(recaptcha_v2.group(1))
-    elif xfilecaptcha:
-        return do_xfilecaptcha(xfilecaptcha.group(1))
-    else:
-        captcha = re.compile("left:(\d+)px;padding-top:\d+px;'>&#(.+?);<").findall(html)
-        result = sorted(captcha, key=lambda ltr: int(ltr[0]))
-        solution = ''.join(str(int(num[1]) - 48) for num in result)
-        if solution:
-            return {'code': solution}
+    if urlresolver.ALLOW_POPUPS:
+        if solvemedia:
+            return do_solvemedia_captcha(solvemedia.group(1))
+        elif recaptcha:
+            return do_recaptcha(recaptcha.group(1))
+        elif recaptcha_v2:
+            return do_recaptcha_v2(recaptcha_v2.group(1))
+        elif xfilecaptcha:
+            return do_xfilecaptcha(xfilecaptcha.group(1))
         else:
-            return {}
+            captcha = re.compile("left:(\d+)px;padding-top:\d+px;'>&#(.+?);<").findall(html)
+            result = sorted(captcha, key=lambda ltr: int(ltr[0]))
+            solution = ''.join(str(int(num[1]) - 48) for num in result)
+            if solution:
+                return {'code': solution}
+            else:
+                return {}
+    else:
+        return {}
 
 def do_solvemedia_captcha(captcha_url):
-    common.log_utils.log_debug('SolveMedia Captcha: %s' % (captcha_url))
+    common.logger.log_debug('SolveMedia Captcha: %s' % (captcha_url))
     if captcha_url.startswith('//'): captcha_url = 'http:' + captcha_url
     html = net.http_GET(captcha_url).content
     data = {
         'adcopy_challenge': ''  # set to blank just in case not found; avoids exception on return
     }
-    data.update(helpers.get_hidden(html))
+    data.update(helpers.get_hidden(html), include_submit=False)
     captcha_img = os.path.join(common.profile_path, IMG_FILE)
     try: os.remove(captcha_img)
     except: pass
@@ -99,7 +95,7 @@ def do_solvemedia_captcha(captcha_url):
     return {'adcopy_challenge': data['adcopy_challenge'], 'adcopy_response': 'manual_challenge'}
 
 def do_recaptcha(captcha_url):
-    common.log_utils.log_debug('Google ReCaptcha: %s' % (captcha_url))
+    common.logger.log_debug('Google ReCaptcha: %s' % (captcha_url))
     if captcha_url.startswith('//'): captcha_url = 'http:' + captcha_url
     personal_nid = common.get_setting('personal_nid')
     if personal_nid:
@@ -119,7 +115,7 @@ def do_recaptcha_v2(sitekey):
 
     return {}
 def do_xfilecaptcha(captcha_url):
-    common.log_utils.log_debug('XFileLoad ReCaptcha: %s' % (captcha_url))
+    common.logger.log_debug('XFileLoad ReCaptcha: %s' % (captcha_url))
     if captcha_url.startswith('//'): captcha_url = 'http:' + captcha_url
     solution = get_response(captcha_url)
     return {'code': solution}

@@ -18,10 +18,13 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-
 import re
+from lib import jsunpack
 from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
+
+logger = common.log_utils.Logger.get_logger(__name__)
+logger.disable()
 
 class WatchersResolver(UrlResolver):
     name = "watchers"
@@ -37,14 +40,29 @@ class WatchersResolver(UrlResolver):
         html = response.content
 
         if html:
-            ip_loc = re.search('<img src="http://([\d.]+)/.+?"', html).groups()[0]
-            id_media = re.search('([a-zA-Z0-9]+)(?=\|+?download)', html).groups()[0]
-            m3u8 = 'http://%s/hls/%s/index-v1-a1.m3u8' % (ip_loc, id_media)
+            packed = re.search('(eval\(function.*?)\s*</script>', html, re.DOTALL)
+            if packed:
+                js = jsunpack.unpack(packed.group(1))
+            else:
+                js = html
 
-            if m3u8:
-                return m3u8
+            video_url = None
+
+            link = re.search('([^"]*.m3u8)', js)
+            if link:
+                video_url = link.group(1)
+                logger.log_debug('watchers.to Link Found: %s' % video_url)
+
+            if not video_url:
+                link = re.search('([^"]*.mp4)', js)
+                if link:
+                    video_url = link.group(1)
+                    logger.log_debug('watchers.to Link Found: %s' % video_url)
+
+            if video_url:
+                return video_url
 
         raise ResolverError('No playable video found.')
 
     def get_url(self, host, media_id):
-        return 'http://%s/embed-%s.html' % (host, media_id)
+        return self._default_get_url(host, media_id)

@@ -15,10 +15,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-
-
 import re
-import urllib
+from lib import helpers
 from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
 
@@ -32,27 +30,13 @@ class Mp4streamResolver(UrlResolver):
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-
-        headers = {
-        'Host': 'mp4stream.com',
-        'Referer': 'https://www.mp4stream.com'
-        }
-
-        response = self.net.http_GET(web_url, headers=headers)
-
-        html = response.content
-
-        headers = dict(response._response.info().items())
-
-        r = re.search('sources\s*:\s*(\[.*?\])', html, re.DOTALL)
-
-        if r:
-            html = r.group(1)
-            r = re.search("'file'\s*:\s*'(.+?)'", html)
-            if r:
-                return r.group(1) + '|' + urllib.urlencode({'Cookie': headers['set-cookie']})
-            else:
-                raise ResolverError('File Not Found or removed')
+        headers = {'User-Agent': common.IE_USER_AGENT, 'Referer': web_url}
+        html = self.net.http_GET(web_url, headers=headers).content
+        url = re.findall('src\s*:\s*\'(.+?)\'', html)
+        if url:
+            return url[-1] + helpers.append_headers(headers)
+        else:
+            raise ResolverError('File not found')
 
     def get_url(self, host, media_id):
         return 'http://mp4stream.com/embed/%s' % media_id

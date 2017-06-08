@@ -17,49 +17,36 @@
 """
 
 import re
-import urllib
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
-import xbmcgui
+from urlresolver.resolver import UrlResolver, ResolverError  # @UnusedImport
+from lib import helpers
 
 class FilePupResolver(UrlResolver):
     name = "filepup"
     domains = ["filepup.net"]
     pattern = '(?://|\.)(filepup.(?:net))/(?:play|files)/([0-9a-zA-Z]+)'
+    headers = {'User-Agent': common.RAND_UA}
 
     def __init__(self):
         self.net = common.Net()
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-        headers = {'User-Agent': common.SMU_USER_AGENT}
-        html = self.net.http_GET(web_url, headers=headers).content
+        html = self.net.http_GET(web_url, headers=self.headers).content
         default_url = self.__get_def_source(html)
         if default_url:
             qualities = self.__get_qualities(html)
             def_quality = self.__get_default(html)
-            if len(qualities) <= 1:
-                pick_quality = def_quality
-            elif self.get_setting('auto_pick') == 'true':
-                pick_quality = ''
-                best_height = 0
-                for quality in qualities:
-                    height = int(quality[:-1])
-                    if height > best_height:
-                        pick_quality = quality
-            else:
-                result = xbmcgui.Dialog().select('Choose the link', qualities)
-                if result == -1:
-                    raise ResolverError('No link selected')
+            sources = []
+            for quality in qualities:
+                if quality == def_quality:
+                    sources.append((quality, default_url))
                 else:
-                    pick_quality = qualities[result]
-
-            if not def_quality or pick_quality == def_quality:
-                return default_url
-            else:
-                return default_url.replace('.mp4?', '-%s.mp4?' % (pick_quality))
-        else:
-            raise ResolverError('Unable to location download link')
+                    stream_url = default_url.replace('.mp4?', '-%s.mp4?' % (quality))
+                    sources.append((quality, stream_url))
+            try: sources.sort(key=lambda x: int(x[0][:-1]), reverse=True)
+            except: pass
+            return helpers.pick_source(sources)
 
     def __get_def_source(self, html):
         default_url = ''
@@ -67,7 +54,7 @@ class FilePupResolver(UrlResolver):
         if match:
             match = re.search('src\s*:\s*"([^"]+)', match.group(1))
             if match:
-                default_url = match.group(1) + '|' + urllib.urlencode({'User-Agent': common.SMU_USER_AGENT})
+                default_url = match.group(1) + helpers.append_headers(self.headers)
         return default_url
 
     def __get_default(self, html):
@@ -86,9 +73,3 @@ class FilePupResolver(UrlResolver):
 
     def get_url(self, host, media_id):
         return 'http://www.filepup.net/play/%s' % (media_id)
-
-    @classmethod
-    def get_settings_xml(cls):
-        xml = super(cls, cls).get_settings_xml()
-        xml.append('<setting id="%s_auto_pick" type="bool" label="Automatically pick best quality" default="false" visible="true"/>' % (cls.__name__))
-        return xml

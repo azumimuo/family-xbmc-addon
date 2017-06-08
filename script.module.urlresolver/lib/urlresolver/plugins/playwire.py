@@ -26,9 +26,9 @@ from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
 
 class PlayWireResolver(UrlResolver):
-    name     = "playwire"
-    domains  = ["playwire.com"]
-    pattern  = '(?://|\.)(config\.playwire\.com)/(.+?)/zeus\.json'
+    name = "playwire"
+    domains = ["playwire.com"]
+    pattern = '(?://|\.)(config\.playwire\.com)/(.+?)/(?:zeus|player)\.json'
     pattern2 = '(?://|\.)(cdn\.playwire\.com.+?\d+)/(?:config|embed)/(\d+)'
     qual_map = {'1080': 'Full HD', '720': "HD", '480': "SD", '360': 'Low Quality', '270': 'Poor Quality', '240': 'Mobile HD', '144': 'Mobile SD'}
 
@@ -44,22 +44,22 @@ class PlayWireResolver(UrlResolver):
             try:
                 if 'config.playwire.com' in host:
                     response = json.loads(html)['content']['media']['f4m']
-                elif not 'v2' in host:
+                elif 'v2' not in host:
                     response = re.findall(r'<src>(.+?)</src>', html)[0]
                 else:
                     response = json.loads(html)['src']
-                    return response    
-                    
+                    return response
+
                 response = self.net.http_GET(response).content
                 baseURL = re.findall(r'<baseURL>\s*(.+)\s*</baseURL>', response)[0]
                 media = re.findall(r'<media url="(\S+)".+?height="(\d+)".*?/>', response)
                 media.sort(key=lambda x: x[1], reverse=True)
                 sources = [('%s' % self.__replaceQuality(i[1], i[1]), '%s/%s' % (baseURL, i[0])) for i in media]
-                source = helpers.pick_source(sources, self.get_setting('auto_pick') == 'true')
+                source = helpers.pick_source(sources)
                 source = source.encode('utf-8')
 
                 return source
-                
+
             except:
                 raise ResolverError('Unable to resolve url.')
 
@@ -67,11 +67,11 @@ class PlayWireResolver(UrlResolver):
 
     def __replaceQuality(self, qual, num):
         return self.qual_map.get(qual, num)
-    
+
     def get_url(self, host, media_id):
         if 'config.playwire.com' in host:
             return 'http://%s/%s/zeus.json' % (host, media_id)
-        elif not 'v2' in host:
+        elif 'v2' not in host:
             return 'http://%s/embed/%s.xml' % (host, media_id)
         else:
             return 'http://%s/config/%s.json' % (host, media_id)
@@ -86,9 +86,3 @@ class PlayWireResolver(UrlResolver):
 
     def valid_url(self, url, host):
         return re.search(self.pattern, url) or re.search(self.pattern2, url) or self.name in host
-        
-    @classmethod
-    def get_settings_xml(cls):
-        xml = super(cls, cls).get_settings_xml()
-        xml.append('<setting id="%s_auto_pick" type="bool" label="Automatically pick best quality" default="false" visible="true"/>' % (cls.__name__))
-        return xml

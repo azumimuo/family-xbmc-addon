@@ -20,7 +20,11 @@ import re
 import urllib
 import json
 from urlresolver import common
+from urlresolver.common import i18n
 from urlresolver.resolver import UrlResolver, ResolverError
+
+logger = common.log_utils.Logger.get_logger(__name__)
+logger.disable()
 
 class RPnetResolver(UrlResolver):
     name = "RPnet"
@@ -65,10 +69,10 @@ class RPnetResolver(UrlResolver):
             url = 'http://premium.rpnet.biz/hoster.json'
             response = self.net.http_GET(url).content
             hosters = json.loads(response)
-            common.log_utils.log_debug('rpnet patterns: %s' % (hosters))
+            logger.log_debug('rpnet patterns: %s' % (hosters))
             patterns = [re.compile(pattern) for pattern in hosters['supported']]
         except Exception as e:
-            common.log_utils.log_error('Error getting RPNet patterns: %s' % (e))
+            logger.log_error('Error getting RPNet patterns: %s' % (e))
         return patterns
 
     @common.cache.cache_method(cache_limit=8)
@@ -78,9 +82,9 @@ class RPnetResolver(UrlResolver):
             url = 'http://premium.rpnet.biz/hoster2.json'
             response = self.net.http_GET(url).content
             hosts = json.loads(response)['supported']
-            common.log_utils.log_debug('rpnet hosts: %s' % (hosts))
+            logger.log_debug('rpnet hosts: %s' % (hosts))
         except Exception as e:
-            common.log_utils.log_error('Error getting RPNet hosts: %s' % (e))
+            logger.log_error('Error getting RPNet hosts: %s' % (e))
         return hosts
 
     def valid_url(self, url, host):
@@ -103,9 +107,9 @@ class RPnetResolver(UrlResolver):
     @classmethod
     def get_settings_xml(cls):
         xml = super(cls, cls).get_settings_xml()
-        xml.append('<setting id="%s_login" type="bool" label="login" default="false"/>' % (cls.__name__))
-        xml.append('<setting id="%s_username" enable="eq(-1,true)" type="text" label="Username" default=""/>' % (cls.__name__))
-        xml.append('<setting id="%s_password" enable="eq(-2,true)" type="text" label="Password (API KEY)" option="hidden" default=""/>' % (cls.__name__))
+        xml.append('<setting id="%s_login" type="bool" label="%s" default="false"/>' % (cls.__name__, i18n('login')))
+        xml.append('<setting id="%s_username" enable="eq(-1,true)" type="text" label="%s" default=""/>' % (cls.__name__, i18n('username')))
+        xml.append('<setting id="%s_password" enable="eq(-2,true)" type="text" label="%s" option="hidden" default=""/>' % (cls.__name__, i18n('password')))
         return xml
 
     @classmethod

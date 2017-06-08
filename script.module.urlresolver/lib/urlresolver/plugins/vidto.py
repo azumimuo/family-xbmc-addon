@@ -14,39 +14,9 @@
     Special thanks for help with this resolver go out to t0mm0, jas0npc,
     mash2k3, Mikey1234,voinage and of course Eldorado. Cheers guys :)
 """
+from __generic_resolver__ import GenericResolver
 
-import re
-from lib import jsunpack
-from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
-
-class VidtoResolver(UrlResolver):
+class VidtoResolver(GenericResolver):
     name = "vidto"
     domains = ["vidto.me"]
     pattern = '(?://|\.)(vidto\.me)/(?:embed-)?([0-9a-zA-Z]+)'
-
-    def __init__(self):
-        self.net = common.Net()
-
-    def get_media_url(self, host, media_id):
-        web_url = self.get_url(host, media_id)
-
-        html = self.net.http_GET(web_url).content
-
-        if jsunpack.detect(html):
-            js_data = jsunpack.unpack(html)
-
-            max_label = 0
-            stream_url = ''
-            for match in re.finditer('label:\s*"(\d+)p"\s*,\s*file:\s*"([^"]+)', js_data):
-                label, link = match.groups()
-                if int(label) > max_label:
-                    stream_url = link
-                    max_label = int(label)
-            if stream_url:
-                return stream_url
-            else:
-                raise ResolverError("File Link Not Found")
-
-    def get_url(self, host, media_id):
-        return 'http://vidto.me/embed-%s.html' % media_id

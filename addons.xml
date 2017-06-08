@@ -1312,6 +1312,51 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.bubbles" version="2.0.1" name="Bubbles" provider-name="Bubbles">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+
+		<import addon="script.bubbles.resources" version="2.0.0" />
+		<import addon="script.bubbles.artwork" version="1.4.2" />
+		<import addon="script.bubbles.binaries" version="1.4.2" optional="true" />
+		<import addon="script.bubbles.icons" version="2.0.0" optional="true" />
+		<import addon="script.bubbles.skins" version="1.4.2" optional="true" />
+		<import addon="skin.bubbles.aeon.nox" version="1.1.2" optional="true" />
+
+		<import addon="script.module.urlresolver" version="3.0.29" />
+		<import addon="script.module.metahandler" version="2.9.0" />
+
+		<import addon="plugin.video.quasar" version="0.9.78" optional="true" />
+		<import addon="script.trakt" version="3.1.11" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="bubbles.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Stream Movies and Shows</summary>
+		<description lang="en">Stream movies, shows, documentaries, and short films from a variety of sources, such as torrents, usenet, file hosters, and video streaming services.</description>
+		<disclaimer lang="en">Bubbles and its developers are not in any way affiliated with Kodi, TVAddons, OffshoreGit, Premiumize, RealDebrid, EasyNews, or any of the sites and providers used in the addon. Bubbles is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes. Bubbles and its developers do not host, create, or distribute any of the content displayed in the addon.</disclaimer>
+		<platform>all</platform>
+		<license>GPL 3.0</license>
+		<website>https://offshoregit.com/bubbles</website>
+		<forum>https://www.tvaddons.ag/forums/bubbles-repository</forum>
+		<assets>
+			<icon>icon.png</icon> <!-- Do not change file name. Required by older Kodi versions. -->
+			<fanart>fanart.jpg</fanart> <!-- Do not change file name. Required by older Kodi versions. -->
+			<screenshot>resources/media/screenshots/screenshot01.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot02.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot03.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot04.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot05.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot06.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot07.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot08.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot09.jpg</screenshot>
+			<screenshot>resources/media/screenshots/screenshot10.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="plugin.video.ccloudtv"
        name="cCloud TV"
        version="1.4.4"
@@ -2439,19 +2484,25 @@ http://www.hometheater.co.il</description>
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2"
+  version="2017.06.03"
   name="SportsDevil"
   provider-name="SportsDevil">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
    <import addon="script.module.requests" />
-   <import addon="script.module.pydevd" version="4.4.0" optional="true"/>
+   <import addon="script.module.livestreamer" />
+   <import addon="script.video.F4mProxy" />
+   <import addon="plugin.video.f4mTester" />
   </requires>
   <extension
     point="xbmc.python.pluginsource"
     library="default.py">
    <provides>video</provides>
   </extension>
+  <extension point="xbmc.service" library="service/proxy_service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary>Play videos of different sports streaming sites</summary>
     <description>Play videos of different sports streaming sites</description>
@@ -2947,6 +2998,28 @@ http://www.hometheater.co.il</description>
 		<description>Video plug-ins for XBMC</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.bubbles" version="1.4.0" name="Bubbles Repository" provider-name="Bubbles">
+	<extension point="xbmc.addon.repository" name="Bubbles Repository">
+		<dir>
+			<info compressed="false">https://offshoregit.com/bubbles/repository/common/addons.xml</info>
+			<checksum>https://offshoregit.com/bubbles/repository/common/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/bubbles/repository/common/</datadir>
+		</dir>
+		<info compressed="false">https://offshoregit.com/bubbles/repository/addons.xml</info>
+		<checksum>https://offshoregit.com/bubbles/repository/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/bubbles/repository/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Bubbles Repository</summary>
+		<description lang="en">The Bubbles repository for the addon, resources, extensions, and external addons.</description>
+		<disclaimer lang="en">Bubbles and its developers are not in any way affiliated with Kodi, TVAddons, OffshoreGit, Premiumize, RealDebrid, EasyNews, or any of the sites and providers used in the addon. Bubbles is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes. Bubbles and its developers do not host, create, or distribute any of the content displayed in the addon.</disclaimer>
+		<platform>all</platform>
+		<license>GPL 3.0</license>
+		<website>https://offshoregit.com/bubbles</website>
+		<forum>https://www.tvaddons.ag/forums/bubbles-repository</forum>
 	</extension>
 </addon>
 
@@ -3540,6 +3613,37 @@ Addons Included
         <description>This repository contains intermediate builds of libraries commonly used by TVAddons Kodi addons, Brought to you by TVADDONS.ag</description>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="repository.unofficialsportsdevil" name="Unofficial SportsDevil Repository" version="1.0.0" provider-name="unofficialsportsdevil">
+ <extension point="xbmc.addon.repository" name="Unofficial SportsDevil Repository">
+  <dir>
+   <info compressed="false">
+    https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml
+   </info>
+   <checksum>
+    https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5
+   </checksum>
+   <datadir zip="true">
+    https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/
+   </datadir>
+  </dir>
+  <info compressed="false">
+   https://offshoregit.com/unofficialsportsdevil/addons.xml
+  </info>
+  <checksum>
+   https://offshoregit.com/unofficialsportsdevil/addons.xml.md5
+  </checksum>
+  <datadir zip="true">https://offshoregit.com/unofficialsportsdevil/</datadir>
+ </extension>
+ <extension point="xbmc.addon.metadata">
+  <summary>Unofficial SportsDevil Updates for Kodi</summary>
+  <description>Unofficial SportsDevil Updates for Kodi</description>
+  <platform>all</platform>
+  <forum>
+   https://forums.tvaddons.ag/sportsdevil-addon-for-kodi/
+  </forum>
+ </extension>
 </addon>
 
     <addon id="repository.vms" name="VMS Repository" version="1.0.8" provider-name="tedbundyjr">
@@ -4209,9 +4313,11 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="3.0.21" provider-name="Eldorado">
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.32" provider-name="tvaddons.ag, Eldorado">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.python.pluginsource" library="lib/default.py" />

@@ -16,21 +16,39 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 from urlresolver.resolver import UrlResolver, ResolverError
+from urlresolver.lib import kodi
+from lib import helpers
+
+try:
+    import youtube_resolver
+except ImportError:
+    youtube_resolver = None
+
 
 class YoutubeResolver(UrlResolver):
     name = "youtube"
-    domains = ['youtube.com', 'youtu.be']
+    domains = ['youtube.com', 'youtu.be', 'youtube-nocookie.com']
     pattern = '''https?://(?:[0-9A-Z-]+\.)?(?:(youtu\.be|youtube(?:-nocookie)?\.com)/?\S*?[^\w\s-])([\w-]{11})(?=[^\w-]|$)(?![?=&+%\w.-]*(?:['"][^<>]*>|</a>))[?=&+%\w.-]*'''
 
     def get_media_url(self, host, media_id):
-        plugin = 'plugin://plugin.video.youtube/play/?video_id=' + media_id
-        return plugin
+        if youtube_resolver is None:
+            return 'plugin://plugin.video.youtube/play/?video_id=' + media_id
+        else:
+            streams = youtube_resolver.resolve(media_id)
+            streams_no_dash = [item for item in streams if item['container'] != 'mpd']
+            stream_tuples = [(item['title'], item['url']) for item in streams_no_dash]
+            return helpers.pick_source(stream_tuples)
 
     def get_url(self, host, media_id):
         return 'http://youtube.com/watch?v=%s' % media_id
 
     @classmethod
+    def _is_enabled(cls):
+        return cls.get_setting('enabled') == 'true' and kodi.has_addon('plugin.video.youtube')
+
+    @classmethod
     def get_settings_xml(cls):
         xml = super(cls, cls).get_settings_xml()
-        xml.append('<setting label="This plugin calls the youtube addon -change settings there." type="lsep" />')
+        if youtube_resolver is None:
+            xml.append('<setting label="This plugin calls the youtube addon -change settings there." type="lsep" />')
         return xml

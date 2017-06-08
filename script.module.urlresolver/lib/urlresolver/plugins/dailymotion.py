@@ -15,78 +15,50 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
-
-import re
 import json
-import urllib2
+import re
+import urllib
+from lib import helpers
 from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
 
 class DailymotionResolver(UrlResolver):
-    name = "dailymotion"
-    domains = ["dailymotion.com"]
+    name = 'dailymotion'
+    domains = ['dailymotion.com']
     pattern = '(?://|\.)(dailymotion\.com)/(?:video|embed|sequence|swf)(?:/video)?/([0-9a-zA-Z]+)'
 
     def __init__(self):
         self.net = common.Net()
+        self.headers = {'User-Agent': common.RAND_UA}
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-        html = self.net.http_GET(web_url).content
-
-        html = re.search('({"context".+?)\);\n', html, re.DOTALL)
-        if html:
-            html = json.loads(html.group(1))
-            if 'metadata' in html: html = html['metadata']
-            else: return
-
-        if 'error' in html:
-            err_title = html['error']
-            if 'title' in err_title:
-                err_title = err_title['title']
-            else:
-                err_title = 'Content not available.'
-            raise ResolverError(err_title)
-
-        if 'qualities' in html:
-            html = html['qualities']
-
-        videoUrl = []
-        try: videoUrl.append(html['1080'][0]['url'])
-        except: pass
-        try: videoUrl.append(html['720'][0]['url'])
-        except: pass
-        try: videoUrl.append(html['480'][0]['url'])
-        except: pass
-        try: videoUrl.append(html['380'][0]['url'])
-        except: pass
-        try: videoUrl.append(html['240'][0]['url'])
-        except: pass
-        try: videoUrl.append(html['auto'][0]['url'])
-        except: pass
-
-        vUrl = ''
-        vUrlsCount = len(videoUrl)
-        if vUrlsCount > 0:
-            q = self.get_setting('quality')
-            if q == '0':
-                # Highest Quality
-                vUrl = videoUrl[0]
-            elif q == '1':
-                # Medium Quality
-                vUrl = videoUrl[(int)(vUrlsCount / 2)]
-            elif q == '2':
-                # Lowest Quality
-                vUrl = videoUrl[vUrlsCount - 1]
-
-        vUrl = urllib2.urlopen(urllib2.Request(vUrl)).geturl()
-        return vUrl
+        html = self.net.http_GET(web_url, headers=self.headers).content
+        if '"reason":"video attribute|explicit"' in html:
+            headers = {'Referer': web_url}
+            headers.update(self.headers)
+            url_back = '/embed/video/%s' % (media_id)
+            web_url = 'http://www.dailymotion.com/family_filter?enable=false&urlback=%s' % (urllib.quote_plus(url_back))
+            html = self.net.http_GET(url=web_url, headers=headers).content
+            
+        match = re.search('var\s+config\s*=\s*(.*?}});', html)
+        if not match: raise ResolverError('Unable to locate config')
+        try: js_data = json.loads(match.group(1))
+        except: js_data = {}
+        
+        sources = []
+        streams = js_data.get('metadata', {}).get('qualities', {})
+        for quality, links in streams.iteritems():
+            for link in links:
+                if not quality.isdigit() or link.get('type', '').startswith('video'):
+                    sources.append((quality, link['url']))
+                
+        sources.sort(key=lambda x: self.__key(x), reverse=True)
+        return helpers.pick_source(sources) + helpers.append_headers(self.headers)
+    
+    def __key(self, item):
+        try: return int(item[0])
+        except: return 0
 
     def get_url(self, host, media_id):
         return 'http://www.dailymotion.com/embed/video/%s' % media_id
-
-    @classmethod
-    def get_settings_xml(cls):
-        xml = super(cls, cls).get_settings_xml()
-        xml.append('<setting label="Video Quality" id="%s_quality" type="enum" values="High|Medium|Low" default="0" />' % (cls.__name__))
-        return xml

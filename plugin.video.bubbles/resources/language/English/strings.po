@@ -1,0 +1,5749 @@
+# Addon Name: Bubbles
+# Addon id: plugin.video.bubbles
+# Addon Provider: Bubbles
+msgid ""
+msgstr ""
+
+msgctxt "#32001"
+msgid "Movies"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Shows"
+msgstr ""
+
+msgctxt "#32003"
+msgid "My Movies"
+msgstr ""
+
+msgctxt "#32004"
+msgid "My TV Shows"
+msgstr ""
+
+msgctxt "#32005"
+msgid "New Movies"
+msgstr ""
+
+msgctxt "#32006"
+msgid "New Episodes"
+msgstr ""
+
+msgctxt "#32007"
+msgid "Channels"
+msgstr ""
+
+msgctxt "#32008"
+msgid "Tools"
+msgstr ""
+
+msgctxt "#32009"
+msgid "Downloads"
+msgstr ""
+
+msgctxt "#32010"
+msgid "Search"
+msgstr ""
+
+msgctxt "#32011"
+msgid "Genres"
+msgstr ""
+
+msgctxt "#32012"
+msgid "Year"
+msgstr ""
+
+msgctxt "#32013"
+msgid "People"
+msgstr ""
+
+msgctxt "#32014"
+msgid "Languages"
+msgstr ""
+
+msgctxt "#32015"
+msgid "Certificates"
+msgstr ""
+
+msgctxt "#32016"
+msgid "Networks"
+msgstr ""
+
+msgctxt "#32017"
+msgid "People Watching"
+msgstr ""
+
+msgctxt "#32018"
+msgid "Most Popular"
+msgstr ""
+
+msgctxt "#32019"
+msgid "Most Voted"
+msgstr ""
+
+msgctxt "#32020"
+msgid "Box Office"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Oscar Winners"
+msgstr ""
+
+msgctxt "#32022"
+msgid "In Theaters"
+msgstr ""
+
+msgctxt "#32023"
+msgid "Highly Rated"
+msgstr ""
+
+msgctxt "#32024"
+msgid "Airing today"
+msgstr ""
+
+msgctxt "#32025"
+msgid "Returning TV Shows"
+msgstr ""
+
+msgctxt "#32026"
+msgid "New TV Shows"
+msgstr ""
+
+msgctxt "#32027"
+msgid "Calendar"
+msgstr ""
+
+msgctxt "#32028"
+msgid "People Search"
+msgstr ""
+
+msgctxt "#32029"
+msgid "Movie People"
+msgstr ""
+
+msgctxt "#32030"
+msgid "TV People"
+msgstr ""
+
+msgctxt "#32031"
+msgid "Discover"
+msgstr ""
+
+msgctxt "#32032"
+msgid "Collection"
+msgstr ""
+
+msgctxt "#32033"
+msgid "Watchlist"
+msgstr ""
+
+msgctxt "#32034"
+msgid "IMDb"
+msgstr ""
+
+msgctxt "#32035"
+msgid "Featured"
+msgstr ""
+
+msgctxt "#32036"
+msgid "History"
+msgstr ""
+
+msgctxt "#32037"
+msgid "Progress"
+msgstr ""
+
+msgctxt "#32038"
+msgid "Episodes"
+msgstr ""
+
+msgctxt "#32039"
+msgid "Movie Lists"
+msgstr ""
+
+msgctxt "#32040"
+msgid "Show Lists"
+msgstr ""
+
+msgctxt "#32041"
+msgid "Episode Lists"
+msgstr ""
+
+msgctxt "#32042"
+msgid "No Trakt or IMDb account found."
+msgstr ""
+
+msgctxt "#32043"
+msgid "[B]SETTINGS[/B] : General"
+msgstr ""
+
+msgctxt "#32044"
+msgid "[B]SETTINGS[/B] : Accounts"
+msgstr ""
+
+msgctxt "#32045"
+msgid "[B]SETTINGS[/B] : Playback"
+msgstr ""
+
+msgctxt "#32046"
+msgid "[B]SETTINGS[/B] : Subtitles"
+msgstr ""
+
+msgctxt "#32047"
+msgid "[B]SETTINGS[/B] : Providers"
+msgstr ""
+
+msgctxt "#32048"
+msgid "[B]BUBBLES[/B] : Downloads"
+msgstr ""
+
+msgctxt "#32049"
+msgid "[B]BUBBLES[/B] : Viewtypes"
+msgstr ""
+
+msgctxt "#32050"
+msgid "[B]BUBBLES[/B] : Clear providers..."
+msgstr ""
+
+msgctxt "#32051"
+msgid "[B]BUBBLES[/B] : Clear metadata..."
+msgstr ""
+
+msgctxt "#32052"
+msgid "[B]BUBBLES[/B] : Clear cache..."
+msgstr ""
+
+msgctxt "#32053"
+msgid "[I]Next Page[/I]"
+msgstr ""
+
+msgctxt "#32054"
+msgid "Seasons"
+msgstr ""
+
+msgctxt "#32055"
+msgid "Season"
+msgstr ""
+
+msgctxt "#32056"
+msgid "Are you sure?"
+msgstr ""
+
+msgctxt "#32057"
+msgid "Process Complete"
+msgstr ""
+
+msgctxt "#32058"
+msgid "This will slow down things until they are re-cached!"
+msgstr ""
+
+msgctxt "#32059"
+msgid "Select To Save View"
+msgstr ""
+
+msgctxt "#32060"
+msgid "January|February|March|April|May|June|July|August|September|October|November|December"
+msgstr ""
+
+msgctxt "#32061"
+msgid "Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday"
+msgstr ""
+
+msgctxt "#32062"
+msgid "[B]%s:[/B] %s"
+msgstr ""
+
+msgctxt "#32063"
+msgid "Play Manual"
+msgstr ""
+
+msgctxt "#32064"
+msgid "Play Automatic"
+msgstr ""
+
+msgctxt "#32065"
+msgid "Queue Item"
+msgstr ""
+
+msgctxt "#32066"
+msgid "Mark Watch"
+msgstr ""
+
+msgctxt "#32067"
+msgid "Mark Unwatch"
+msgstr ""
+
+msgctxt "#32068"
+msgid "Trakt Watch"
+msgstr ""
+
+msgctxt "#32069"
+msgid "Trakt Unwatch"
+msgstr ""
+
+msgctxt "#32070"
+msgid "Trakt Manager"
+msgstr ""
+
+msgctxt "#32071"
+msgid "Browse Show"
+msgstr ""
+
+msgctxt "#32072"
+msgid "Refresh"
+msgstr ""
+
+msgctxt "#32301"
+msgid "Enabled"
+msgstr ""
+
+msgctxt "#32302"
+msgid "Disabled"
+msgstr ""
+
+msgctxt "#32303"
+msgid "User"
+msgstr ""
+
+msgctxt "#32304"
+msgid "Email"
+msgstr ""
+
+msgctxt "#32305"
+msgid "ID"
+msgstr ""
+
+msgctxt "#32306"
+msgid "Authentication ..."
+msgstr ""
+
+msgctxt "#32307"
+msgid "Password"
+msgstr ""
+
+msgctxt "#32308"
+msgid "PIN"
+msgstr ""
+
+msgctxt "#32309"
+msgid "API"
+msgstr ""
+
+msgctxt "#32310"
+msgid "General"
+msgstr ""
+
+msgctxt "#32311"
+msgid "Appearance"
+msgstr ""
+
+msgctxt "#32312"
+msgid "Provider Timeout"
+msgstr ""
+
+msgctxt "#32313"
+msgid "Indicators"
+msgstr ""
+
+msgctxt "#32314"
+msgid "Local"
+msgstr ""
+
+msgctxt "#32315"
+msgid "Trakt"
+msgstr ""
+
+msgctxt "#32316"
+msgid "Info Language"
+msgstr ""
+
+msgctxt "#32317"
+msgid "Flatten TV seasons"
+msgstr ""
+
+msgctxt "#32318"
+msgid "Enable Fanart"
+msgstr ""
+
+msgctxt "#32319"
+msgid "Menus"
+msgstr ""
+
+msgctxt "#32320"
+msgid "Movie Arrivals"
+msgstr ""
+
+msgctxt "#32321"
+msgid "Featured"
+msgstr ""
+
+msgctxt "#32322"
+msgid "People Watching"
+msgstr ""
+
+msgctxt "#32323"
+msgid "Most Popular"
+msgstr ""
+
+msgctxt "#32324"
+msgid "In Theaters"
+msgstr ""
+
+msgctxt "#32325"
+msgid "Show Arrivals"
+msgstr ""
+
+msgctxt "#32326"
+msgid "Episodes"
+msgstr ""
+
+msgctxt "#32327"
+msgid "Trakt Progress"
+msgstr ""
+
+msgctxt "#32328"
+msgid "Trakt Calendar"
+msgstr ""
+
+msgctxt "#32329"
+msgid "My Lists"
+msgstr ""
+
+msgctxt "#32330"
+msgid "Playback"
+msgstr ""
+
+msgctxt "#32331"
+msgid "Default action"
+msgstr ""
+
+msgctxt "#32332"
+msgid "Dialog"
+msgstr ""
+
+msgctxt "#32333"
+msgid "Directory"
+msgstr ""
+
+msgctxt "#32334"
+msgid "Auto Play"
+msgstr ""
+
+msgctxt "#32335"
+msgid "Progress Dialog"
+msgstr ""
+
+msgctxt "#32336"
+msgid "Foreground"
+msgstr ""
+
+msgctxt "#32337"
+msgid "Background"
+msgstr ""
+
+msgctxt "#32338"
+msgid "File Hosting Filters"
+msgstr ""
+
+msgctxt "#32339"
+msgid "Max Quality"
+msgstr ""
+
+msgctxt "#32340"
+msgid "SD Hosters in Auto Play"
+msgstr ""
+
+msgctxt "#32341"
+msgid "Hosters with captchas"
+msgstr ""
+
+msgctxt "#32342"
+msgid "Sort by Provider"
+msgstr ""
+
+msgctxt "#32343"
+msgid "When playback starts..."
+msgstr ""
+
+msgctxt "#32344"
+msgid "Resume Playback"
+msgstr ""
+
+msgctxt "#32345"
+msgid "Providers"
+msgstr ""
+
+msgctxt "#32346"
+msgid "Accounts"
+msgstr ""
+
+msgctxt "#32347"
+msgid "Downloads"
+msgstr ""
+
+msgctxt "#32348"
+msgid "Enable downloads"
+msgstr ""
+
+msgctxt "#32349"
+msgid "Movies"
+msgstr ""
+
+msgctxt "#32350"
+msgid "TV"
+msgstr ""
+
+msgctxt "#32351"
+msgid "Downloading features are disabled by default."
+msgstr ""
+
+msgctxt "#32352"
+msgid "Set up your download folders in order to enable them."
+msgstr ""
+
+msgctxt "#32353"
+msgid "Subtitles"
+msgstr ""
+
+msgctxt "#32354"
+msgid "Enable subtitles"
+msgstr ""
+
+msgctxt "#32355"
+msgid "Convert subtitles to UTF-8"
+msgstr ""
+
+msgctxt "#32356"
+msgid "Primary Language"
+msgstr ""
+
+msgctxt "#32357"
+msgid "Secondary Language"
+msgstr ""
+
+msgctxt "#32358"
+msgid "Subtitles could be unavailable or out of sync."
+msgstr ""
+
+msgctxt "#32359"
+msgid "In that case use your own subtitles."
+msgstr ""
+
+msgctxt "#32401"
+msgid "The Stream Is Unavailable"
+msgstr ""
+
+msgctxt "#32402"
+msgid "No Available Streams"
+msgstr ""
+
+msgctxt "#32403"
+msgid "Download"
+msgstr ""
+
+msgctxt "#32404"
+msgid "Elapsed Time"
+msgstr ""
+
+msgctxt "#32405"
+msgid "Seconds"
+msgstr ""
+
+msgctxt "#32406"
+msgid "Remaining Providers"
+msgstr ""
+
+msgctxt "#32407"
+msgid "Are you sure?"
+msgstr ""
+
+msgctxt "#32408"
+msgid "Process Complete"
+msgstr ""
+
+msgctxt "#32501"
+msgid "Start from beginning"
+msgstr ""
+
+msgctxt "#32502"
+msgid "Resume from %s"
+msgstr ""
+
+msgctxt "#32503"
+msgid "Resume"
+msgstr ""
+
+msgctxt "#32511"
+msgid "An account already exists."
+msgstr ""
+
+msgctxt "#32512"
+msgid "Do you want to reset the account?"
+msgstr ""
+
+msgctxt "#32513"
+msgid "1) Visit : [COLOR skyblue]%s[/COLOR]"
+msgstr ""
+
+msgctxt "#32514"
+msgid "2) When prompted enter : [COLOR skyblue]%s[/COLOR]"
+msgstr ""
+
+msgctxt "#32515"
+msgid "Trakt Manager"
+msgstr ""
+
+msgctxt "#32516"
+msgid "Add Collection"
+msgstr ""
+
+msgctxt "#32517"
+msgid "Remove Collection"
+msgstr ""
+
+msgctxt "#32518"
+msgid "Add Watchlist"
+msgstr ""
+
+msgctxt "#32519"
+msgid "Remove Watchlist"
+msgstr ""
+
+msgctxt "#32520"
+msgid "Add New List"
+msgstr ""
+
+msgctxt "#32521"
+msgid "Add %s"
+msgstr ""
+
+msgctxt "#32522"
+msgid "Remove %s"
+msgstr ""
+
+msgctxt "#32531"
+msgid "An account already exists."
+msgstr ""
+
+msgctxt "#32532"
+msgid "Do you want to reset?"
+msgstr ""
+
+msgctxt "#32533"
+msgid "1) Visit : [COLOR skyblue]%s[/COLOR]"
+msgstr ""
+
+msgctxt "#32534"
+msgid "2) When prompted enter : [COLOR skyblue]%s[/COLOR]"
+msgstr ""
+
+# [BUBBLESCODE]
+
+msgctxt "#33000"
+msgid "Favourites"
+msgstr ""
+
+msgctxt "#33001"
+msgid "Categories"
+msgstr ""
+
+msgctxt "#33002"
+msgid "Lists"
+msgstr ""
+
+msgctxt "#33003"
+msgid "Browse"
+msgstr ""
+
+msgctxt "#33004"
+msgid "New Releases"
+msgstr ""
+
+msgctxt "#33005"
+msgid "Highest Rated"
+msgstr ""
+
+msgctxt "#33006"
+msgid "Recently Premiered"
+msgstr ""
+
+msgctxt "#33007"
+msgid "Currently Trending"
+msgstr ""
+
+msgctxt "#33008"
+msgid "Award Winners"
+msgstr ""
+
+msgctxt "#33009"
+msgid "Airing Today"
+msgstr ""
+
+msgctxt "#33010"
+msgid "Box Office Hits"
+msgstr ""
+
+msgctxt "#33011"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#33012"
+msgid "Views"
+msgstr ""
+
+msgctxt "#33013"
+msgid "Clear"
+msgstr ""
+
+msgctxt "#33014"
+msgid "Providers"
+msgstr ""
+
+msgctxt "#33015"
+msgid "Metadata"
+msgstr ""
+
+msgctxt "#33016"
+msgid "Cache"
+msgstr ""
+
+msgctxt "#33017"
+msgid "Verification"
+msgstr ""
+
+msgctxt "#33018"
+msgid "Verifying Accounts"
+msgstr ""
+
+msgctxt "#33019"
+msgid "Verifying Providers"
+msgstr ""
+
+msgctxt "#33020"
+msgid "Verification Completed"
+msgstr ""
+
+msgctxt "#33021"
+msgid "Verification Failed"
+msgstr ""
+
+msgctxt "#33022"
+msgid "Disabled"
+msgstr ""
+
+msgctxt "#33023"
+msgid "Failure"
+msgstr ""
+
+msgctxt "#33024"
+msgid "Limited"
+msgstr ""
+
+msgctxt "#33025"
+msgid "Operational"
+msgstr ""
+
+msgctxt "#33026"
+msgid "The accounts could not be verified"
+msgstr ""
+
+msgctxt "#33027"
+msgid "The providers could not be verified"
+msgstr ""
+
+msgctxt "#33028"
+msgid "Episode"
+msgstr ""
+
+msgctxt "#33029"
+msgid "All"
+msgstr ""
+
+msgctxt "#33030"
+msgid "Speed Test"
+msgstr ""
+
+msgctxt "#33031"
+msgid "Copy Link"
+msgstr ""
+
+msgctxt "#33032"
+msgid "Clipboard"
+msgstr ""
+
+msgctxt "#33033"
+msgid "The %s was copied to the clipboard"
+msgstr ""
+
+msgctxt "#33034"
+msgid "The %s was pasted from the clipboard"
+msgstr ""
+
+msgctxt "#33035"
+msgid "item"
+msgstr ""
+
+msgctxt "#33036"
+msgid "link"
+msgstr ""
+
+msgctxt "#33037"
+msgid "Splash"
+msgstr ""
+
+msgctxt "#33038"
+msgid "Recent"
+msgstr ""
+
+msgctxt "#33039"
+msgid "Title"
+msgstr ""
+
+msgctxt "#33040"
+msgid "Description"
+msgstr ""
+
+msgctxt "#33041"
+msgid "Searches"
+msgstr ""
+
+msgctxt "#33042"
+msgid "Are you sure you want to clear the data?"
+msgstr ""
+
+msgctxt "#33043"
+msgid "The data was successfully cleared."
+msgstr ""
+
+msgctxt "#33044"
+msgid "Usenet Open"
+msgstr ""
+
+msgctxt "#33045"
+msgid "Usenet Member"
+msgstr ""
+
+msgctxt "#33046"
+msgid "Torrents Open"
+msgstr ""
+
+msgctxt "#33047"
+msgid "Torrents Member"
+msgstr ""
+
+msgctxt "#33048"
+msgid "Local Content"
+msgstr ""
+
+msgctxt "#33049"
+msgid "Nothing was found"
+msgstr ""
+
+msgctxt "#33050"
+msgid "Notifications"
+msgstr ""
+
+msgctxt "#33051"
+msgid "Download"
+msgstr ""
+
+msgctxt "#33052"
+msgid "Caching"
+msgstr ""
+
+msgctxt "#33053"
+msgid "%s Completed"
+msgstr ""
+
+msgctxt "#33054"
+msgid "%s Failed"
+msgstr ""
+
+msgctxt "#33055"
+msgid "%s Started"
+msgstr ""
+
+msgctxt "#33056"
+msgid "%s Removed"
+msgstr ""
+
+msgctxt "#33057"
+msgid "%s Paused"
+msgstr ""
+
+msgctxt "#33058"
+msgid "%s Resumed"
+msgstr ""
+
+msgctxt "#33059"
+msgid "%s Progress"
+msgstr ""
+
+msgctxt "#33060"
+msgid "Unknown %s Error"
+msgstr ""
+
+msgctxt "#33061"
+msgid "Disabled %s Settings"
+msgstr ""
+
+msgctxt "#33062"
+msgid "Invalid %s Link"
+msgstr ""
+
+msgctxt "#33063"
+msgid "Invalid %s Location"
+msgstr ""
+
+msgctxt "#33064"
+msgid "Server Unreachable"
+msgstr ""
+
+msgctxt "#33065"
+msgid "An unknown %s error occurred. Retry the download or try a different stream."
+msgstr ""
+
+msgctxt "#33066"
+msgid "The %s download feature is disabled. Enable the feature in the settings."
+msgstr ""
+
+msgctxt "#33067"
+msgid "The provided %s link is invalid."
+msgstr ""
+
+msgctxt "#33068"
+msgid "The %s location is invalid. Ensure the location provided in the settings is accessible and writable."
+msgstr ""
+
+msgctxt "#33069"
+msgid "The server is unreachable or the stream is inaccessible."
+msgstr ""
+
+msgctxt "#33070"
+msgid "The %s completed successfully."
+msgstr ""
+
+msgctxt "#33071"
+msgid "Stream"
+msgstr ""
+
+msgctxt "#33072"
+msgid "Initializing Download"
+msgstr ""
+
+msgctxt "#33073"
+msgid "of"
+msgstr ""
+
+msgctxt "#33074"
+msgid "Download Speed"
+msgstr ""
+
+msgctxt "#33075"
+msgid "Completed Size"
+msgstr ""
+
+msgctxt "#33076"
+msgid "Download Options"
+msgstr ""
+
+msgctxt "#33077"
+msgid "Continue Download"
+msgstr ""
+
+msgctxt "#33078"
+msgid "Continue download in the foreground"
+msgstr ""
+
+msgctxt "#33079"
+msgid "Hide Download"
+msgstr ""
+
+msgctxt "#33080"
+msgid "Continue download in the background"
+msgstr ""
+
+msgctxt "#33081"
+msgid "Pause Download"
+msgstr ""
+
+msgctxt "#33082"
+msgid "Pause download and keep the file"
+msgstr ""
+
+msgctxt "#33083"
+msgid "Delete Download"
+msgstr ""
+
+msgctxt "#33084"
+msgid "Remove download and delete the file"
+msgstr ""
+
+msgctxt "#33085"
+msgid "Resume Download"
+msgstr ""
+
+msgctxt "#33086"
+msgid "Resume download from previous position"
+msgstr ""
+
+msgctxt "#33087"
+msgid "Restart Download"
+msgstr ""
+
+msgctxt "#33088"
+msgid "Overwrite file and restart download"
+msgstr ""
+
+msgctxt "#33089"
+msgid "Duplicate Download"
+msgstr ""
+
+msgctxt "#33090"
+msgid "Start a separate download"
+msgstr ""
+
+msgctxt "#33091"
+msgid "Play Download"
+msgstr ""
+
+msgctxt "#33092"
+msgid "Pause download and play the file"
+msgstr ""
+
+msgctxt "#33093"
+msgid "Stream Download"
+msgstr ""
+
+msgctxt "#33094"
+msgid "Play the file"
+msgstr ""
+
+msgctxt "#33095"
+msgid "Continue download and play the file"
+msgstr ""
+
+msgctxt "#33096"
+msgid "%s Options"
+msgstr ""
+
+msgctxt "#33097"
+msgid "%s Completed Successfully"
+msgstr ""
+
+msgctxt "#33098"
+msgid "Too Many %s Errors"
+msgstr ""
+
+msgctxt "#33099"
+msgid "Too many %s errors detected during the transferal."
+msgstr ""
+
+# Settings
+
+msgctxt "#33100"
+msgid "API Key"
+msgstr ""
+
+msgctxt "#33101"
+msgid "Authentication"
+msgstr ""
+
+msgctxt "#33102"
+msgid "User ID"
+msgstr ""
+
+msgctxt "#33103"
+msgid "Pin"
+msgstr ""
+
+msgctxt "#33104"
+msgid "Visit"
+msgstr ""
+
+msgctxt "#33105"
+msgid "Special"
+msgstr ""
+
+msgctxt "#33106"
+msgid "Auto Play SD"
+msgstr ""
+
+msgctxt "#33107"
+msgid "Never"
+msgstr ""
+
+msgctxt "#33108"
+msgid "Non-Debrid"
+msgstr ""
+
+msgctxt "#33109"
+msgid "Always"
+msgstr ""
+
+msgctxt "#33110"
+msgid "Manual"
+msgstr ""
+
+msgctxt "#33111"
+msgid "Automation"
+msgstr ""
+
+msgctxt "#33112"
+msgid "None"
+msgstr ""
+
+msgctxt "#33113"
+msgid "Any"
+msgstr ""
+
+msgctxt "#33114"
+msgid "Include"
+msgstr ""
+
+msgctxt "#33115"
+msgid "Exclude"
+msgstr ""
+
+msgctxt "#33116"
+msgid "Require"
+msgstr ""
+
+msgctxt "#33117"
+msgid "Prefer"
+msgstr ""
+
+msgctxt "#33118"
+msgid "or"
+msgstr ""
+
+msgctxt "#33119"
+msgid "Release Restrictions"
+msgstr ""
+
+msgctxt "#33120"
+msgid "Video Restrictions"
+msgstr ""
+
+msgctxt "#33121"
+msgid "Audio Restrictions"
+msgstr ""
+
+msgctxt "#33122"
+msgid "Subtitle Restrictions"
+msgstr ""
+
+msgctxt "#33123"
+msgid "Bandwidth Restrictions"
+msgstr ""
+
+msgctxt "#33124"
+msgid "Special Editions"
+msgstr ""
+
+msgctxt "#33125"
+msgid "Minimum Video Quality"
+msgstr ""
+
+msgctxt "#33126"
+msgid "Maximum Video Quality"
+msgstr ""
+
+msgctxt "#33127"
+msgid "Video Codec"
+msgstr ""
+
+msgctxt "#33128"
+msgid "3D Videos"
+msgstr ""
+
+msgctxt "#33129"
+msgid "Audio Channels"
+msgstr ""
+
+msgctxt "#33130"
+msgid "Audio Codec"
+msgstr ""
+
+msgctxt "#33131"
+msgid "Softcoded Subtitles"
+msgstr ""
+
+msgctxt "#33132"
+msgid "Hardcoded Subtitles"
+msgstr ""
+
+msgctxt "#33133"
+msgid "Maximum Bandwidth Consumption"
+msgstr ""
+
+msgctxt "#33134"
+msgid "Unknown Bandwidth Consumption"
+msgstr ""
+
+msgctxt "#33135"
+msgid "Torrent Minimum Seeds"
+msgstr ""
+
+msgctxt "#33136"
+msgid "Usenet Maximum Age"
+msgstr ""
+
+msgctxt "#33137"
+msgid "SD"
+msgstr ""
+
+msgctxt "#33138"
+msgid "HD720"
+msgstr ""
+
+msgctxt "#33139"
+msgid "HD1080"
+msgstr ""
+
+msgctxt "#33140"
+msgid "HD2K"
+msgstr ""
+
+msgctxt "#33141"
+msgid "HD4K"
+msgstr ""
+
+msgctxt "#33142"
+msgid "HD6K"
+msgstr ""
+
+msgctxt "#33143"
+msgid "HD8K"
+msgstr ""
+
+msgctxt "#33144"
+msgid "H265"
+msgstr ""
+
+msgctxt "#33145"
+msgid "H264"
+msgstr ""
+
+msgctxt "#33146"
+msgid "H265 or H264"
+msgstr ""
+
+msgctxt "#33147"
+msgid "2CH"
+msgstr ""
+
+msgctxt "#33148"
+msgid "6CH"
+msgstr ""
+
+msgctxt "#33149"
+msgid "8CH"
+msgstr ""
+
+msgctxt "#33150"
+msgid "6CH or 8CH"
+msgstr ""
+
+msgctxt "#33151"
+msgid "DTS"
+msgstr ""
+
+msgctxt "#33152"
+msgid "DD"
+msgstr ""
+
+msgctxt "#33153"
+msgid "AAC"
+msgstr ""
+
+msgctxt "#33154"
+msgid "DTS or DD"
+msgstr ""
+
+msgctxt "#33155"
+msgid "DTS, DD or AAC"
+msgstr ""
+
+msgctxt "#33156"
+msgid "10"
+msgstr ""
+
+msgctxt "#33157"
+msgid "20"
+msgstr ""
+
+msgctxt "#33158"
+msgid "50"
+msgstr ""
+
+msgctxt "#33159"
+msgid "100"
+msgstr ""
+
+msgctxt "#33160"
+msgid "200"
+msgstr ""
+
+msgctxt "#33161"
+msgid "500"
+msgstr ""
+
+msgctxt "#33162"
+msgid "1000"
+msgstr ""
+
+msgctxt "#33163"
+msgid "2000"
+msgstr ""
+
+msgctxt "#33164"
+msgid "5000"
+msgstr ""
+
+msgctxt "#33165"
+msgid "5 Years"
+msgstr ""
+
+msgctxt "#33166"
+msgid "2 Years"
+msgstr ""
+
+msgctxt "#33167"
+msgid "1 Year"
+msgstr ""
+
+msgctxt "#33168"
+msgid "6 Months"
+msgstr ""
+
+msgctxt "#33169"
+msgid "3 Months"
+msgstr ""
+
+msgctxt "#33170"
+msgid "2 Months"
+msgstr ""
+
+msgctxt "#33171"
+msgid "1 Month"
+msgstr ""
+
+msgctxt "#33172"
+msgid "14 Days"
+msgstr ""
+
+msgctxt "#33173"
+msgid "7 Days"
+msgstr ""
+
+msgctxt "#33174"
+msgid "3 Days"
+msgstr ""
+
+msgctxt "#33175"
+msgid "2 Days"
+msgstr ""
+
+msgctxt "#33176"
+msgid "1 Day"
+msgstr ""
+
+msgctxt "#33177"
+msgid "1 mbps"
+msgstr ""
+
+msgctxt "#33178"
+msgid "2 mbps"
+msgstr ""
+
+msgctxt "#33179"
+msgid "3 mbps"
+msgstr ""
+
+msgctxt "#33180"
+msgid "4 mbps"
+msgstr ""
+
+msgctxt "#33181"
+msgid "5 mbps"
+msgstr ""
+
+msgctxt "#33182"
+msgid "6 mbps"
+msgstr ""
+
+msgctxt "#33183"
+msgid "7 mbps"
+msgstr ""
+
+msgctxt "#33184"
+msgid "8 mbps"
+msgstr ""
+
+msgctxt "#33185"
+msgid "9 mbps"
+msgstr ""
+
+msgctxt "#33186"
+msgid "10 mbps"
+msgstr ""
+
+msgctxt "#33187"
+msgid "11 mbps"
+msgstr ""
+
+msgctxt "#33188"
+msgid "12 mbps"
+msgstr ""
+
+msgctxt "#33189"
+msgid "13 mbps"
+msgstr ""
+
+msgctxt "#33190"
+msgid "14 mbps"
+msgstr ""
+
+msgctxt "#33191"
+msgid "15 mbps"
+msgstr ""
+
+msgctxt "#33192"
+msgid "Enable"
+msgstr ""
+
+msgctxt "#33193"
+msgid "Selection Mode"
+msgstr ""
+
+msgctxt "#33194"
+msgid "Provider Restrictions"
+msgstr ""
+
+msgctxt "#33195"
+msgid "Ignore Captchas"
+msgstr ""
+
+msgctxt "#33196"
+msgid "Provider Sorting"
+msgstr ""
+
+msgctxt "#33197"
+msgid "Utilize Providers"
+msgstr ""
+
+msgctxt "#33198"
+msgid "Hosters"
+msgstr ""
+
+msgctxt "#33199"
+msgid "Torrents"
+msgstr ""
+
+msgctxt "#33200"
+msgid "Usenet"
+msgstr ""
+
+msgctxt "#33201"
+msgid "Hosters and Torrents"
+msgstr ""
+
+msgctxt "#33202"
+msgid "Hosters and Usenet"
+msgstr ""
+
+msgctxt "#33203"
+msgid "Torrents and Usenet"
+msgstr ""
+
+msgctxt "#33204"
+msgid "Service Restrictions"
+msgstr ""
+
+msgctxt "#33205"
+msgid "Utilize Services"
+msgstr ""
+
+msgctxt "#33206"
+msgid "Debrid and Member"
+msgstr ""
+
+msgctxt "#33207"
+msgid "Debrid and Open"
+msgstr ""
+
+msgctxt "#33208"
+msgid "Member and Open"
+msgstr ""
+
+msgctxt "#33209"
+msgid "Debrid"
+msgstr ""
+
+msgctxt "#33210"
+msgid "Member"
+msgstr ""
+
+msgctxt "#33211"
+msgid "Open"
+msgstr ""
+
+msgctxt "#33212"
+msgid "Maximum Debrid Cost"
+msgstr ""
+
+msgctxt "#33213"
+msgid "1"
+msgstr ""
+
+msgctxt "#33214"
+msgid "2"
+msgstr ""
+
+msgctxt "#33215"
+msgid "3"
+msgstr ""
+
+msgctxt "#33216"
+msgid "4"
+msgstr ""
+
+msgctxt "#33217"
+msgid "5"
+msgstr ""
+
+msgctxt "#33218"
+msgid "6"
+msgstr ""
+
+msgctxt "#33219"
+msgid "7"
+msgstr ""
+
+msgctxt "#33220"
+msgid "8"
+msgstr ""
+
+msgctxt "#33221"
+msgid "9"
+msgstr ""
+
+msgctxt "#33222"
+msgid "10"
+msgstr ""
+
+msgctxt "#33223"
+msgid "Interface"
+msgstr ""
+
+msgctxt "#33224"
+msgid "Stream List"
+msgstr ""
+
+msgctxt "#33225"
+msgid "Premiumize Information"
+msgstr ""
+
+msgctxt "#33226"
+msgid "Cost"
+msgstr ""
+
+msgctxt "#33227"
+msgid "Limit"
+msgstr ""
+
+msgctxt "#33228"
+msgid "Usage"
+msgstr ""
+
+msgctxt "#33229"
+msgid "Cost and Limit"
+msgstr ""
+
+msgctxt "#33230"
+msgid "Cost and Usage"
+msgstr ""
+
+msgctxt "#33231"
+msgid "Usage and Limit"
+msgstr ""
+
+msgctxt "#33232"
+msgid "Navigation"
+msgstr ""
+
+msgctxt "#33233"
+msgid "Theme"
+msgstr ""
+
+msgctxt "#33234"
+msgid "Flatten Seasons"
+msgstr ""
+
+msgctxt "#33235"
+msgid "Special Seasons"
+msgstr ""
+
+msgctxt "#33236"
+msgid "Special Episodes"
+msgstr ""
+
+msgctxt "#33237"
+msgid "Fanart Backdrops"
+msgstr ""
+
+msgctxt "#33238"
+msgid "Information Language"
+msgstr ""
+
+msgctxt "#33239"
+msgid "Help"
+msgstr ""
+
+msgctxt "#33240"
+msgid "Settings Help"
+msgstr ""
+
+msgctxt "#33241"
+msgid "Informants"
+msgstr ""
+
+msgctxt "#33242"
+msgid "Artwork"
+msgstr ""
+
+msgctxt "#33243"
+msgid "Speed Test Optimization"
+msgstr ""
+
+msgctxt "#33244"
+msgid "Local Library"
+msgstr ""
+
+msgctxt "#33245"
+msgid "Hosters Member"
+msgstr ""
+
+msgctxt "#33246"
+msgid "Hosters Open"
+msgstr ""
+
+msgctxt "#33247"
+msgid "Manual Downloads"
+msgstr ""
+
+msgctxt "#33248"
+msgid "Combined"
+msgstr ""
+
+msgctxt "#33249"
+msgid "Separate"
+msgstr ""
+
+msgctxt "#33250"
+msgid "Locations"
+msgstr ""
+
+msgctxt "#33251"
+msgid "Movies and Shows"
+msgstr ""
+
+msgctxt "#33252"
+msgid "Interval"
+msgstr ""
+
+msgctxt "#33253"
+msgid "Automatic Library Update"
+msgstr ""
+
+msgctxt "#33254"
+msgid "Foreign Streams"
+msgstr ""
+
+msgctxt "#33255"
+msgid "Stream Precheck Timeout"
+msgstr ""
+
+msgctxt "#33256"
+msgid "Launch"
+msgstr ""
+
+msgctxt "#33257"
+msgid "Automatic Launch"
+msgstr ""
+
+msgctxt "#33258"
+msgid "Splash Screen"
+msgstr ""
+
+msgctxt "#33259"
+msgid "Stream Prechecks"
+msgstr ""
+
+msgctxt "#33260"
+msgid "Additional Metadata"
+msgstr ""
+
+msgctxt "#33261"
+msgid "Additional Metadata Timeout"
+msgstr ""
+
+msgctxt "#33262"
+msgid "Universal Providers"
+msgstr ""
+
+msgctxt "#33263"
+msgid "English Providers"
+msgstr ""
+
+msgctxt "#33264"
+msgid "German Providers"
+msgstr ""
+
+msgctxt "#33265"
+msgid "Local Downloads"
+msgstr ""
+
+msgctxt "#33266"
+msgid "Local Cache"
+msgstr ""
+
+msgctxt "#33267"
+msgid "Username"
+msgstr ""
+
+msgctxt "#33268"
+msgid "Confirmation"
+msgstr ""
+
+msgctxt "#33269"
+msgid "Exclude Precheck Fails"
+msgstr ""
+
+msgctxt "#33270"
+msgid "Debrid Cache Inspection"
+msgstr ""
+
+msgctxt "#33271"
+msgid "Debrid Inspection Timeout"
+msgstr ""
+
+msgctxt "#33272"
+msgid "Stream Detection"
+msgstr ""
+
+msgctxt "#33273"
+msgid "Timeout"
+msgstr ""
+
+msgctxt "#33274"
+msgid "%s Confirmation"
+msgstr ""
+
+msgctxt "#33275"
+msgid "Do you want continue the %s of %s with a size of %s."
+msgstr ""
+
+msgctxt "#33276"
+msgid "Do you want continue the %s of %s with an unknown size."
+msgstr ""
+
+msgctxt "#33277"
+msgid "The %s was stalled and the file transfer is incomplete."
+msgstr ""
+
+msgctxt "#33278"
+msgid "The %s was paused and the file transfer is incomplete."
+msgstr ""
+
+msgctxt "#33279"
+msgid "The %s was already completed."
+msgstr ""
+
+msgctxt "#33280"
+msgid "The %s is already running."
+msgstr ""
+
+msgctxt "#33281"
+msgid "Another version of the %s already exists."
+msgstr ""
+
+msgctxt "#33282"
+msgid "%s Stalled"
+msgstr ""
+
+msgctxt "#33283"
+msgid "%s Busy"
+msgstr ""
+
+msgctxt "#33284"
+msgid "%s Exists"
+msgstr ""
+
+msgctxt "#33285"
+msgid "Continue existing download"
+msgstr ""
+
+msgctxt "#33286"
+msgid "Remove Download"
+msgstr ""
+
+msgctxt "#33287"
+msgid "Remove download and keep the file"
+msgstr ""
+
+msgctxt "#33288"
+msgid "Cancel Download"
+msgstr ""
+
+msgctxt "#33289"
+msgid "Cancel download action"
+msgstr ""
+
+msgctxt "#33290"
+msgid "Manual"
+msgstr ""
+
+msgctxt "#33291"
+msgid "Busy"
+msgstr ""
+
+msgctxt "#33292"
+msgid "Paused"
+msgstr ""
+
+msgctxt "#33293"
+msgid "Stopped"
+msgstr ""
+
+msgctxt "#33294"
+msgid "Completed"
+msgstr ""
+
+msgctxt "#33295"
+msgid "Failed"
+msgstr ""
+
+msgctxt "#33296"
+msgid "Paused"
+msgstr ""
+
+msgctxt "#33297"
+msgid "List"
+msgstr ""
+
+msgctxt "#33298"
+msgid "Clear %s"
+msgstr ""
+
+msgctxt "#33299"
+msgid "Are you sure you want to clear these downloads?"
+msgstr ""
+
+msgctxt "#33300"
+msgid "Disabled Settings"
+msgstr ""
+
+msgctxt "#33301"
+msgid "Download Manual"
+msgstr ""
+
+msgctxt "#33302"
+msgid "Download Cache"
+msgstr ""
+
+msgctxt "#33303"
+msgid "Started"
+msgstr ""
+
+msgctxt "#33304"
+msgid "Completed"
+msgstr ""
+
+msgctxt "#33305"
+msgid "Removed"
+msgstr ""
+
+msgctxt "#33306"
+msgid "Started and Removed"
+msgstr ""
+
+msgctxt "#33307"
+msgid "Completed and Removed"
+msgstr ""
+
+msgctxt "#33308"
+msgid "Cache Downloads"
+msgstr ""
+
+msgctxt "#33309"
+msgid "Cache Size"
+msgstr ""
+
+msgctxt "#33310"
+msgid "Entire Disk"
+msgstr ""
+
+msgctxt "#33311"
+msgid "10 GB"
+msgstr ""
+
+msgctxt "#33312"
+msgid "20 GB"
+msgstr ""
+
+msgctxt "#33313"
+msgid "50 GB"
+msgstr ""
+
+msgctxt "#33314"
+msgid "100 GB"
+msgstr ""
+
+msgctxt "#33315"
+msgid "150 GB"
+msgstr ""
+
+msgctxt "#33316"
+msgid "200 GB"
+msgstr ""
+
+msgctxt "#33317"
+msgid "250 GB"
+msgstr ""
+
+msgctxt "#33318"
+msgid "300 GB"
+msgstr ""
+
+msgctxt "#33319"
+msgid "350 GB"
+msgstr ""
+
+msgctxt "#33320"
+msgid "400 GB"
+msgstr ""
+
+msgctxt "#33321"
+msgid "450 GB"
+msgstr ""
+
+msgctxt "#33322"
+msgid "500 GB"
+msgstr ""
+
+msgctxt "#33323"
+msgid "600 GB"
+msgstr ""
+
+msgctxt "#33324"
+msgid "700 GB"
+msgstr ""
+
+msgctxt "#33325"
+msgid "800 GB"
+msgstr ""
+
+msgctxt "#33326"
+msgid "900 GB"
+msgstr ""
+
+msgctxt "#33327"
+msgid "1 TB"
+msgstr ""
+
+msgctxt "#33328"
+msgid "1.5 TB"
+msgstr ""
+
+msgctxt "#33329"
+msgid "2 TB"
+msgstr ""
+
+msgctxt "#33330"
+msgid "2.5 TB"
+msgstr ""
+
+msgctxt "#33331"
+msgid "3 TB"
+msgstr ""
+
+msgctxt "#33332"
+msgid "3.5 TB"
+msgstr ""
+
+msgctxt "#33333"
+msgid "4 TB"
+msgstr ""
+
+msgctxt "#33334"
+msgid "4.5 TB"
+msgstr ""
+
+msgctxt "#33335"
+msgid "5 TB"
+msgstr ""
+
+msgctxt "#33336"
+msgid "Foreign Conversion"
+msgstr ""
+
+msgctxt "#33337"
+msgid "Skin Theme"
+msgstr ""
+
+msgctxt "#33338"
+msgid "Icon Theme"
+msgstr ""
+
+msgctxt "#33339"
+msgid "Account"
+msgstr ""
+
+msgctxt "#33340"
+msgid "Valid"
+msgstr ""
+
+msgctxt "#33341"
+msgid "Yes"
+msgstr ""
+
+msgctxt "#33342"
+msgid "No"
+msgstr ""
+
+msgctxt "#33343"
+msgid "Type"
+msgstr ""
+
+msgctxt "#33344"
+msgid "Information"
+msgstr ""
+
+msgctxt "#33345"
+msgid "Expiration"
+msgstr ""
+
+msgctxt "#33346"
+msgid "Date"
+msgstr ""
+
+msgctxt "#33347"
+msgid "Days"
+msgstr ""
+
+msgctxt "#33348"
+msgid "Percentage"
+msgstr ""
+
+msgctxt "#33349"
+msgid "Points"
+msgstr ""
+
+msgctxt "#33350"
+msgid "Storage"
+msgstr ""
+
+msgctxt "#33351"
+msgid "The %s account is not enabled. Enable the account in the settings."
+msgstr ""
+
+msgctxt "#33352"
+msgid "The %s account is invalid. Ensure the account details were correctly entered in the settings."
+msgstr ""
+
+msgctxt "#33353"
+msgid "Webcache"
+msgstr ""
+
+msgctxt "#33354"
+msgid "Website"
+msgstr ""
+
+msgctxt "#33355"
+msgid "Bug Reports"
+msgstr ""
+
+msgctxt "#33356"
+msgid "Feature Polls"
+msgstr ""
+
+msgctxt "#33357"
+msgid "Help"
+msgstr ""
+
+msgctxt "#33358"
+msgid "About"
+msgstr ""
+
+msgctxt "#33359"
+msgid "Version"
+msgstr ""
+
+msgctxt "#33360"
+msgid "Removal Mode"
+msgstr ""
+
+msgctxt "#33361"
+msgid "Oldest Age"
+msgstr ""
+
+msgctxt "#33362"
+msgid "Longest Unwatched"
+msgstr ""
+
+msgctxt "#33363"
+msgid "Smallest Size"
+msgstr ""
+
+msgctxt "#33364"
+msgid "Largest Size"
+msgstr ""
+
+msgctxt "#33365"
+msgid "%s Location Unwritable"
+msgstr ""
+
+msgctxt "#33366"
+msgid "The %s could not be completed. Ensure that the download location is writable and has enough free space."
+msgstr ""
+
+msgctxt "#33367"
+msgid "Remaining"
+msgstr ""
+
+msgctxt "#33368"
+msgid "Buffering"
+msgstr ""
+
+msgctxt "#33369"
+msgid "Buffering is caused by slow download speeds. Wait for the buffering to complete or press cancel to stop playback and continue downloading in the background."
+msgstr ""
+
+msgctxt "#33370"
+msgid "Stalled"
+msgstr ""
+
+msgctxt "#33371"
+msgid "Actions"
+msgstr ""
+
+msgctxt "#33372"
+msgid "Refresh Download"
+msgstr ""
+
+msgctxt "#33373"
+msgid "Refresh download progress"
+msgstr ""
+
+msgctxt "#33374"
+msgid "The %s failed and the file transfer is incomplete."
+msgstr ""
+
+msgctxt "#33375"
+msgid "Experimental"
+msgstr ""
+
+msgctxt "#33376"
+msgid "Caching is an experimental feature. Local caching is supported on all systems, whereas network caching over Samba only works on Windows, and Unix systems which have [I]smbclient [/I] installed. Additionally, certain features depend on the server functionality the file is downloaded from."
+msgstr ""
+
+msgctxt "#33377"
+msgid "Issues"
+msgstr ""
+
+msgctxt "#33378"
+msgid "The background caching of the stream is still busy."
+msgstr ""
+
+msgctxt "#33379"
+msgid "Details"
+msgstr ""
+
+msgctxt "#33380"
+msgid "File"
+msgstr ""
+
+msgctxt "#33381"
+msgid "Link"
+msgstr ""
+
+msgctxt "#33382"
+msgid "Path"
+msgstr ""
+
+msgctxt "#33383"
+msgid "Size"
+msgstr ""
+
+msgctxt "#33384"
+msgid "Accessible"
+msgstr ""
+
+msgctxt "#33385"
+msgid "Created"
+msgstr ""
+
+msgctxt "#33386"
+msgid "Modified"
+msgstr ""
+
+msgctxt "#33387"
+msgid "Unknown"
+msgstr ""
+
+msgctxt "#33388"
+msgid "Remaining Time"
+msgstr ""
+
+msgctxt "#33389"
+msgid "Status"
+msgstr ""
+
+msgctxt "#33390"
+msgid "Name"
+msgstr ""
+
+msgctxt "#33391"
+msgid "Extension"
+msgstr ""
+
+msgctxt "#33392"
+msgid "Resumable"
+msgstr ""
+
+msgctxt "#33393"
+msgid "Copy Path"
+msgstr ""
+
+msgctxt "#33394"
+msgid "Host"
+msgstr ""
+
+msgctxt "#33395"
+msgid "Port"
+msgstr ""
+
+msgctxt "#33396"
+msgid "Port"
+msgstr ""
+
+msgctxt "#33397"
+msgid "Launch Animation"
+msgstr ""
+
+msgctxt "#33398"
+msgid "Fixed Profile"
+msgstr ""
+
+msgctxt "#33399"
+msgid "Profile Name"
+msgstr ""
+
+msgctxt "#33400"
+msgid "Prismatik Program"
+msgstr ""
+
+msgctxt "#33401"
+msgid "Automatic Detection"
+msgstr ""
+
+msgctxt "#33402"
+msgid "Specific Location"
+msgstr ""
+
+msgctxt "#33403"
+msgid "Prismatik Location"
+msgstr ""
+
+msgctxt "#33404"
+msgid "Connection"
+msgstr ""
+
+msgctxt "#33405"
+msgid "Lightpack Sets"
+msgstr ""
+
+msgctxt "#33406"
+msgid "Lightpack"
+msgstr ""
+
+msgctxt "#33407"
+msgid "Switch On"
+msgstr ""
+
+msgctxt "#33408"
+msgid "Switch Off"
+msgstr ""
+
+msgctxt "#33409"
+msgid "Animate"
+msgstr ""
+
+msgctxt "#33410"
+msgid "The communication with the Lightpack failed. Make sure that your settings are correct, that the Lightpack is connected, and that Prismatik is running."
+msgstr ""
+
+msgctxt "#33411"
+msgid "Forum"
+msgstr ""
+
+msgctxt "#33412"
+msgid "Repository"
+msgstr ""
+
+msgctxt "#33413"
+msgid "Developer Options"
+msgstr ""
+
+msgctxt "#33414"
+msgid "Developer Code"
+msgstr ""
+
+msgctxt "#33415"
+msgid "Stream Information"
+msgstr ""
+
+msgctxt "#33416"
+msgid "Stream Layout"
+msgstr ""
+
+msgctxt "#33417"
+msgid "Short Line"
+msgstr ""
+
+msgctxt "#33418"
+msgid "Long Line"
+msgstr ""
+
+msgctxt "#33419"
+msgid "Multiple Lines"
+msgstr ""
+
+msgctxt "#33420"
+msgid "Encryption"
+msgstr ""
+
+msgctxt "#33421"
+msgid "French Providers"
+msgstr ""
+
+msgctxt "#33422"
+msgid "Mirror Sites"
+msgstr ""
+
+msgctxt "#33423"
+msgid "Startup Sound"
+msgstr ""
+
+msgctxt "#33424"
+msgid "Sound 1"
+msgstr ""
+
+msgctxt "#33425"
+msgid "Sound 2"
+msgstr ""
+
+msgctxt "#33426"
+msgid "Sound 3"
+msgstr ""
+
+msgctxt "#33427"
+msgid "Sound 4"
+msgstr ""
+
+msgctxt "#33428"
+msgid "Sound 5"
+msgstr ""
+
+msgctxt "#33429"
+msgid "Kids"
+msgstr ""
+
+msgctxt "#33430"
+msgid "Kids Menu"
+msgstr ""
+
+msgctxt "#33431"
+msgid "Favourites Menu"
+msgstr ""
+
+msgctxt "#33432"
+msgid "Age Restriction"
+msgstr ""
+
+msgctxt "#33433"
+msgid "Minor (< 7)"
+msgstr ""
+
+msgctxt "#33434"
+msgid "Young (< 13)"
+msgstr ""
+
+msgctxt "#33435"
+msgid "Teens (< 16)"
+msgstr ""
+
+msgctxt "#33436"
+msgid "Youth (< 18)"
+msgstr ""
+
+msgctxt "#33437"
+msgid "Age"
+msgstr ""
+
+msgctxt "#33438"
+msgid "Parental Control"
+msgstr ""
+
+msgctxt "#33439"
+msgid "Parental Password"
+msgstr ""
+
+msgctxt "#33440"
+msgid "Incorrect Password"
+msgstr ""
+
+msgctxt "#33441"
+msgid "The provided parental password is incorrect. The parental control will stay in place."
+msgstr ""
+
+msgctxt "#33442"
+msgid "Parental Lock"
+msgstr ""
+
+msgctxt "#33443"
+msgid "Parental Unlock"
+msgstr ""
+
+msgctxt "#33444"
+msgid "The parental control is now unlocked. All menus are accessible."
+msgstr ""
+
+msgctxt "#33445"
+msgid "The parental control is now locked. Only the kids menu is accessible."
+msgstr ""
+
+msgctxt "#33446"
+msgid "Releases Menu"
+msgstr ""
+
+msgctxt "#33447"
+msgid "Search Menu"
+msgstr ""
+
+msgctxt "#33448"
+msgid "Stream Failure"
+msgstr ""
+
+msgctxt "#33449"
+msgid "Stream Link Down"
+msgstr ""
+
+msgctxt "#33450"
+msgid "Stream Link Unplayable"
+msgstr ""
+
+msgctxt "#33451"
+msgid "Starting Stream"
+msgstr ""
+
+msgctxt "#33452"
+msgid "Establishing the stream connection"
+msgstr ""
+
+msgctxt "#33453"
+msgid "Poster Type"
+msgstr ""
+
+msgctxt "#33454"
+msgid "Banner Type"
+msgstr ""
+
+msgctxt "#33455"
+msgid "Plain"
+msgstr ""
+
+msgctxt "#33456"
+msgid "Artwork"
+msgstr ""
+
+msgctxt "#33457"
+msgid "Disc Box"
+msgstr ""
+
+msgctxt "#33458"
+msgid "Full Support"
+msgstr ""
+
+msgctxt "#33459"
+msgid "Limited Support"
+msgstr ""
+
+msgctxt "#33460"
+msgid "Minimal Support"
+msgstr ""
+
+msgctxt "#33461"
+msgid "Automatic Playback"
+msgstr ""
+
+msgctxt "#33462"
+msgid "4 Years"
+msgstr ""
+
+msgctxt "#33463"
+msgid "3 Years"
+msgstr ""
+
+msgctxt "#33464"
+msgid "Torrents Cache"
+msgstr ""
+
+msgctxt "#33465"
+msgid "Usenet Cache"
+msgstr ""
+
+msgctxt "#33466"
+msgid "Temporary"
+msgstr ""
+
+msgctxt "#33467"
+msgid "System"
+msgstr ""
+
+msgctxt "#33468"
+msgid "Clean"
+msgstr ""
+
+msgctxt "#33469"
+msgid "Cleaning the addon clears all your settings, downloads, caches, and will reset the addon to its original state. Do you want to continue with the cleaning?"
+msgstr ""
+
+msgctxt "#33470"
+msgid "Docus"
+msgstr ""
+
+msgctxt "#33471"
+msgid "Shorts"
+msgstr ""
+
+msgctxt "#33472"
+msgid "Manager"
+msgstr ""
+
+msgctxt "#33473"
+msgid "Torrent Streaming"
+msgstr ""
+
+msgctxt "#33474"
+msgid "Installation"
+msgstr ""
+
+msgctxt "#33475"
+msgid "Do you want to download and install Quasar to utilize local torrent streaming?"
+msgstr ""
+
+msgctxt "#33476"
+msgid "The Quasar addon is not installed."
+msgstr ""
+
+msgctxt "#33477"
+msgid "Webinterface"
+msgstr ""
+
+msgctxt "#33478"
+msgid "Stream Language"
+msgstr ""
+
+msgctxt "#33479"
+msgid "Stream Quality"
+msgstr ""
+
+msgctxt "#33480"
+msgid "Stream Limit"
+msgstr ""
+
+msgctxt "#33481"
+msgid "Streams"
+msgstr ""
+
+msgctxt "#33482"
+msgid "Usenet Streaming"
+msgstr ""
+
+msgctxt "#33483"
+msgid "The stream cannot be started, because none of the torrent streaming options are enabled or supported."
+msgstr ""
+
+msgctxt "#33484"
+msgid "The stream cannot be started, because none of the usenet streaming options are enabled or supported."
+msgstr ""
+
+msgctxt "#33485"
+msgid "The stream cannot be started, because none of the hoster streaming options are enabled or supported."
+msgstr ""
+
+msgctxt "#33486"
+msgid "Close"
+msgstr ""
+
+msgctxt "#33487"
+msgid "Streaming"
+msgstr ""
+
+msgctxt "#33488"
+msgid "Hoster Streaming"
+msgstr ""
+
+msgctxt "#33489"
+msgid "Direct"
+msgstr ""
+
+msgctxt "#33490"
+msgid "Arrivals"
+msgstr ""
+
+msgctxt "#33491"
+msgid "Documentaries"
+msgstr ""
+
+msgctxt "#33492"
+msgid "The account is already authorized. Do you want to reset the account authentication?"
+msgstr ""
+
+msgctxt "#33493"
+msgid "Authentication"
+msgstr ""
+
+msgctxt "#33494"
+msgid "Visit the link below and enter the activation token. The token was copied to your clipboard."
+msgstr ""
+
+msgctxt "#33495"
+msgid "Token"
+msgstr ""
+
+msgctxt "#33496"
+msgid "Download Count"
+msgstr ""
+
+msgctxt "#33497"
+msgid "Total"
+msgstr ""
+
+msgctxt "#33498"
+msgid "Download Size"
+msgstr ""
+
+msgctxt "#33499"
+msgid "Download Host"
+msgstr ""
+
+msgctxt "#33500"
+msgid "Domain"
+msgstr ""
+
+msgctxt "#33501"
+msgid "Size Limit"
+msgstr ""
+
+msgctxt "#33502"
+msgid "Services"
+msgstr ""
+
+msgctxt "#33503"
+msgid "Changelog"
+msgstr ""
+
+msgctxt "#33504"
+msgid "Collections"
+msgstr ""
+
+msgctxt "#33505"
+msgid "Donate"
+msgstr ""
+
+msgctxt "#33506"
+msgid "Support the development of Bubbles by donating a few coins from a variety of[CR]crypto currencies. You can purchase crypto currencies online from CoinBase[CR]and easily create a free wallet using Exodus.[CR]Donations are voluntary and neither entitle donors to request custom features[CR]nor guarantee faster bug fixes. Donations will never be used for personal[CR]purposes, but for maintaining debrid services, implementing new features,[CR]or donating to other open-source projects Bubbles relies on."
+msgstr ""
+
+msgctxt "#33507"
+msgid "Wallet"
+msgstr ""
+
+msgctxt "#33508"
+msgid "Polish Providers"
+msgstr ""
+
+msgctxt "#33509"
+msgid "Global"
+msgstr ""
+
+msgctxt "#33510"
+msgid "16 mbps"
+msgstr ""
+
+msgctxt "#33511"
+msgid "17 mbps"
+msgstr ""
+
+msgctxt "#33512"
+msgid "18 mbps"
+msgstr ""
+
+msgctxt "#33513"
+msgid "19 mbps"
+msgstr ""
+
+msgctxt "#33514"
+msgid "20 mbps"
+msgstr ""
+
+msgctxt "#33515"
+msgid "25 mbps"
+msgstr ""
+
+msgctxt "#33516"
+msgid "30 mbps"
+msgstr ""
+
+msgctxt "#33517"
+msgid "35 mbps"
+msgstr ""
+
+msgctxt "#33518"
+msgid "40 mbps"
+msgstr ""
+
+msgctxt "#33519"
+msgid "45 mbps"
+msgstr ""
+
+msgctxt "#33520"
+msgid "50 mbps"
+msgstr ""
+
+msgctxt "#33521"
+msgid "55 mbps"
+msgstr ""
+
+msgctxt "#33522"
+msgid "60 mbps"
+msgstr ""
+
+msgctxt "#33523"
+msgid "65 mbps"
+msgstr ""
+
+msgctxt "#33524"
+msgid "70 mbps"
+msgstr ""
+
+msgctxt "#33525"
+msgid "75 mbps"
+msgstr ""
+
+msgctxt "#33526"
+msgid "80 mbps"
+msgstr ""
+
+msgctxt "#33527"
+msgid "85 mbps"
+msgstr ""
+
+msgctxt "#33528"
+msgid "90 mbps"
+msgstr ""
+
+msgctxt "#33529"
+msgid "95 mbps"
+msgstr ""
+
+msgctxt "#33530"
+msgid "100 mbps"
+msgstr ""
+
+msgctxt "#33531"
+msgid "110 mbps"
+msgstr ""
+
+msgctxt "#33532"
+msgid "120 mbps"
+msgstr ""
+
+msgctxt "#33533"
+msgid "130 mbps"
+msgstr ""
+
+msgctxt "#33534"
+msgid "140 mbps"
+msgstr ""
+
+msgctxt "#33535"
+msgid "150 mbps"
+msgstr ""
+
+msgctxt "#33536"
+msgid "160 mbps"
+msgstr ""
+
+msgctxt "#33537"
+msgid "170 mbps"
+msgstr ""
+
+msgctxt "#33538"
+msgid "180 mbps"
+msgstr ""
+
+msgctxt "#33539"
+msgid "190 mbps"
+msgstr ""
+
+msgctxt "#33540"
+msgid "200 mbps"
+msgstr ""
+
+msgctxt "#33541"
+msgid "250 mbps"
+msgstr ""
+
+msgctxt "#33542"
+msgid "300 mbps"
+msgstr ""
+
+msgctxt "#33543"
+msgid "350 mbps"
+msgstr ""
+
+msgctxt "#33544"
+msgid "400 mbps"
+msgstr ""
+
+msgctxt "#33545"
+msgid "450 mbps"
+msgstr ""
+
+msgctxt "#33546"
+msgid "500 mbps"
+msgstr ""
+
+msgctxt "#33547"
+msgid "600 mbps"
+msgstr ""
+
+msgctxt "#33548"
+msgid "700 mbps"
+msgstr ""
+
+msgctxt "#33549"
+msgid "800 mbps"
+msgstr ""
+
+msgctxt "#33550"
+msgid "900 mbps"
+msgstr ""
+
+msgctxt "#33551"
+msgid "1 gbps"
+msgstr ""
+
+msgctxt "#33552"
+msgid "2 gbps"
+msgstr ""
+
+msgctxt "#33553"
+msgid "3 gbps"
+msgstr ""
+
+msgctxt "#33554"
+msgid "4 gbps"
+msgstr ""
+
+msgctxt "#33555"
+msgid "5 gbps"
+msgstr ""
+
+msgctxt "#33556"
+msgid "6 gbps"
+msgstr ""
+
+msgctxt "#33557"
+msgid "7 gbps"
+msgstr ""
+
+msgctxt "#33558"
+msgid "8 gbps"
+msgstr ""
+
+msgctxt "#33559"
+msgid "9 gbps"
+msgstr ""
+
+msgctxt "#33560"
+msgid "10 gbps"
+msgstr ""
+
+msgctxt "#33561"
+msgid "Play With"
+msgstr ""
+
+msgctxt "#33562"
+msgid "Download With"
+msgstr ""
+
+msgctxt "#33563"
+msgid "Cache With"
+msgstr ""
+
+msgctxt "#33564"
+msgid "Default"
+msgstr ""
+
+msgctxt "#33565"
+msgid "Select"
+msgstr ""
+
+msgctxt "#33566"
+msgid "Premiumize"
+msgstr ""
+
+msgctxt "#33567"
+msgid "RealDebrid"
+msgstr ""
+
+msgctxt "#33568"
+msgid "AllDebrid"
+msgstr ""
+
+msgctxt "#33569"
+msgid "RapidPremium"
+msgstr ""
+
+msgctxt "#33570"
+msgid "Quasar"
+msgstr ""
+
+msgctxt "#33571"
+msgid "Home Releases"
+msgstr ""
+
+msgctxt "#33572"
+msgid "Documentary Arrivals"
+msgstr ""
+
+msgctxt "#33573"
+msgid "Short Arrivals"
+msgstr ""
+
+msgctxt "#33574"
+msgid "No stream could be auto played"
+msgstr ""
+
+msgctxt "#33575"
+msgid "Add item to your collection"
+msgstr ""
+
+msgctxt "#33576"
+msgid "Remove item from your collection"
+msgstr ""
+
+msgctxt "#33577"
+msgid "Add item to your watchlist"
+msgstr ""
+
+msgctxt "#33578"
+msgid "Remove item from your watchlist"
+msgstr ""
+
+msgctxt "#33579"
+msgid "Add item to a new list"
+msgstr ""
+
+msgctxt "#33580"
+msgid "Add item to your %s list"
+msgstr ""
+
+msgctxt "#33581"
+msgid "Remove item from your %s list"
+msgstr ""
+
+msgctxt "#33582"
+msgid "The item was added to Trakt"
+msgstr ""
+
+msgctxt "#33583"
+msgid "The item was removed from Trakt"
+msgstr ""
+
+msgctxt "#33584"
+msgid "Trakt List Addition Failed"
+msgstr ""
+
+msgctxt "#33585"
+msgid "Download Manager"
+msgstr ""
+
+msgctxt "#33586"
+msgid "View Updated"
+msgstr ""
+
+msgctxt "#33587"
+msgid "View changed to"
+msgstr ""
+
+msgctxt "#33588"
+msgid "Title"
+msgstr ""
+
+msgctxt "#33589"
+msgid "Title Year"
+msgstr ""
+
+msgctxt "#33590"
+msgid "Title. Year"
+msgstr ""
+
+msgctxt "#33591"
+msgid "Title - Year"
+msgstr ""
+
+msgctxt "#33592"
+msgid "Title (Year)"
+msgstr ""
+
+msgctxt "#33593"
+msgid "Title [Year]"
+msgstr ""
+
+msgctxt "#33594"
+msgid "Year Title"
+msgstr ""
+
+msgctxt "#33595"
+msgid "Year. Title"
+msgstr ""
+
+msgctxt "#33596"
+msgid "Year - Title"
+msgstr ""
+
+msgctxt "#33597"
+msgid "(Year) Title"
+msgstr ""
+
+msgctxt "#33598"
+msgid "[Year] Title"
+msgstr ""
+
+msgctxt "#33599"
+msgid "Season 1"
+msgstr ""
+
+msgctxt "#33600"
+msgid "Season 01"
+msgstr ""
+
+msgctxt "#33601"
+msgid "S1"
+msgstr ""
+
+msgctxt "#33602"
+msgid "S01"
+msgstr ""
+
+msgctxt "#33603"
+msgid "1 Season"
+msgstr ""
+
+msgctxt "#33604"
+msgid "01 Season"
+msgstr ""
+
+msgctxt "#33605"
+msgid "1. Season"
+msgstr ""
+
+msgctxt "#33606"
+msgid "01. Season"
+msgstr ""
+
+msgctxt "#33607"
+msgid "1"
+msgstr ""
+
+msgctxt "#33608"
+msgid "01"
+msgstr ""
+
+msgctxt "#33609"
+msgid "1 Title"
+msgstr ""
+
+msgctxt "#33610"
+msgid "01 Title"
+msgstr ""
+
+msgctxt "#33611"
+msgid "1. Title"
+msgstr ""
+
+msgctxt "#33612"
+msgid "01. Title"
+msgstr ""
+
+msgctxt "#33613"
+msgid "1x1 Title"
+msgstr ""
+
+msgctxt "#33614"
+msgid "1x01 Title"
+msgstr ""
+
+msgctxt "#33615"
+msgid "01x01 Title"
+msgstr ""
+
+msgctxt "#33616"
+msgid "E1 Title"
+msgstr ""
+
+msgctxt "#33617"
+msgid "E01 Title"
+msgstr ""
+
+msgctxt "#33618"
+msgid "E1. Title"
+msgstr ""
+
+msgctxt "#33619"
+msgid "E01. Title"
+msgstr ""
+
+msgctxt "#33620"
+msgid "S1E1 Title"
+msgstr ""
+
+msgctxt "#33621"
+msgid "S1E01 Title"
+msgstr ""
+
+msgctxt "#33622"
+msgid "S01E01 Title"
+msgstr ""
+
+msgctxt "#33623"
+msgid "1"
+msgstr ""
+
+msgctxt "#33624"
+msgid "01"
+msgstr ""
+
+msgctxt "#33625"
+msgid "1x1"
+msgstr ""
+
+msgctxt "#33626"
+msgid "1x01"
+msgstr ""
+
+msgctxt "#33627"
+msgid "01x01"
+msgstr ""
+
+msgctxt "#33628"
+msgid "E1"
+msgstr ""
+
+msgctxt "#33629"
+msgid "E01"
+msgstr ""
+
+msgctxt "#33630"
+msgid "S1E1"
+msgstr ""
+
+msgctxt "#33631"
+msgid "S1E01"
+msgstr ""
+
+msgctxt "#33632"
+msgid "S01E01"
+msgstr ""
+
+msgctxt "#33633"
+msgid "Title Layout"
+msgstr ""
+
+msgctxt "#33634"
+msgid "Movie Layout"
+msgstr ""
+
+msgctxt "#33635"
+msgid "Show Layout"
+msgstr ""
+
+msgctxt "#33636"
+msgid "Season Layout"
+msgstr ""
+
+msgctxt "#33637"
+msgid "Episode Layout"
+msgstr ""
+
+msgctxt "#33638"
+msgid "Documentary Layout"
+msgstr ""
+
+msgctxt "#33639"
+msgid "Short Layout"
+msgstr ""
+
+msgctxt "#33640"
+msgid "A %s account is required in order to conduct this speed test."
+msgstr ""
+
+msgctxt "#33641"
+msgid "Icon Quality"
+msgstr ""
+
+msgctxt "#33642"
+msgid "Skin Default"
+msgstr ""
+
+msgctxt "#33643"
+msgid "Standard Quality"
+msgstr ""
+
+msgctxt "#33644"
+msgid "High Quality"
+msgstr ""
+
+msgctxt "#33645"
+msgid "Automatic Removal"
+msgstr ""
+
+msgctxt "#33646"
+msgid "An active Trakt is required for these features. Enable a Trakt account in the settings."
+msgstr ""
+
+msgctxt "#33647"
+msgid "An active IMDb is required for these features. Enable an IMDb account in the settings."
+msgstr ""
+
+msgctxt "#33648"
+msgid "Date Sorting"
+msgstr ""
+
+msgctxt "#33649"
+msgid "Ascending"
+msgstr ""
+
+msgctxt "#33650"
+msgid "Descending"
+msgstr ""
+
+msgctxt "#33651"
+msgid "Mark Watched"
+msgstr ""
+
+msgctxt "#33652"
+msgid "Mark Unwatched"
+msgstr ""
+
+msgctxt "#33653"
+msgid "Rate Item"
+msgstr ""
+
+msgctxt "#33654"
+msgid "Unrate Item"
+msgstr ""
+
+msgctxt "#33655"
+msgid "Mark the item as watched"
+msgstr ""
+
+msgctxt "#33656"
+msgid "Mark the item as unwatched"
+msgstr ""
+
+msgctxt "#33657"
+msgid "Provide a rating for the item"
+msgstr ""
+
+msgctxt "#33658"
+msgid "Remove the rating from the item"
+msgstr ""
+
+msgctxt "#33659"
+msgid "This action requires the Trakt addon to be installed."
+msgstr ""
+
+msgctxt "#33660"
+msgid "IMDb Charts"
+msgstr ""
+
+msgctxt "#33661"
+msgid "Trakt List Addition Succeeded"
+msgstr ""
+
+msgctxt "#33662"
+msgid "Recommended"
+msgstr ""
+
+msgctxt "#33663"
+msgid "Docu Lists"
+msgstr ""
+
+msgctxt "#33664"
+msgid "Short Lists"
+msgstr ""
+
+msgctxt "#33665"
+msgid "Season Lists"
+msgstr ""
+
+msgctxt "#33666"
+msgid "The speed test can be performed directly on the Premiumize server facility or on their streaming services. The streaming results are a more accurate estimation of the speeds that will be achieved during streaming in Kodi. Which speed test do you want to conduct?"
+msgstr ""
+
+msgctxt "#33667"
+msgid "Streaming Server"
+msgstr ""
+
+msgctxt "#33668"
+msgid "Main Server"
+msgstr ""
+
+msgctxt "#33669"
+msgid "Failure Detection"
+msgstr ""
+
+msgctxt "#33670"
+msgid "Stop Threshold"
+msgstr ""
+
+msgctxt "#33671"
+msgid "Retry Delay"
+msgstr ""
+
+msgctxt "#33672"
+msgid "Preload Torrents"
+msgstr ""
+
+msgctxt "#33673"
+msgid "Preload Usenet"
+msgstr ""
+
+msgctxt "#33674"
+msgid "Transferring the torrent data"
+msgstr ""
+
+msgctxt "#33675"
+msgid "Transferring the usenet data"
+msgstr ""
+
+msgctxt "#33676"
+msgid "Temporary Trakt Server Problems"
+msgstr ""
+
+msgctxt "#33677"
+msgid "Reauthenticate Trakt Access"
+msgstr ""
+
+msgctxt "#33678"
+msgid "Sorting Restrictions"
+msgstr ""
+
+msgctxt "#33679"
+msgid "Sorting Order"
+msgstr ""
+
+msgctxt "#33680"
+msgid "Quality"
+msgstr ""
+
+msgctxt "#33681"
+msgid "Provider"
+msgstr ""
+
+msgctxt "#33682"
+msgid "Presets"
+msgstr ""
+
+msgctxt "#33683"
+msgid "Preset"
+msgstr ""
+
+msgctxt "#33684"
+msgid "This preset is already set. Do you want to load the existing preset or save the current selection?"
+msgstr ""
+
+msgctxt "#33685"
+msgid "Load"
+msgstr ""
+
+msgctxt "#33686"
+msgid "Save"
+msgstr ""
+
+msgctxt "#33687"
+msgid "Preset Name"
+msgstr ""
+
+msgctxt "#33688"
+msgid "Preset Successfully Saved"
+msgstr ""
+
+msgctxt "#33689"
+msgid "Preset Successfully Cleared"
+msgstr ""
+
+msgctxt "#33690"
+msgid "Preset Successfully Loaded"
+msgstr ""
+
+msgctxt "#33691"
+msgid "Custom Presets"
+msgstr ""
+
+msgctxt "#33692"
+msgid "Provider Presets"
+msgstr ""
+
+msgctxt "#33693"
+msgid "Local Streams"
+msgstr ""
+
+msgctxt "#33694"
+msgid "Cached Streams"
+msgstr ""
+
+msgctxt "#33695"
+msgid "Direct Streams"
+msgstr ""
+
+msgctxt "#33696"
+msgid "1st"
+msgstr ""
+
+msgctxt "#33697"
+msgid "2nd"
+msgstr ""
+
+msgctxt "#33698"
+msgid "3rd"
+msgstr ""
+
+msgctxt "#33699"
+msgid "Prioritize Streams"
+msgstr ""
+
+msgctxt "#33700"
+msgid "Bubbles detected that your system is slow. In order to get the most out of Bubbles and find all available streams, [B]disable unused providers[/B] (Setting -> Providers) and [B]increase the provider timeout[/B] (Settings -> General)."
+msgstr ""
+
+msgctxt "#33701"
+msgid "Ignore"
+msgstr ""
+
+msgctxt "#33702"
+msgid "Unknown"
+msgstr ""
+
+msgctxt "#33703"
+msgid "Network Information"
+msgstr ""
+
+msgctxt "#33704"
+msgid "Local Network"
+msgstr ""
+
+msgctxt "#33705"
+msgid "Global Network"
+msgstr ""
+
+msgctxt "#33706"
+msgid "IP Address"
+msgstr ""
+
+msgctxt "#33707"
+msgid "Host Name"
+msgstr ""
+
+msgctxt "#33708"
+msgid "IP Name"
+msgstr ""
+
+msgctxt "#33709"
+msgid "IP Type"
+msgstr ""
+
+msgctxt "#33710"
+msgid "Provider"
+msgstr ""
+
+msgctxt "#33711"
+msgid "Organization"
+msgstr ""
+
+msgctxt "#33712"
+msgid "System"
+msgstr ""
+
+msgctxt "#33713"
+msgid "Continent"
+msgstr ""
+
+msgctxt "#33714"
+msgid "Country"
+msgstr ""
+
+msgctxt "#33715"
+msgid "Region"
+msgstr ""
+
+msgctxt "#33716"
+msgid "City"
+msgstr ""
+
+msgctxt "#33717"
+msgid "Latitude"
+msgstr ""
+
+msgctxt "#33718"
+msgid "Longitude"
+msgstr ""
+
+msgctxt "#33719"
+msgid "Network"
+msgstr ""
+
+msgctxt "#33720"
+msgid "Extensions"
+msgstr ""
+
+msgctxt "#33721"
+msgid "Available"
+msgstr ""
+
+msgctxt "#33722"
+msgid "Installed"
+msgstr ""
+
+msgctxt "#33723"
+msgid "Required Addon"
+msgstr ""
+
+msgctxt "#33724"
+msgid "Recommended Addon"
+msgstr ""
+
+msgctxt "#33725"
+msgid "Optional Addon"
+msgstr ""
+
+msgctxt "#33726"
+msgid "The addon provides the essential resources and icons for Bubbles. The addon is required for Bubbles to function properly."
+msgstr ""
+
+msgctxt "#33727"
+msgid "The addon provides additional artwork and fanart for movies and shows displayed in the background of Bubbles. The addon is not necessary if a Fanart account is given in the settings."
+msgstr ""
+
+msgctxt "#33728"
+msgid "The addon provides binaries and metadata tools for Bubbles. The addon is not necessary, since Bubbles has alternative methods for retrieving metadata."
+msgstr ""
+
+msgctxt "#33729"
+msgid "The addon provides additional icons packs with different colors for Bubbles. The addon is not necessary if you either use the default or the white icons in Bubbles."
+msgstr ""
+
+msgctxt "#33730"
+msgid "The addon provides additional skins and backgrounds for Bubbles. The addon is not necessary if you disabled the skins or if you use the default skin in Bubbles."
+msgstr ""
+
+msgctxt "#33731"
+msgid "The addon provides and Aeon Nox skin for Kodi. The skin has better integration for Bubbles in Kodi menus. If the addon is uninstalled, you may need to rename the backup files in userdata/addon_data/script.skinshortcuts to restore your old menu and shortcuts."
+msgstr ""
+
+msgctxt "#33732"
+msgid "The addon resolves links from hosters and other streaming websites. The addon is required for Bubbles to function properly."
+msgstr ""
+
+msgctxt "#33733"
+msgid "The addon provides indicators for play counts. The addon is required for Bubbles to function properly."
+msgstr ""
+
+msgctxt "#33734"
+msgid "The addon provides rating facilities and Trakt management in Bubbles. The addon is recommended for taking full advantage of Trakt features."
+msgstr ""
+
+msgctxt "#33735"
+msgid "The addon allows for local torrent downloads. The addon is only necessary if you want to stream torrents locally or do not have a Premiumize or RealDebrid account."
+msgstr ""
+
+msgctxt "#33736"
+msgid "Install"
+msgstr ""
+
+msgctxt "#33737"
+msgid "Disable"
+msgstr ""
+
+msgctxt "#33738"
+msgid "Required addons cannot be disabled, since it would cause Bubbles to not function properly."
+msgstr ""
+
+msgctxt "#33739"
+msgid "Get More Icon Packs"
+msgstr ""
+
+msgctxt "#33740"
+msgid "Get More Skin Packs"
+msgstr ""
+
+msgctxt "#33741"
+msgid "Do you want to install additional icon packs? This will require additional disk space and use your bandwidth when updates are released. Only install this if you use the icons in the pack."
+msgstr ""
+
+msgctxt "#33742"
+msgid "Do you want to install additional skin packs? This will require additional disk space and use your bandwidth when updates are released. Only install this if you use the skins in the pack."
+msgstr ""
+
+msgctxt "#33743"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "#33744"
+msgid "Do you want to disable buffering for the rest of the playback? This might cause the playback to suddenly stop if your download speed is slower than your playback speed."
+msgstr ""
+
+msgctxt "#33745"
+msgid "Direct Member"
+msgstr ""
+
+msgctxt "#33746"
+msgid "Direct Open"
+msgstr ""
+
+msgctxt "#33747"
+msgid "UrlResolver"
+msgstr ""
+
+msgctxt "#33748"
+msgid "Direct Streaming"
+msgstr ""
+
+msgctxt "#33749"
+msgid "Korean Providers"
+msgstr ""
+
+msgctxt "#33750"
+msgid "Loyalty"
+msgstr ""
+
+msgctxt "#33751"
+msgid "Consumed Web"
+msgstr ""
+
+msgctxt "#33752"
+msgid "Consumed NNTP"
+msgstr ""
+
+msgctxt "#33753"
+msgid "Consumed NNTP Unlimited"
+msgstr ""
+
+msgctxt "#33754"
+msgid "Consumed Total"
+msgstr ""
+
+msgctxt "#33755"
+msgid "Season Packs"
+msgstr ""
+
+msgctxt "#33756"
+msgid "Season Pack"
+msgstr ""
+
+msgctxt "#33757"
+msgid "The stream is an unsupported %s archive"
+msgstr ""
+
+msgctxt "#33758"
+msgid "SCR1080"
+msgstr ""
+
+msgctxt "#33759"
+msgid "SCR720"
+msgstr ""
+
+msgctxt "#33760"
+msgid "SCR"
+msgstr ""
+
+msgctxt "#33761"
+msgid "CAM1080"
+msgstr ""
+
+msgctxt "#33762"
+msgid "CAM720"
+msgstr ""
+
+msgctxt "#33763"
+msgid "CAM"
+msgstr ""
+
+msgctxt "#33764"
+msgid "Quality Sorting"
+msgstr ""
+
+msgctxt "#33765"
+msgid "High to Low"
+msgstr ""
+
+msgctxt "#33766"
+msgid "Low to High"
+msgstr ""
+
+msgctxt "#33767"
+msgid "Premium Content"
+msgstr ""
+
+msgctxt "#33768"
+msgid "Premium"
+msgstr ""
+
+msgctxt "#33769"
+msgid "Premium Streams"
+msgstr ""
+
+msgctxt "#33770"
+msgid "4th"
+msgstr ""
+
+msgctxt "#33771"
+msgid "On Playback End"
+msgstr ""
+
+msgctxt "#33772"
+msgid "On Kodi Restart"
+msgstr ""
+
+msgctxt "#33773"
+msgid "Backup"
+msgstr ""
+
+msgctxt "#33774"
+msgid "Import"
+msgstr ""
+
+msgctxt "#33775"
+msgid "Databases"
+msgstr ""
+
+msgctxt "#33776"
+msgid "Everything"
+msgstr ""
+
+msgctxt "#33777"
+msgid "The backup could not be saved to the specified location. Make sure the location is writable and that there is enough disk space available."
+msgstr ""
+
+msgctxt "#33778"
+msgid "The backup could not be imported from the specified location. Make sure the file is accessible and that it is a valid Bubbles backup."
+msgstr ""
+
+msgctxt "#33779"
+msgid "Do you want to create a backup of your settings and accounts which can be later imported on this or other devices?"
+msgstr ""
+
+msgctxt "#33780"
+msgid "Do you want to create a backup of your databases and caches which can be later imported on this or other devices?"
+msgstr ""
+
+msgctxt "#33781"
+msgid "Do you want to create a backup of all your settings, accounts, and databases which can be later imported on this or other devices?"
+msgstr ""
+
+msgctxt "#33782"
+msgid "Do you want to import a backup and overwrite your current settings or databases?"
+msgstr ""
+
+msgctxt "#33783"
+msgid "The backup was only partially imported. You should restart Kodi and import the backup again. If the problem persists, you can extract the files in the backup as a ZIP to [I]kodi/userdata/addon_data/%s[/I]."
+msgstr ""
+
+msgctxt "#33784"
+msgid "Backup Successfully Created"
+msgstr ""
+
+msgctxt "#33785"
+msgid "Backup Successfully Imported"
+msgstr ""
+
+msgctxt "#33786"
+msgid "No Trakt Result"
+msgstr ""
+
+msgctxt "#33787"
+msgid "Language"
+msgstr ""
+
+msgctxt "#33788"
+msgid "English"
+msgstr ""
+
+msgctxt "#33789"
+msgid "German"
+msgstr ""
+
+msgctxt "#33790"
+msgid "French"
+msgstr ""
+
+msgctxt "#33791"
+msgid "Polish"
+msgstr ""
+
+msgctxt "#33792"
+msgid "Portuguese"
+msgstr ""
+
+msgctxt "#33793"
+msgid "Korean"
+msgstr ""
+
+msgctxt "#33794"
+msgid "EasyNews"
+msgstr ""
+
+msgctxt "#33795"
+msgid "Encrypted"
+msgstr ""
+
+msgctxt "#33796"
+msgid "Unencrypted"
+msgstr ""
+
+msgctxt "#33797"
+msgid "United States East"
+msgstr ""
+
+msgctxt "#33798"
+msgid "United States West"
+msgstr ""
+
+msgctxt "#33799"
+msgid "Europe"
+msgstr ""
+
+msgctxt "#33800"
+msgid "Automatic"
+msgstr ""
+
+msgctxt "#33801"
+msgid "VPN"
+msgstr ""
+
+msgctxt "#33802"
+msgid "Configuration"
+msgstr ""
+
+msgctxt "#33803"
+msgid "Automatic Verification"
+msgstr ""
+
+msgctxt "#33804"
+msgid "Verification Interval"
+msgstr ""
+
+msgctxt "#33805"
+msgid "Kodi Startup"
+msgstr ""
+
+msgctxt "#33806"
+msgid "Bubbles Startup"
+msgstr ""
+
+msgctxt "#33807"
+msgid "Kodi and Bubbles Startup"
+msgstr ""
+
+msgctxt "#33808"
+msgid "5 minutes"
+msgstr ""
+
+msgctxt "#33809"
+msgid "10 minutes"
+msgstr ""
+
+msgctxt "#33810"
+msgid "15 minutes"
+msgstr ""
+
+msgctxt "#33811"
+msgid "30 minutes"
+msgstr ""
+
+msgctxt "#33812"
+msgid "45 minutes"
+msgstr ""
+
+msgctxt "#33813"
+msgid "1 hour"
+msgstr ""
+
+msgctxt "#33814"
+msgid "2 hours"
+msgstr ""
+
+msgctxt "#33815"
+msgid "3 hours"
+msgstr ""
+
+msgctxt "#33816"
+msgid "6 hours"
+msgstr ""
+
+msgctxt "#33817"
+msgid "12 hours"
+msgstr ""
+
+msgctxt "#33818"
+msgid "24 hours"
+msgstr ""
+
+msgctxt "#33819"
+msgid "ISP Address Mask"
+msgstr ""
+
+msgctxt "#33820"
+msgid "Step"
+msgstr ""
+
+msgctxt "#33821"
+msgid "Continue"
+msgstr ""
+
+msgctxt "#33822"
+msgid "This automatic configuration wizard provides a stepwise guide to setup your VPN settings. If configured, you will receive a warning notification if your VPN is not connected."
+msgstr ""
+
+msgctxt "#33823"
+msgid "Disconnect your VPN, proxy, and any other anonymity tool. The IP address assigned by your ISP will be detected. Only continue if the VPN is disabled."
+msgstr ""
+
+msgctxt "#33824"
+msgid "The following network information was detected:[CR]     IP Address: [B]%s[/B][CR]     Service Provider: [B]%s[/B][CR]     Location: [B]%s[/B]"
+msgstr ""
+
+msgctxt "#33825"
+msgid "ISP Address Mask Adjusted"
+msgstr ""
+
+msgctxt "#33826"
+msgid "VPN Connected"
+msgstr ""
+
+msgctxt "#33827"
+msgid "VPN Disconnected"
+msgstr ""
+
+msgctxt "#33828"
+msgid "Your VPN is not connected and you are not anonymous.[CR]     IP Address: [B]%s[/B][CR]     Service Provider: [B]%s[/B][CR]     Location: [B]%s[/B]"
+msgstr ""
+
+msgctxt "#33829"
+msgid "The VPN could not be configured."
+msgstr ""
+
+msgctxt "#33830"
+msgid "The following address mask was determined for your service provider:[CR]     Mask: [B]%s[/B]"
+msgstr ""
+
+msgctxt "#33831"
+msgid "Start"
+msgstr ""
+
+msgctxt "#33832"
+msgid "Finish"
+msgstr ""
+
+msgctxt "#33833"
+msgid "Your VPN was successfully configured."
+msgstr ""
+
+msgctxt "#33834"
+msgid "Connect your VPN again. Only continue if the VPN is enabled."
+msgstr ""
+
+msgctxt "#33835"
+msgid "The VPN is not connected. The following network information was detected:[CR]     IP Address: [B]%s[/B][CR]     Service Provider: [B]%s[/B][CR]     Location: [B]%s[/B]"
+msgstr ""
+
+msgctxt "#33836"
+msgid "The VPN is connected. The following network information was detected:[CR]     IP Address: [B]%s[/B][CR]     Service Provider: [B]%s[/B][CR]     Location: [B]%s[/B]"
+msgstr ""
+
+msgctxt "#33837"
+msgid "You have to configure an IP address mask for your ISP to verify whether or not your VPN is connected."
+msgstr ""
+
+msgctxt "#33838"
+msgid "The VPN could not be verified."
+msgstr ""
+
+msgctxt "#33839"
+msgid "The VPN is connected and you are anonymous.[CR]     IP Address: [B]%s[/B][CR]     Service Provider: [B]%s[/B][CR]     Location: [B]%s[/B]"
+msgstr ""
+
+msgctxt "#33840"
+msgid "VPN Unverifiable"
+msgstr ""
+
+msgctxt "#33841"
+msgid "VPN Configuration"
+msgstr ""
+
+msgctxt "#33842"
+msgid "VPN Verification"
+msgstr ""
+
+msgctxt "#33843"
+msgid "Speed Results Submission Failure"
+msgstr ""
+
+msgctxt "#33844"
+msgid "Statistics"
+msgstr ""
+
+msgctxt "#33845"
+msgid "Statistics Sharing"
+msgstr ""
+
+msgctxt "#33846"
+msgid "Participation"
+msgstr ""
+
+msgctxt "#33847"
+msgid "Bubbles provides a facility to share speed test results with the community. You can compare your connection speed with that of other international and local users."
+msgstr ""
+
+msgctxt "#33848"
+msgid "Your privacy will not be violated and all data will be kept anonymous. Your test results are transmitted and stored according to international data and IP anonymity standards."
+msgstr ""
+
+msgctxt "#33849"
+msgid "The summarized data among users will be shared with the debrid services supported by this addon in order to identify countries and areas with poor connection speeds."
+msgstr ""
+
+msgctxt "#33850"
+msgid "Do you want to share your anonymized speed test results with the Bubbles community? You can always toggle this setting at a later stage."
+msgstr ""
+
+msgctxt "#33851"
+msgid "Comparison"
+msgstr ""
+
+msgctxt "#33852"
+msgid "Speed Test Retrieval Failure"
+msgstr ""
+
+msgctxt "#33853"
+msgid "International"
+msgstr ""
+
+msgctxt "#33854"
+msgid "Continent"
+msgstr ""
+
+msgctxt "#33855"
+msgid "Country"
+msgstr ""
+
+msgctxt "#33856"
+msgid "Region"
+msgstr ""
+
+msgctxt "#33857"
+msgid "City"
+msgstr ""
+
+msgctxt "#33858"
+msgid "Connection Latency"
+msgstr ""
+
+msgctxt "#33859"
+msgid "Upload Speed"
+msgstr ""
+
+msgctxt "#33860"
+msgid "Connection Statistics"
+msgstr ""
+
+msgctxt "#33861"
+msgid "International Comparison"
+msgstr ""
+
+msgctxt "#33862"
+msgid "Continent Comparison"
+msgstr ""
+
+msgctxt "#33863"
+msgid "Country Comparison"
+msgstr ""
+
+msgctxt "#33864"
+msgid "Region Comparison"
+msgstr ""
+
+msgctxt "#33865"
+msgid "City Comparison"
+msgstr ""
+
+msgctxt "#33866"
+msgid "EasyNews Information"
+msgstr ""
+
+msgctxt "#33867"
+msgid "Consumed Percentage"
+msgstr ""
+
+msgctxt "#33868"
+msgid "Remaining Percentage"
+msgstr ""
+
+msgctxt "#33869"
+msgid "Total Size"
+msgstr ""
+
+msgctxt "#33870"
+msgid "Consumed Size"
+msgstr ""
+
+msgctxt "#33871"
+msgid "Remaining Size"
+msgstr ""
+
+msgctxt "#33872"
+msgid "Consumed Size and Percentage"
+msgstr ""
+
+msgctxt "#33873"
+msgid "Remaining Size and Percentage"
+msgstr ""
+
+msgctxt "#33874"
+msgid "Location"
+msgstr ""
+
+msgctxt "#33875"
+msgid "Yeah, you won a voucher!"
+msgstr ""
+
+msgctxt "#33876"
+msgid "Voucher"
+msgstr ""
+
+msgctxt "#33877"
+msgid "You have %s to redeem the voucher."
+msgstr ""
+
+msgctxt "#33878"
+msgid "The code was copied to your clipboard."
+msgstr ""
+
+msgctxt "#33879"
+msgid "Winner"
+msgstr ""
+
+msgctxt "#33880"
+msgid "When participating in community speed tests, you will be entered into lucky draws and have the chance to win premium accounts. The draw is automatic and you will only be notified if you have won. The more speed tests you conduct, the greater your chance of winning."
+msgstr ""
+
+msgctxt "#33881"
+msgid "Scraping"
+msgstr ""
+
+msgctxt "#33882"
+msgid "Preemptive Termination"
+msgstr ""
+
+msgctxt "#33883"
+msgid "Minimum Streams"
+msgstr ""
+
+msgctxt "#33884"
+msgid "Cached"
+msgstr ""
+
+msgctxt "#33885"
+msgid "Premium or Cached"
+msgstr ""
+
+msgctxt "#33886"
+msgid "Premium or Direct"
+msgstr ""
+
+msgctxt "#33887"
+msgid "Cached or Direct"
+msgstr ""
+
+msgctxt "#33888"
+msgid "Premium, Cached or Direct"
+msgstr ""
+
+msgctxt "#33889"
+msgid "Video Quality"
+msgstr ""
+
+msgctxt "#33890"
+msgid "Stream Type"
+msgstr ""
+
+msgctxt "#33891"
+msgid "Unwatched Count"
+msgstr ""
+
+msgctxt "#33892"
+msgid "Unwatched Limit"
+msgstr ""
+
+msgctxt "#33893"
+msgid "Wizard"
+msgstr ""
+
+msgctxt "#33894"
+msgid "Advanced"
+msgstr ""
+
+msgctxt "#33895"
+msgid "Configuration Wizard"
+msgstr ""
+
+msgctxt "#33896"
+msgid "Advanced Settings"
+msgstr ""
+
+msgctxt "#33897"
+msgid "Skip"
+msgstr ""
+
+msgctxt "#33898"
+msgid "Activate Account"
+msgstr ""
+
+msgctxt "#33899"
+msgid "New Account"
+msgstr ""
+
+msgctxt "#33900"
+msgid "Existing Account"
+msgstr ""
+
+msgctxt "#33901"
+msgid "Enter Key"
+msgstr ""
+
+msgctxt "#33902"
+msgid "Retry Activation"
+msgstr ""
+
+msgctxt "#33903"
+msgid "Enter ID"
+msgstr ""
+
+msgctxt "#33904"
+msgid "Enter PIN"
+msgstr ""
+
+msgctxt "#33905"
+msgid "Enable Torrents"
+msgstr ""
+
+msgctxt "#33906"
+msgid "Disable Torrents"
+msgstr ""
+
+msgctxt "#33907"
+msgid "Enable Usenet"
+msgstr ""
+
+msgctxt "#33908"
+msgid "Disable Usenet"
+msgstr ""
+
+msgctxt "#33909"
+msgid "Enable Hosters"
+msgstr ""
+
+msgctxt "#33910"
+msgid "Disable Hosters"
+msgstr ""
+
+msgctxt "#33911"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33912"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33913"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33914"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33915"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33916"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33917"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33918"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33919"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33920"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33921"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33922"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33923"
+msgid "Ignore Failures"
+msgstr ""
+
+msgctxt "#33924"
+msgid "Detect Failures"
+msgstr ""
+
+msgctxt "#33925"
+msgid "Adjust"
+msgstr ""
+
+msgctxt "#33926"
+msgid "Accept"
+msgstr ""
+
+msgctxt "#33927"
+msgid "Activate VPN"
+msgstr ""
+
+msgctxt "#33928"
+msgid "Test Speed"
+msgstr ""
+
+msgctxt "#33929"
+msgid "Do you want to automatically setup Bubbles using the stepwise configuration wizard, or tune individual options using the advanced settings?"
+msgstr ""
+
+msgctxt "#33930"
+msgid "Welcome to the Bubbles automatic configuration wizard which will guide you through a stepwise setup. You can run this wizard or manually adjust the settings at a later stage. Do you want to configure Bubbles now?"
+msgstr ""
+
+msgctxt "#33931"
+msgid "Trakt provides movie and show information and search facilities. It also tracks your watch progress, history, and lists. It is easy and free to create an account. Do you want to activate a Trakt account?"
+msgstr ""
+
+msgctxt "#33932"
+msgid "Do you want to create a new Trakt account or use an existing one?"
+msgstr ""
+
+msgctxt "#33933"
+msgid "The Trakt account was successfully added and activated."
+msgstr ""
+
+msgctxt "#33934"
+msgid "Fanart provides custom backgrounds for movies and shows. Bubbles provides limited local fanart and it is recommended to create a free Fanart account. Do you want to activate a Fanart account?"
+msgstr ""
+
+msgctxt "#33935"
+msgid "Do you want to create a new Fanart account or use an existing one?"
+msgstr ""
+
+msgctxt "#33936"
+msgid "Enter your Fanart API key. The key can be found by clicking on the API icon on the homepage or the API link in the bottom footer of the Fanart website."
+msgstr ""
+
+msgctxt "#33937"
+msgid "The Fanart account with the provided API key is invalid. Ensure that you entered the account details correctly."
+msgstr ""
+
+msgctxt "#33938"
+msgid "The Fanart account was successfully added and activated."
+msgstr ""
+
+msgctxt "#33939"
+msgid "Premiumize is a subscription-based debrid service offering streaming for torrents, usenent, and hosters. It also provides access to VPNs and geo-unrestriction. Do you want to activate a Premiumize account?"
+msgstr ""
+
+msgctxt "#33940"
+msgid "Do you want to create a new Premiumize account or use an existing one?"
+msgstr ""
+
+msgctxt "#33941"
+msgid "Enter your Premiumize customer ID. This is not your normal username, but the ID listed under the account section on the Premiumize website."
+msgstr ""
+
+msgctxt "#33942"
+msgid "Enter your Premiumize customer PIN. This is not your normal password, but the PIN listed under the account section on the Premiumize website."
+msgstr ""
+
+msgctxt "#33943"
+msgid "The Premiumize account with the provided customer ID and PIN is invalid. Ensure that you entered the account details correctly."
+msgstr ""
+
+msgctxt "#33944"
+msgid "The Premiumize account was successfully added and activated."
+msgstr ""
+
+msgctxt "#33945"
+msgid "RealDebrid is a subscription-based debrid service offering streaming for torrents and hosters. Do you want to activate a RealDebrid account?"
+msgstr ""
+
+msgctxt "#33946"
+msgid "Do you want to create a new RealDebrid account or use an existing one?"
+msgstr ""
+
+msgctxt "#33947"
+msgid "The RealDebrid account was successfully added and activated."
+msgstr ""
+
+msgctxt "#33948"
+msgid "EasyNews is a subscription-based debrid service offering streaming for usenet. It also provides access to VPNs and NNTP. Do you want to activate a EasyNews account?"
+msgstr ""
+
+msgctxt "#33949"
+msgid "Do you want to create a new EasyNews account or use an existing one?"
+msgstr ""
+
+msgctxt "#33950"
+msgid "Enter your EasyNews username."
+msgstr ""
+
+msgctxt "#33951"
+msgid "Enter your EasyNews password."
+msgstr ""
+
+msgctxt "#33952"
+msgid "The EasyNews account with the provided username and password is invalid. Please ensure that you entered the account details correctly."
+msgstr ""
+
+msgctxt "#33953"
+msgid "The EasyNews account was successfully added and activated."
+msgstr ""
+
+msgctxt "#33954"
+msgid "Providers search for streams from various sources. You can toggle individual providers and tweak their settings at a later stage."
+msgstr ""
+
+msgctxt "#33955"
+msgid "Groups or individual providers can be toggled to find streams from different sources. Enabling more providers will find more streams, but will also increase the search time, so enable providers sparingly."
+msgstr ""
+
+msgctxt "#33956"
+msgid "Do you want to enable torrent providers? Torrent streams require a Premiumize or RealDebrid account, or the installation of the third-party addon Quasar."
+msgstr ""
+
+msgctxt "#33957"
+msgid "Do you want to enable usenet providers? Usenet streams require a Premiumize account. EasyNews does not utilize usenet providers."
+msgstr ""
+
+msgctxt "#33958"
+msgid "Do you want to enable hoster providers? Most hoster providers are free and do not require an account."
+msgstr ""
+
+msgctxt "#33959"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33960"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33961"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33962"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33963"
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+msgctxt "#33964"
+msgid "Bubbles supports multiple languages for some features such as movie and show information, stream providers, audio languages, and subtitles."
+msgstr ""
+
+msgctxt "#33965"
+msgid "Certain providers are often down. Do you want to enable automatic failure detection and ignore providers with a high failure rate? Failed providers that come back online are reincorporated into the search process."
+msgstr ""
+
+msgctxt "#33966"
+msgid "Providers need some time to find streams online. Not giving the providers enough time will result in fewer streams. The timeout is depended on your internet speed, device capabilities, and enabled providers."
+msgstr ""
+
+msgctxt "#33967"
+msgid "Do you want to use the default provider timeout or automatically detect the recommended timeout based on your device, connection, and providers? The timeout can be manually adjusted at a later stage."
+msgstr ""
+
+msgctxt "#33968"
+msgid "Do you want to use this recommended timeout or adjust it manually?"
+msgstr ""
+
+msgctxt "#33969"
+msgid "A VPN redirects your internet traffic through a private encrypted connection. This reduces your connection speed slightly, but ensure anonymity. Premiumize and EasyNews offer VPNs with their subscriptions."
+msgstr ""
+
+msgctxt "#33970"
+msgid "Streaming over debrid services such as Premiumize, RealDebrid, and EasyNews already runs over a secure connection and does not require an additional VPN to stay anonymous. This includes torrents, usenet, and hosters."
+msgstr ""
+
+msgctxt "#33971"
+msgid "Bubbles can detect if you are connected to a VPN and warn you in case you forgot to enable your VPN. Do you want to configure automatic VPN detection?"
+msgstr ""
+
+msgctxt "#33972"
+msgid "Internet speed tests determine the quality of your connection. You can share your results anonymously with the Bubbles community, allowing you to compare your speeds with the rest of the world and stand a chance to win premium accounts."
+msgstr ""
+
+msgctxt "#33973"
+msgid "Do you want to conduct a speed test now? If you have a VPN enabled, disconnect it in order to get accurate measurements."
+msgstr ""
+
+msgctxt "#33974"
+msgid "You are all setup and ready to stream! If you like Bubbles, consider donating to help keep the lights on and the development going."
+msgstr ""
+
+msgctxt "#33975"
+msgid "Do you want to cancel the configuration wizard or only skip the current step?"
+msgstr ""
+
+msgctxt "#33976"
+msgid "Cancel Wizard"
+msgstr ""
+
+msgctxt "#33977"
+msgid "Skip Step"
+msgstr ""
+
+msgctxt "#33978"
+msgid "Keep this dialog open during activation. It will close automatically once activated."
+msgstr ""
+
+msgctxt "#33979"
+msgid "The Trakt account could not be activated or verified. Do you want to retry the activation?"
+msgstr ""
+
+msgctxt "#33980"
+msgid "The Fanart account could not be activated or verified. Do you want to retry the activation?"
+msgstr ""
+
+msgctxt "#33981"
+msgid "Do you want to activate your new Trakt account now?"
+msgstr ""
+
+msgctxt "#33982"
+msgid "Do you want to activate your new Fanart account now?"
+msgstr ""
+
+msgctxt "#33983"
+msgid "This download is not on your local machine, but on the RealDebrid servers. Please consider letting the download complete in the background so that it is cached for other users and they can play it immediately."
+msgstr ""
+
+msgctxt "#33984"
+msgid "Leave"
+msgstr ""
+
+msgctxt "#33985"
+msgid "Delete"
+msgstr ""
+
+msgctxt "#33986"
+msgid "Do you want to activate your new Premiumize account now?"
+msgstr ""
+
+msgctxt "#33987"
+msgid "Do you want to activate your new RealDebrid account now?"
+msgstr ""
+
+msgctxt "#33988"
+msgid "Do you want to activate your new EasyNews account now?"
+msgstr ""
+
+msgctxt "#33989"
+msgid "The Premiumize account could not be activated or verified. Do you want to retry the activation?"
+msgstr ""
+
+msgctxt "#33990"
+msgid "The RealDebrid account could not be activated or verified. Do you want to retry the activation?"
+msgstr ""
+
+msgctxt "#33991"
+msgid "The EasyNews account could not be activated or verified. Do you want to retry the activation?"
+msgstr ""
+
+msgctxt "#33992"
+msgid "Russian"
+msgstr ""
+
+msgctxt "#33993"
+msgid "Russian Providers"
+msgstr ""
+
+msgctxt "#33994"
+msgid "Enter Username"
+msgstr ""
+
+msgctxt "#33995"
+msgid "Enter Password"
+msgstr ""
+
+msgctxt "#33996"
+msgid "Provider Optimization"
+msgstr ""
+
+msgctxt "#33997"
+msgid "Slow"
+msgstr ""
+
+msgctxt "#33998"
+msgid "Fast"
+msgstr ""
+
+msgctxt "#33999"
+msgid "Medium"
+msgstr ""
+
+# HELP LABELS
+
+msgctxt "#34000"
+msgid "The skin and background appearance."
+msgstr ""
+
+msgctxt "#34001"
+msgid "The language of the information displayed about the movies, shows, and documentaries. If the option is set to [I]Automatic[/I], the language will be determined from your main language settings."
+msgstr ""
+
+msgctxt "#34002"
+msgid "The artwork displayed for the movies and shows instead of the skin background."
+msgstr ""
+
+msgctxt "#34003"
+msgid "The list of streams is displayed in a directory or a popup dialog."
+msgstr ""
+
+msgctxt "#34004"
+msgid "The progress is displayed in a background bar (noncancellable) or a foreground dialog (cancellable)."
+msgstr ""
+
+msgctxt "#34005"
+msgid "The source list from which the new movie arrivals are derived from."
+msgstr ""
+
+msgctxt "#34006"
+msgid "The source list from which the new show arrivals are derived from. Requires a Trakt account and Trakt indicators."
+msgstr ""
+
+msgctxt "#34007"
+msgid "Integrates your collections, watchlists, and progress from Trakt and IMDb in the main menu."
+msgstr ""
+
+msgctxt "#34008"
+msgid "The shows seasons are flattened and all episodes are show in a single list."
+msgstr ""
+
+msgctxt "#34009"
+msgid "A special season 0 is displayed with alternative episodes, interviews, and behind the scene."
+msgstr ""
+
+msgctxt "#34010"
+msgid "A special episode 0 is displayed as an additional episode or a season recap."
+msgstr ""
+
+msgctxt "#34011"
+msgid "The Premiumize service costs, daily limits, and current usage is displayed next to every stream."
+msgstr ""
+
+msgctxt "#34012"
+msgid "The timeout in number of seconds after which busy providers are forcefully stopped."
+msgstr ""
+
+msgctxt "#34013"
+msgid "The indicator tracks your watch progress of movies and shows using Trakt or local trackers."
+msgstr ""
+
+msgctxt "#34014"
+msgid "Bookmarks are kept to resume your stream playback at the last watched time."
+msgstr ""
+
+msgctxt "#34015"
+msgid "Users can manually select a specific stream from a list filtered by the restrictions below. Automatic playback uses a different set of restrictions. Manual restrictions should always be kept more lenient than automatic restrictions."
+msgstr ""
+
+msgctxt "#34016"
+msgid "Streaming from debrid, membership, or free servers."
+msgstr ""
+
+msgctxt "#34017"
+msgid "The maximum allowed Premiumize cost per unit of transmitted data."
+msgstr ""
+
+msgctxt "#34018"
+msgid "Ignores sources which require a manual captcha input."
+msgstr ""
+
+msgctxt "#34019"
+msgid "Sorts the list of streams according to quality or provider."
+msgstr ""
+
+msgctxt "#34020"
+msgid "The type of providers streams are retrieved from."
+msgstr ""
+
+msgctxt "#34021"
+msgid "The minimum number of seeds required for torrent streams. Low seeded torrents may take longer for streaming to commence."
+msgstr ""
+
+msgctxt "#34022"
+msgid "The maximum age of usenet streams. Older usenet items may take longer for streaming to commence."
+msgstr ""
+
+msgctxt "#34023"
+msgid "The speed of your internet connection. Streams that are too large and require constant buffering will be ignored."
+msgstr ""
+
+msgctxt "#34024"
+msgid "Include streams for which no bandwidth limit can be calculated for due to an unknown file size. Most hosters have files of unknown size."
+msgstr ""
+
+msgctxt "#34025"
+msgid "Movies which are director's cuts, extended or special editions."
+msgstr ""
+
+msgctxt "#34026"
+msgid "The minimum video quality of the streams."
+msgstr ""
+
+msgctxt "#34027"
+msgid "The maximum video quality of the streams."
+msgstr ""
+
+msgctxt "#34028"
+msgid "The video codec of the streams. Most streams haves have an unknown codec."
+msgstr ""
+
+msgctxt "#34029"
+msgid "Movies which are 3D-enabled. A 3D-enabled screen is required to correctly play these streams."
+msgstr ""
+
+msgctxt "#34030"
+msgid "The number of audio channels of the streams between 2.0, 5.1, and 7.1 configurations. Most streams have an unknown configuration."
+msgstr ""
+
+msgctxt "#34031"
+msgid "The audio codec of the streams. Most streams haves have an unknown codec."
+msgstr ""
+
+msgctxt "#34032"
+msgid "The streams with softcoded subtitles which can be manually disabled in the player settings."
+msgstr ""
+
+msgctxt "#34033"
+msgid "The streams with hardcoded subtitles which cannot be disabled and will remain on the screen."
+msgstr ""
+
+msgctxt "#34034"
+msgid "The best stream adhering to the restrictions below will be played automatically. If no streams with the given restrictions can be found, a dialog with the more leniently filtered manual streams will be displayed."
+msgstr ""
+
+msgctxt "#34035"
+msgid "Suitable streams are played automatically."
+msgstr ""
+
+msgctxt "#34036"
+msgid "Providers search for streams from torrent, usenet, hosting and streaming sources. The following providers require an account: NZBFinder, StreamLord, MoviesPlanet, and Ororo."
+msgstr ""
+
+msgctxt "#34037"
+msgid "The bandwidth restriction is automatically optimized using an internet speed test."
+msgstr ""
+
+msgctxt "#34038"
+msgid "Retrieves the content from your local and network library."
+msgstr ""
+
+msgctxt "#34039"
+msgid "Searches for different variations of foreign titles by including special symbols, umlauts, and language-specific characters. This immensely increases the chances of finding foreign streams."
+msgstr ""
+
+msgctxt "#34040"
+msgid "The timeout in number of seconds after which busy prechecks are forcefully stopped."
+msgstr ""
+
+msgctxt "#34041"
+msgid "Launches the addon automatically when Kodi starts. Changes to this setting require a Kodi restart."
+msgstr ""
+
+msgctxt "#34042"
+msgid "Shows the addon splash screen on launch."
+msgstr ""
+
+msgctxt "#34043"
+msgid "Performs prechecks in order to eliminate unreachable, dead, or corrupt streams. Prechecks might reduce the number of streams available to view."
+msgstr ""
+
+msgctxt "#34044"
+msgid "Extracts additional metadata from streams."
+msgstr ""
+
+msgctxt "#34045"
+msgid "The timeout in number of seconds after which busy metadata gatherings are forcefully stopped."
+msgstr ""
+
+msgctxt "#34046"
+msgid "Retrieves the content from your local and network downloads. Requires a download setup."
+msgstr ""
+
+msgctxt "#34047"
+msgid "Retrieves the content from your local and network cache. Requires a cache setup."
+msgstr ""
+
+msgctxt "#34048"
+msgid "Enables the use of universal local providers."
+msgstr ""
+
+msgctxt "#34049"
+msgid "Enables the use of free universal torrent providers."
+msgstr ""
+
+msgctxt "#34050"
+msgid "Enables the use of free universal usenet providers."
+msgstr ""
+
+msgctxt "#34051"
+msgid "Enables the use of English membership hosters and streaming service providers."
+msgstr ""
+
+msgctxt "#34052"
+msgid "Enables the use of free English hosters and streaming service providers."
+msgstr ""
+
+msgctxt "#34053"
+msgid "Enables the use of universal membership usenet providers."
+msgstr ""
+
+msgctxt "#34054"
+msgid "The account is used to retrieve additional artwork for movies and shows. Free and paid accounts are available."
+msgstr ""
+
+msgctxt "#34055"
+msgid "The account is used to retrieve information for movies and shows, and keep track of progress, watchlists, and collections. Free and paid accounts are available."
+msgstr ""
+
+msgctxt "#34056"
+msgid "The account is used to keep track of watchlists and collections. The account's list must be public for this option to work. Free and paid accounts are available."
+msgstr ""
+
+msgctxt "#34057"
+msgid "The account is used to retrieve information for movies and alternative foreign titles. Free accounts are available."
+msgstr ""
+
+msgctxt "#34058"
+msgid "The account is used to download and stream content from torrents, usenet, and premium member hosters. Paid accounts are available."
+msgstr ""
+
+msgctxt "#34059"
+msgid "The account is used to download and stream content from premium member hosters. Paid accounts are available."
+msgstr ""
+
+msgctxt "#34060"
+msgid "The account is used to download and stream content from premium member hosters. Free and paid accounts are available."
+msgstr ""
+
+msgctxt "#34061"
+msgid "The account is used by a provider to retrieve usenet NZBs for the debrid service Premiumize. Free and paid accounts are available."
+msgstr ""
+
+msgctxt "#34062"
+msgid "The account is used by a provider to stream content from a member hoster. Free and paid accounts are available."
+msgstr ""
+
+msgctxt "#34063"
+msgid "The account is used by a provider to stream content from a member hoster. Free accounts are available."
+msgstr ""
+
+msgctxt "#34064"
+msgid "Excludes the streams that were unavailable during the precheck. Prechecks must be enabled for exclusions to apply."
+msgstr ""
+
+msgctxt "#34065"
+msgid "Checks the Premiumize cache for available streams which can be accessed immediately, irrespective of the number of seeds, age, or accessibility of the source."
+msgstr ""
+
+msgctxt "#34066"
+msgid "The timeout in number of seconds after which busy debrid cache inspections are forcefully stopped."
+msgstr ""
+
+msgctxt "#34067"
+msgid "The timeout in number of seconds after which busy foreign title searches are forcefully stopped."
+msgstr ""
+
+msgctxt "#34068"
+msgid "Enables the use of manual downloads which allows the downloading of streams to local storage."
+msgstr ""
+
+msgctxt "#34069"
+msgid "Enables the use of caching which allows the automatic downloading of streams to local storage and sharing on the local network."
+msgstr ""
+
+msgctxt "#34070"
+msgid "The download progress is displayed by regular interval notifications, in a background bar (noncancellable), or a foreground dialog (cancellable)."
+msgstr ""
+
+msgctxt "#34071"
+msgid "The important download notifications and failures are shown in the background or a foreground dialog."
+msgstr ""
+
+msgctxt "#34072"
+msgid "The download requires a manual confirmation before commencing the transfer."
+msgstr ""
+
+msgctxt "#34073"
+msgid "The local library is automatically updated when the download is started, completed, or removed. The download path must be added to the Kodi sources for this option to work. Note that updating on download removal will clean the entire library and may take some time."
+msgstr ""
+
+msgctxt "#34074"
+msgid "The downloaded movies and shows are downloaded to the same or separate directories."
+msgstr ""
+
+msgctxt "#34075"
+msgid "The download directory movies, shows, documentaries, and short films."
+msgstr ""
+
+msgctxt "#34076"
+msgid "The download directory for movies."
+msgstr ""
+
+msgctxt "#34077"
+msgid "The download directory for shows."
+msgstr ""
+
+msgctxt "#34078"
+msgid "The download progress is displayed by regular interval notifications."
+msgstr ""
+
+msgctxt "#34079"
+msgid "The maximum disk space for the cache. If the cache is full, old files are sequentially removed until enough space is available for the new download."
+msgstr ""
+
+msgctxt "#34080"
+msgid "Subtitles can be automatically added to the stream, but may be unavailable or out of sync in some cases."
+msgstr ""
+
+msgctxt "#34081"
+msgid "Enables the use of automatic subtitles."
+msgstr ""
+
+msgctxt "#34082"
+msgid "The subtitles are converted to UTF-8 to accommodate foreign characters and special symbols."
+msgstr ""
+
+msgctxt "#34083"
+msgid "The primary subtitle language to use if available. If this option is set to [I]Automatic[/I], the main language setting will be used."
+msgstr ""
+
+msgctxt "#34084"
+msgid "The secondary subtitle language to use if available. If this option is set to [I]Automatic[/I], the main language setting will be used."
+msgstr ""
+
+msgctxt "#34085"
+msgid "Change the interface layout, theme, and appearance."
+msgstr ""
+
+msgctxt "#34086"
+msgid "The icon colour and appearance."
+msgstr ""
+
+msgctxt "#34087"
+msgid "The mode of automatically removing files when the cache is full. Either no files, the oldest files, the files than were accessed the longest time ago, the smallest or the largest files are removed first. Automatic caching will cease when no files are removed while the cache is full."
+msgstr ""
+
+msgctxt "#34088"
+msgid "Files can be manually downloaded for later view. Caching automatically downloads the stream in the background while playing it back at the same time."
+msgstr ""
+
+msgctxt "#34089"
+msgid "Accounts provide additional functionality, such as artwork, watch progress, debrid services for faster streams, and providers requiring a registered account."
+msgstr ""
+
+msgctxt "#34090"
+msgid "Adjusts the startup settings, indicators, bookmarks, VPN, and parental control."
+msgstr ""
+
+msgctxt "#34091"
+msgid "Enables the use of German membership hosters and streaming services."
+msgstr ""
+
+msgctxt "#34092"
+msgid "Enables the use of free German hosters and streaming services."
+msgstr ""
+
+msgctxt "#34093"
+msgid "Control your Lightpack directly from within Bubbles. This requires an older version 5 of Prismatik, with the server enabled under the experimental tab."
+msgstr ""
+
+msgctxt "#34094"
+msgid "Enables Lightpack access and control."
+msgstr ""
+
+msgctxt "#34095"
+msgid "Automatically detects the Prismatik executable from the system path or common installation locations, or specify a manual location for the executable."
+msgstr ""
+
+msgctxt "#34096"
+msgid "The path of the Prismatik executable."
+msgstr ""
+
+msgctxt "#34097"
+msgid "Automatically launches Prismatik if it is not running already."
+msgstr ""
+
+msgctxt "#34098"
+msgid "Animates the Lightpack for a short while when Bubbles is launched for the first time."
+msgstr ""
+
+msgctxt "#34099"
+msgid "Sets the Lightpack to a fixed profile. If not profile is specified, the current profile is kept."
+msgstr ""
+
+msgctxt "#34100"
+msgid "The Lightpack profile name as shown in Prismatik."
+msgstr ""
+
+msgctxt "#34101"
+msgid "The number of Lightpacks connected to the system. Small screens typically have one set, whereas larger screens have two or more."
+msgstr ""
+
+msgctxt "#34102"
+msgid "The IP address of the host running the Lightpack. 127.0.0.1 is the local machine."
+msgstr ""
+
+msgctxt "#34103"
+msgid "The port of the host running the Lightpack. 3636 is the default port for Prismatik."
+msgstr ""
+
+msgctxt "#34104"
+msgid "Enables authorization when communicating with the Lightpack. If authorization is disabled, the API key in Prismatik must be empty."
+msgstr ""
+
+msgctxt "#34105"
+msgid "The API key for the host running the Lightpack. The brackets {} and dashes - must be included."
+msgstr ""
+
+msgctxt "#34106"
+msgid "Options for development and debugging purposes only."
+msgstr ""
+
+msgctxt "#34107"
+msgid "Displays the stream information as a short or long line, or divides the information over multiple lines. Certain Kodi skins cannot properly display more than one line."
+msgstr ""
+
+msgctxt "#34108"
+msgid "Enables encryption for Premiumize connections using SSL certificates. Note that certain features are not fully supported over unencrypted connections. To take full advantage of this feature, the SSL option must be enabled on the Premiumize website."
+msgstr ""
+
+msgctxt "#34109"
+msgid "Enables the use of French membership hosters and streaming services."
+msgstr ""
+
+msgctxt "#34110"
+msgid "Enables the use of free French hosters and streaming services."
+msgstr ""
+
+msgctxt "#34111"
+msgid "Scrapes the mirror and backup sites of providers if the main site is down or does not return any results. Scraping mirror sites is slow and will increase the processing time."
+msgstr ""
+
+msgctxt "#34112"
+msgid "Plays a startup sound when the addon is launched."
+msgstr ""
+
+msgctxt "#34113"
+msgid "Integrates content for children and teenagers in the main menu."
+msgstr ""
+
+msgctxt "#34114"
+msgid "Restricts the maximum audience age of content show in the kids menu."
+msgstr ""
+
+msgctxt "#34115"
+msgid "Sets a parental password which must be entered to access any content and options outside the kids menu."
+msgstr ""
+
+msgctxt "#34116"
+msgid "Locks the parental control so that only the kids menu can be accessed."
+msgstr ""
+
+msgctxt "#34117"
+msgid "Unlocks the parental control so that all menus can be accessed."
+msgstr ""
+
+msgctxt "#34118"
+msgid "Integrates the new arrivals list in the main menu."
+msgstr ""
+
+msgctxt "#34119"
+msgid "Integrates the search functionality in the main menu."
+msgstr ""
+
+msgctxt "#34120"
+msgid "Uses an alternative poster if the fanart of the movie or TV show is not available."
+msgstr ""
+
+msgctxt "#34121"
+msgid "Uses an alternative banner if the fanart of the movie or TV show is not available."
+msgstr ""
+
+msgctxt "#34122"
+msgid "Filters the torrent streams that are in the debrid cache."
+msgstr ""
+
+msgctxt "#34123"
+msgid "Filters the usenet streams that are in the debrid cache."
+msgstr ""
+
+msgctxt "#34124"
+msgid "Enables parental control to restrict the content available to children."
+msgstr ""
+
+msgctxt "#34125"
+msgid "Integrates the movie section in the main menu."
+msgstr ""
+
+msgctxt "#34126"
+msgid "Integrates the show section in the main menu."
+msgstr ""
+
+msgctxt "#34127"
+msgid "Integrates the documentary section in the main menu."
+msgstr ""
+
+msgctxt "#34128"
+msgid "Integrates the short film section in the main menu."
+msgstr ""
+
+msgctxt "#34129"
+msgid "Customize the streaming services and default actions for torrent, usenet, and hoster streaming."
+msgstr ""
+
+msgctxt "#34130"
+msgid "The host address for the Quasar webinterface, repository, and client."
+msgstr ""
+
+msgctxt "#34131"
+msgid "The host port for the Quasar webinterface, repository, and client."
+msgstr ""
+
+msgctxt "#34132"
+msgid "Enables debrid torrent streaming using Premiumize."
+msgstr ""
+
+msgctxt "#34133"
+msgid "Enables debrid torrent streaming using the RealDebrid."
+msgstr ""
+
+msgctxt "#34134"
+msgid "Enables local torrent streaming using the Quasar addon."
+msgstr ""
+
+msgctxt "#34135"
+msgid "Enables torrent streaming."
+msgstr ""
+
+msgctxt "#34136"
+msgid "Enables the use of universal membership hosters and streaming services."
+msgstr ""
+
+msgctxt "#34137"
+msgid "The language of the retrieved streams. If the option is set to [I]Any[/I], streams of any language will be retrieved. If the option is set to [I]Automatic[/I], streams of your main language are retrieved."
+msgstr ""
+
+msgctxt "#34138"
+msgid "The exact quality of the retrieved streams. Streams with any other quality will be excluded."
+msgstr ""
+
+msgctxt "#34139"
+msgid "The maximum number of streams to retrieve for a single scraping process. Alluc has a soft cap of 2000 streams per day."
+msgstr ""
+
+msgctxt "#34140"
+msgid "Install the Quasar addon."
+msgstr ""
+
+msgctxt "#34141"
+msgid "Find and connect the Quasar addon."
+msgstr ""
+
+msgctxt "#34142"
+msgid "Enables debrid usenet streaming using Premiumize."
+msgstr ""
+
+msgctxt "#34143"
+msgid "Enables usenet streaming."
+msgstr ""
+
+msgctxt "#34144"
+msgid "Enables hoster streaming."
+msgstr ""
+
+msgctxt "#34145"
+msgid "Enables hoster streaming through UrlResolver without using any third party service."
+msgstr ""
+
+msgctxt "#34146"
+msgid "Enables debrid hoster streaming using Premiumize."
+msgstr ""
+
+msgctxt "#34147"
+msgid "Enables debrid hoster streaming using RealDebrid."
+msgstr ""
+
+msgctxt "#34148"
+msgid "Enables debrid hoster streaming using AllDebrid."
+msgstr ""
+
+msgctxt "#34149"
+msgid "Enables debrid hoster streaming using RapidPremium."
+msgstr ""
+
+msgctxt "#34150"
+msgid "The download directory for documentaries."
+msgstr ""
+
+msgctxt "#34151"
+msgid "The download directory for short films."
+msgstr ""
+
+msgctxt "#34152"
+msgid "Enables the use of Polish membership hosters and streaming services."
+msgstr ""
+
+msgctxt "#34153"
+msgid "Enables the use of free Polish hosters and streaming services."
+msgstr ""
+
+msgctxt "#34154"
+msgid "Sets the default action or streaming service for torrents."
+msgstr ""
+
+msgctxt "#34155"
+msgid "Sets the default action or streaming service for usenet."
+msgstr ""
+
+msgctxt "#34156"
+msgid "Sets the default action or streaming service for hosters."
+msgstr ""
+
+msgctxt "#34157"
+msgid "The source list from which the new documentary arrivals are derived from."
+msgstr ""
+
+msgctxt "#34158"
+msgid "The source list from which the new short film arrivals are derived from."
+msgstr ""
+
+msgctxt "#34159"
+msgid "The account is used by a provider to stream content from a member hoster. Paid accounts are available."
+msgstr ""
+
+msgctxt "#34160"
+msgid "The layout of the movie title label."
+msgstr ""
+
+msgctxt "#34161"
+msgid "The layout of the show title label."
+msgstr ""
+
+msgctxt "#34162"
+msgid "The layout of the season title label."
+msgstr ""
+
+msgctxt "#34163"
+msgid "The layout of the episode title label."
+msgstr ""
+
+msgctxt "#34164"
+msgid "The layout of the documentary title label."
+msgstr ""
+
+msgctxt "#34165"
+msgid "The layout of the short film title label."
+msgstr ""
+
+msgctxt "#34166"
+msgid "The quality of the theme icons. The default skin option optimizes the quality according to the Kodi skin."
+msgstr ""
+
+msgctxt "#34167"
+msgid "Automatically deletes all transfers and files from the Premiumize server."
+msgstr ""
+
+msgctxt "#34168"
+msgid "Automatically deletes all transfers and files from the RealDebrid server."
+msgstr ""
+
+msgctxt "#34169"
+msgid "Sorts the Trakt progress and calendar lists according to date."
+msgstr ""
+
+msgctxt "#34170"
+msgid "Automatically disables providers that continuously do not finish before the provider timeout."
+msgstr ""
+
+msgctxt "#34171"
+msgid "The number of times the provider does not finish on time before being flagged as failure."
+msgstr ""
+
+msgctxt "#34172"
+msgid "The number of days to wait before retrying a failed provider. A value of 0 will never retry a provider once it was flagged as failure."
+msgstr ""
+
+msgctxt "#34173"
+msgid "Enables the use of universal membership torrent providers."
+msgstr ""
+
+msgctxt "#34174"
+msgid "Downloads all torrent files while scraping in order to search the debrid cache. This option will download a lot of unused files and will put a heavy load on the servers."
+msgstr ""
+
+msgctxt "#34175"
+msgid "Downloads all NZB files while scraping in order to search the debrid cache. This option will download a lot of unused files and will put a heavy load on the servers."
+msgstr ""
+
+msgctxt "#34176"
+msgid "Shows notifications if Trakt must be reauthenticated or if there are any problems with the Trakt server or API."
+msgstr ""
+
+msgctxt "#34177"
+msgid "Allows to quickly toggle custom groups of providers which were previously saved."
+msgstr ""
+
+msgctxt "#34178"
+msgid "Moves streams from your local machine or network to the first, second, third, or fourth position of the list."
+msgstr ""
+
+msgctxt "#34179"
+msgid "Moves streams that are cached to the first, second, third, or fourth position of the list. This includes Premiumize torrent streams."
+msgstr ""
+
+msgctxt "#34180"
+msgid "Moves streams that can be directly accessed to the first, second, third, or fourth position of the list. This includes member hosters, GoogleVideo, and content distribution network (CDN) streams."
+msgstr ""
+
+msgctxt "#34181"
+msgid "Assigns priorities to different types of streams by moving them to the top of the result list."
+msgstr ""
+
+msgctxt "#34182"
+msgid "Enables the use of universal free direct streaming providers."
+msgstr ""
+
+msgctxt "#34183"
+msgid "Enables the use of universal membership direct streaming providers."
+msgstr ""
+
+msgctxt "#34184"
+msgid "Enables direct streaming."
+msgstr ""
+
+msgctxt "#34185"
+msgid "Enables the use of Korean membership hosters and streaming services."
+msgstr ""
+
+msgctxt "#34186"
+msgid "Enables the use of free Korean hosters and streaming services."
+msgstr ""
+
+msgctxt "#34187"
+msgid "Enables the use of show season packs. This conducts an additional search and increases scraping time."
+msgstr ""
+
+msgctxt "#34188"
+msgid "Sorts the streams according to the video quality, from high to low, or from low to high."
+msgstr ""
+
+msgctxt "#34189"
+msgid "Enables the use of premium streaming providers."
+msgstr ""
+
+msgctxt "#34190"
+msgid "Moves premium streams to the first, second, third, or fourth position of the list. This includes direct Premiumize, RealDebrid, and EasyNews streams."
+msgstr ""
+
+msgctxt "#34191"
+msgid "Sets the language of the additional title search."
+msgstr ""
+
+msgctxt "#34192"
+msgid "Enables VPN verification and notifications."
+msgstr ""
+
+msgctxt "#34193"
+msgid "Manually verifies the VPN connection."
+msgstr ""
+
+msgctxt "#34194"
+msgid "Automatically detects your ISP and configures the VPN."
+msgstr ""
+
+msgctxt "#34195"
+msgid "The IP address mask for your ISP. When this IP address is detected the user will be notified that the VPN is disconnected. IP address parts with a value of 0 will match all addresses in that range. It is advised to at least leave the last part 0 to ensure dynamic IP detection."
+msgstr ""
+
+msgctxt "#34196"
+msgid "Automatically launches the VPN verification when Kodi or Bubbles is started. Changing this option requires a Kodi restart."
+msgstr ""
+
+msgctxt "#34197"
+msgid "Continuously verifies the VPN connection in the background each interval."
+msgstr ""
+
+msgctxt "#34198"
+msgid "Share speed test statistics with the Bubbles community. Your privacy will not be violated and your data will stay anonymous."
+msgstr ""
+
+msgctxt "#34199"
+msgid "The EasyNews service limits and current usage is displayed next to every stream."
+msgstr ""
+
+msgctxt "#34200"
+msgid "Adjusts the scraping process, timeouts, and stream search features."
+msgstr ""
+
+msgctxt "#34201"
+msgid "Terminates the scraping process once a certain number of streams were found according to the given specifications."
+msgstr ""
+
+msgctxt "#34202"
+msgid "The minimum number of streams that must be found before termination."
+msgstr ""
+
+msgctxt "#34203"
+msgid "The minimum type of the found streams before termination."
+msgstr ""
+
+msgctxt "#34204"
+msgid "The minimum video quality of the found streams before termination."
+msgstr ""
+
+msgctxt "#34205"
+msgid "The minimum video codec of the found streams before termination."
+msgstr ""
+
+msgctxt "#34206"
+msgid "The minimum audio channels of the found streams before termination."
+msgstr ""
+
+msgctxt "#34207"
+msgid "The minimum audio codec of the found streams before termination."
+msgstr ""
+
+msgctxt "#34208"
+msgid "Shows the number of unwatched episodes next to shows and seasons."
+msgstr ""
+
+msgctxt "#34209"
+msgid "Limits the maximum number of unwatched episodes to 99. This provides more appealing visuals for some skins, since numbers with three or more digits do not overflow the indication block."
+msgstr ""
+
+msgctxt "#34210"
+msgid "Enables the use of Russian membership hosters and streaming services."
+msgstr ""
+
+msgctxt "#34211"
+msgid "Enables the use of free Russian hosters and streaming services."
+msgstr ""
+
+msgctxt "#34212"
+msgid "Automatically optimizes the provider timeout based on your device hardware, connection speed, and number of enabled providers."
+msgstr ""
+
+msgctxt "#34213"
+msgid "Displays the airing time and weekday of episodes if available."
+msgstr ""
+
+msgctxt "#34214"
+msgid "Converts the airing time to your local timezone, the native timezone where the show was produced, or the coordinated universal time."
+msgstr ""
+
+msgctxt "#34215"
+msgid "Determines the location where the airing time should be displayed, either as part of the title or the plot description."
+msgstr ""
+
+msgctxt "#34216"
+msgid "Determines the format of the airing time to only show the time, the weekday, or both."
+msgstr ""
+
+msgctxt "#34217"
+msgid "Abbreviates the weekday label."
+msgstr ""
+
+msgctxt "#34218"
+msgid "Makes the airing label bold to be visually more prominent."
+msgstr ""
+
+msgctxt "#34219"
+msgid "Enables the use of French membership torrent providers."
+msgstr ""
+
+msgctxt "#34220"
+msgid "The label to show for streams with multiple audio languages. Either show all languages or the word [I]Multi[\I]."
+msgstr ""
+
+msgctxt "#34221"
+msgid "The primary language is used as main language in various places in the addon."
+msgstr ""
+
+msgctxt "#34222"
+msgid "The secondary language is used as the first foreign or alternative language in various places in the addon."
+msgstr ""
+
+msgctxt "#34223"
+msgid "The tertiary language is used as the second foreign or alternative language in various places in the addon."
+msgstr ""
+
+msgctxt "#34224"
+msgid "Enables the customization of various other language options in the settings. If this option is disabled, all other languages will automatically be determined using the primary, secondary, and tertiary language settings above.
+msgstr ""
+
+msgctxt "#34225"
+msgid "The audio language of the streams. Filters out streams with unwanted audio languages. If this option is set to [I]Selected[/I], the main language settings will be used if language customization is disabled."
+msgstr ""
+
+msgctxt "#34226"
+msgid "Includes streams for which no audio language is detected. Most streams have an unknown language and disabling this option will result in a lot fewer streams."
+msgstr ""
+
+msgctxt "#34227"
+msgid "Includes streams with the given audio language. If this option is set to [I]Automatic[/I], the main language setting will be used."
+msgstr ""
+
+# [/BUBBLESCODE]
+
+msgctxt "#35000"
+msgid "Few"
+msgstr ""
+
+msgctxt "#35001"
+msgid "Several"
+msgstr ""
+
+msgctxt "#35002"
+msgid "Many"
+msgstr ""
+
+msgctxt "#35003"
+msgid "Processors"
+msgstr ""
+
+msgctxt "#35004"
+msgid "Memory"
+msgstr ""
+
+msgctxt "#35005"
+msgid "Do you want to optimize the provider timeout according to your device hardware, connection speed, and enabled providers?"
+msgstr ""
+
+msgctxt "#35006"
+msgid "Your configuration is being analyzed. This may take a few minutes."
+msgstr ""
+
+msgctxt "#35007"
+msgid "Analyzing Device"
+msgstr ""
+
+msgctxt "#35008"
+msgid "Analyzing Connection"
+msgstr ""
+
+msgctxt "#35009"
+msgid "Analyzing Providers"
+msgstr ""
+
+msgctxt "#35010"
+msgid "Analyzing Foreign"
+msgstr ""
+
+msgctxt "#35011"
+msgid "The recommended timeout is [B]%d seconds[/B]."
+msgstr ""
+
+msgctxt "#35012"
+msgid "Device"
+msgstr ""
+
+msgctxt "#35013"
+msgid "Additional Language"
+msgstr ""
+
+msgctxt "#35014"
+msgid "You have been using Bubbles quite a lot. Please consider donating to help keep the lights on and Bubbles going."
+msgstr ""
+
+msgctxt "#35015"
+msgid "Later"
+msgstr ""
+
+msgctxt "#35016"
+msgid "Optimization"
+msgstr ""
+
+msgctxt "#35017"
+msgid "Air Information"
+msgstr ""
+
+msgctxt "#35018"
+msgid "Air Label Zone"
+msgstr ""
+
+msgctxt "#35019"
+msgid "Air Label Location"
+msgstr ""
+
+msgctxt "#35020"
+msgid "Air Label Format"
+msgstr ""
+
+msgctxt "#35021"
+msgid "Air Label Bold"
+msgstr ""
+
+msgctxt "#35022"
+msgid "Native"
+msgstr ""
+
+msgctxt "#35023"
+msgid "UTC"
+msgstr ""
+
+msgctxt "#35024"
+msgid "Before Title"
+msgstr ""
+
+msgctxt "#35025"
+msgid "After Title"
+msgstr ""
+
+msgctxt "#35026"
+msgid "Before Plot"
+msgstr ""
+
+msgctxt "#35027"
+msgid "After Plot"
+msgstr ""
+
+msgctxt "#35028"
+msgid "Day"
+msgstr ""
+
+msgctxt "#35029"
+msgid "Time"
+msgstr ""
+
+msgctxt "#35030"
+msgid "Day and Time"
+msgstr ""
+
+msgctxt "#35031"
+msgid "Air Label Abbreviation"
+msgstr ""
+
+msgctxt "#35032"
+msgid "Airs"
+msgstr ""
+
+msgctxt "#35033"
+msgid "French Providers"
+msgstr ""
+
+msgctxt "#35034"
+msgid "Multiple Languages"
+msgstr ""
+
+msgctxt "#35035"
+msgid "Multi"
+msgstr ""
+
+msgctxt "#35036"
+msgid "Tertiary Language"
+msgstr ""
+
+msgctxt "#35037"
+msgid "Language Customization"
+msgstr ""
+
+msgctxt "#35038"
+msgid "Audio Language"
+msgstr ""
+
+msgctxt "#35039"
+msgid "Selected"
+msgstr ""
+
+msgctxt "#35040"
+msgid "Unknown Language"
+msgstr ""
+
+msgctxt "#35041"
+msgid "%s is set as the default primary language. Do you want to change the primary language?"
+msgstr ""
+
+msgctxt "#35042"
+msgid "%s is set as the default secondary language. Do you want to change the secondary language?"
+msgstr ""
+
+msgctxt "#35043"
+msgid "%s is set as the default tertiary language. Do you want to change the tertiary language?"
+msgstr ""
+
+msgctxt "#35044"
+msgid "Keep"
+msgstr ""
+
+msgctxt "#35045"
+msgid "Change"
+msgstr ""
+
+msgctxt "#35046"
+msgid "Nothing"
+msgstr ""
+
+msgctxt "#35047"
+msgid "Your VPN is not configured yet. Do you want to set it up now?"
+msgstr ""

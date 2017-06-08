@@ -22,7 +22,11 @@ import urllib
 import json
 from lib import helpers
 from urlresolver import common
+from urlresolver.common import i18n
 from urlresolver.resolver import UrlResolver, ResolverError
+
+logger = common.log_utils.Logger.get_logger(__name__)
+logger.disable()
 
 class AllDebridResolver(UrlResolver):
     name = "AllDebrid"
@@ -40,27 +44,31 @@ class AllDebridResolver(UrlResolver):
             pass
 
     def get_media_url(self, host, media_id):
-        common.log_utils.log('in get_media_url %s : %s' % (host, media_id))
+        source = None
+        logger.log('in get_media_url %s : %s' % (host, media_id))
         url = 'http://www.alldebrid.com/service.php?link=%s' % (media_id)
         html = self.net.http_GET(url).content
         if html == 'login':
             raise ResolverError('alldebrid: Authentication Error')
+    
+        try: js_data = json.loads(html)
+        except: js_data = {}
+        if js_data.get('error'):
+            raise ResolverError('alldebrid: %s' % (js_data['error']))
         
-        try:
-            js_data = json.loads(html)
-            if 'error' in js_data and js_data['error']:
-                raise ResolverError('alldebrid: %s' % (js_data['error']))
-            
-            if 'streaming' in js_data:
-                return helpers.pick_source(js_data['streaming'].items())
-        except ResolverError:
-            raise
-        except:
-            match = re.search('''<a\s+class=["']link_dl['"]\s+href=["']([^'"]+)''', html)
+        if 'streaming' in js_data:
+            source = helpers.pick_source(js_data['streaming'].items())
+        elif 'link' in js_data:
+            source = js_data['link']
+        else:
+            match = re.search('''class=["']link_dl['"][^>]+href=["']([^'"]+)''', html)
             if match:
-                return match.group(1)
+                source = match.group(1)
         
-        raise ResolverError('alldebrid: no stream returned')
+        if source:
+            return source.encode('utf-8')
+        else:
+            raise ResolverError('alldebrid: no stream returned')
 
     def get_url(self, host, media_id):
         return media_id
@@ -79,7 +87,7 @@ class AllDebridResolver(UrlResolver):
         if self.hosts is None:
             self.hosts = self.get_all_hosters()
             
-        common.log_utils.log_debug('in valid_url %s : %s' % (url, host))
+        logger.log_debug('in valid_url %s : %s' % (url, host))
         if url:
             match = re.search('//(.*?)/', url)
             if match:
@@ -109,9 +117,9 @@ class AllDebridResolver(UrlResolver):
     @classmethod
     def get_settings_xml(cls):
         xml = super(cls, cls).get_settings_xml()
-        xml.append('<setting id="%s_login" type="bool" label="login" default="false"/>' % (cls.__name__))
-        xml.append('<setting id="%s_username" enable="eq(-1,true)" type="text" label="Username" default=""/>' % (cls.__name__))
-        xml.append('<setting id="%s_password" enable="eq(-2,true)" type="text" label="Password" option="hidden" default=""/>' % (cls.__name__))
+        xml.append('<setting id="%s_login" type="bool" label="%s" default="false"/>' % (cls.__name__, i18n('login')))
+        xml.append('<setting id="%s_username" enable="eq(-1,true)" type="text" label="%s" default=""/>' % (cls.__name__, i18n('username')))
+        xml.append('<setting id="%s_password" enable="eq(-2,true)" type="text" label="%s" option="hidden" default=""/>' % (cls.__name__, i18n('password')))
         return xml
 
     @classmethod

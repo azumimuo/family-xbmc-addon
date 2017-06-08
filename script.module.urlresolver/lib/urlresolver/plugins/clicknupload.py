@@ -15,10 +15,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
-
 import re
-import urllib
-import xbmc
 from lib import helpers
 from lib import captcha_lib
 from urlresolver import common
@@ -44,15 +41,14 @@ class ClickNUploadResolver(UrlResolver):
         tries = 0
         while tries < MAX_TRIES:
             data = helpers.get_hidden(html)
-            data['method_free'] = 'Free+Download+>>'
             data.update(captcha_lib.do_captcha(html))
             html = self.net.http_POST(web_url, data, headers=headers).content
             r = re.search('''class="downloadbtn"[^>]+onClick\s*=\s*\"window\.open\('([^']+)''', html)
             if r:
-                return r.group(1) + '|' + urllib.urlencode({'User-Agent': common.FF_USER_AGENT})
+                return r.group(1) + helpers.append_headers(headers)
 
             if tries > 0:
-                xbmc.sleep(1000)
+                common.kodi.sleep(1000)
                 
             tries = tries + 1
 

@@ -28,7 +28,11 @@ def detect(source):
 
 def unpack(source):
     """Unpacks P.A.C.K.E.R. packed js code."""
+    print len(source)
     payload, symtab, radix, count = _filterargs(source)
+    
+    modp = r'a\+(\d+)'
+    mod = int(re.compile(modp).findall(source)[0])
 
     if count != len(symtab):
         raise UnpackingError('Malformed p.a.c.k.e.r. symtab.')
@@ -37,8 +41,8 @@ def unpack(source):
         """Look up symbols in the synthetic symtab."""
         word = 0 
         for i, char in enumerate(reversed(match.group(0))):
-            word = word + (ord(char)-161)*(95**i)
-
+            word = word + (ord(char)-mod)*(radix**i)
+        
         return symtab[word] or word
     
     source = re.sub(ur'[\xa1-\xff]+', lookup, payload)
@@ -46,12 +50,21 @@ def unpack(source):
 
 def _filterargs(source):
     """Juice from a source file the four args needed by decoder."""
-    argsregex = (r"}\('(.*)', *(\d+), *(\d+), *'(.*)'\."
-                 r"split\('\|'\), *(\d+), *(.*)\)\)")
+    argsregex = (r".*'(.*)'\.split")
     args = re.search(argsregex, source, re.DOTALL).groups()
-
+    ar2 = (r".*?'([\xa1-\xff].*}\);)")
+    args2 = re.search(ar2, source, re.DOTALL).groups()
+    modp = r'a\+(\d+)'
+    mod = int(re.compile(modp).findall(source)[0])
+    
+    reg = ur'[\xa1-\xff]+'
+    ints = re.findall(reg, args2[0], re.DOTALL)
+    t = []
+    for i in ints:
+        t.append(ord(i[-1])-mod)
+    
     try:
-        return args[0], args[3].split('|'), int(args[1]), int(args[2])
+        return args2[0], args[0].split('|'), max(t)+1, len(args[0].split('|'))
     except ValueError:
         raise UnpackingError('Corrupted p.a.c.k.e.r. data.')
 

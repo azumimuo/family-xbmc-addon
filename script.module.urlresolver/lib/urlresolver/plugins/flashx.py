@@ -16,12 +16,15 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-
-import re
-from lib import jsunpack
-from lib import helpers
+import os
+import fx_gmu
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
+from urlresolver.resolver import UrlResolver, ResolverError  # @UnusedImport
+
+logger = common.log_utils.Logger.get_logger(__name__)
+logger.disable()
+FX_SOURCE = 'https://offshoregit.com/tvaresolvers/fx_gmu.py'
+FX_PATH = os.path.join(common.plugins_path, 'fx_gmu.py')
 
 class FlashxResolver(UrlResolver):
     name = "flashx"
@@ -32,44 +35,21 @@ class FlashxResolver(UrlResolver):
         self.net = common.Net()
 
     def get_media_url(self, host, media_id):
-        web_url = self.get_url(host, media_id)
-        html = self.net.http_GET(web_url).content
-        data = helpers.get_hidden(html)
-        data['imhuman'] = 'Proceed+to+video'
-        furl = 'http://www.flashx.tv/dl?%s' % (media_id)
-        headers = {'User-Agent': common.FF_USER_AGENT, 'Referer': web_url, 'Cookie': self.__get_cookies(html)}
+        try:
+            self._auto_update(FX_SOURCE, FX_PATH)
+            reload(fx_gmu)
+            web_url = self.get_url(host, media_id)
+            return fx_gmu.get_media_url(web_url)
+        except Exception as e:
+            logger.log_debug('Exception during flashx resolve parse: %s' % e)
+            raise
         
-        common.kodi.sleep(5000)
-        html = self.net.http_POST(url=furl, form_data=data, headers=headers).content
-        sources = []
-        for match in re.finditer('(eval\(function.*?)</script>', html, re.DOTALL):
-            packed_data = jsunpack.unpack(match.group(1))
-            sources += self.__parse_sources_list(packed_data)
-        source = helpers.pick_source(sources, self.get_setting('auto_pick') == 'true')
-        return source
-
-    def __get_cookies(self, html):
-        cookies = ['ref_url=http%3A%2F%2Fwww.flashx.tv%2F']
-        for match in re.finditer("\$\.cookie\(\s*'([^']+)'\s*,\s*'([^']+)", html):
-            key, value = match.groups()
-            cookies.append('%s=%s' % (key, value))
-        return '; '.join(cookies)
-    
-    def __parse_sources_list(self, html):
-        sources = []
-        match = re.search('sources\s*:\s*\[(.*?)\]', html, re.DOTALL)
-        if match:
-            for match in re.finditer('''['"]?file['"]?\s*:\s*['"]([^'"]+)['"][^}]*['"]?label['"]?\s*:\s*['"]([^'"]*)''', match.group(1), re.DOTALL):
-                stream_url, label = match.groups()
-                stream_url = stream_url.replace('\/', '/')
-                sources.append((label, stream_url))
-        return sources
-
     def get_url(self, host, media_id):
-        return 'http://www.flashx.tv/%s.html' % media_id
+        return self._default_get_url(host, media_id, 'https://{host}/embed.php?c={media_id}')
 
     @classmethod
     def get_settings_xml(cls):
         xml = super(cls, cls).get_settings_xml()
-        xml.append('<setting id="%s_auto_pick" type="bool" label="Automatically pick best quality" default="false" visible="true"/>' % (cls.__name__))
+        xml.append('<setting id="%s_auto_update" type="bool" label="Automatically update resolver" default="true"/>' % (cls.__name__))
+        xml.append('<setting id="%s_etag" type="text" default="" visible="false"/>' % (cls.__name__))
         return xml

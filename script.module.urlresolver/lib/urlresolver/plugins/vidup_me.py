@@ -15,39 +15,69 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-
-import re
-from lib import jsunpack
+import json
+import urllib
+import urllib2
 from urlresolver import common
+from urlresolver.common import i18n
+from lib import helpers
 from urlresolver.resolver import UrlResolver, ResolverError
 
 
 class VidUpMeResolver(UrlResolver):
     name = "vidup.me"
-    domains = ["vidup.me", "beta.vidup.me"]
-    pattern = '(?://|\.)(vidup\.me)/(?:embed-)?([0-9a-zA-Z]+)'
+    domains = ["vidup.me"]
+    pattern = '(?://|\.)(vidup\.me)/(?:embed-|download/)?([0-9a-zA-Z]+)'
 
     def __init__(self):
         self.net = common.Net()
+        self.headers = {'User-Agent': common.SMU_USER_AGENT}
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-        html = self.net.http_GET(web_url).content
+        headers = {
+            'Referer': web_url
+        }
+        headers.update(self.headers)
+        html = self.net.http_GET(web_url, headers=headers).content
+        sources = helpers.parse_sources_list(html)
+        if sources:
+            try:
+                vt = self.__auth_ip(media_id)
+                if vt:
+                    params = {'direct': 'false', 'ua': 1, 'vt': vt}
+                    return helpers.pick_source(sources) + '?' + urllib.urlencode(params) + helpers.append_headers(self.headers)
+            except urllib2.HTTPError:
+                source = helpers.pick_source(sources)
+                return source
+        else:
+            raise ResolverError('Video Token Missing')
 
-        js_data = re.findall('(eval\(function.*?)</script>', html.replace('\n', ''))
-
-        for i in js_data:
-            try: html += jsunpack.unpack(i)
-            except: pass
-
-        match = re.findall('''["']?sources['"]?\s*:\s*\[(.*?)\]''', html)
-
-        if match:
-            stream_url = re.findall('''['"]?file['"]?\s*:\s*['"]?([^'"]+)''', match[0])
-            if stream_url:
-                return stream_url[-1]
-
-        raise ResolverError('File Not Found or removed')
-
+    def __auth_ip(self, media_id):
+        header = i18n('vidup_auth_header')
+        line1 = i18n('auth_required')
+        line2 = i18n('visit_link')
+        line3 = i18n('click_pair') % ('https://vidup.me/pair')
+        with common.kodi.CountdownDialog(header, line1, line2, line3) as cd:
+            return cd.start(self.__check_auth, [media_id])
+        
+    def __check_auth(self, media_id):
+        common.logger.log('Checking Auth: %s' % (media_id))
+        url = 'https://vidup.me/pair?file_code=%s&check' % (media_id)
+        try: js_result = json.loads(self.net.http_GET(url, headers=self.headers).content)
+        except ValueError:
+            raise ResolverError('Unusable Authorization Response')
+        except urllib2.HTTPError as e:
+            if e.code == 401:
+                js_result = json.loads(e.read())
+            else:
+                raise
+            
+        common.logger.log('Auth Result: %s' % (js_result))
+        if js_result.get('status'):
+            return js_result.get('response', {}).get('vt')
+        else:
+            return {}
+        
     def get_url(self, host, media_id):
-        return 'http://beta.vidup.me/embed-%s.html' % media_id
+        return self._default_get_url(host, media_id)
