@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <setting id="pin" type="slider" label="30000" default="0" range="0,1,40" option="int" />
+  <setting id="edge" type="select" label="30001" default="0" value="0,1" lvalues="30101|30100" />
+  <setting id="function" type="text" label="30002" default="ShutDown" />
+  <setting id="silent" type="bool" label="30003" default="false" />
+</settings>

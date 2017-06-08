@@ -3343,6 +3343,23 @@ http://www.hometheater.co.il</description>
     </extension>
 </addon>
 
+<addon id="repository.matthuisman" name="MattHuisman.nz Repository" version="0.0.2" provider-name="MattHuisman.nz">
+  <extension point="xbmc.addon.repository" name="MattHuisman.nz Repository">
+    <dir>
+      <info compressed="false">http://kodi.matthuisman.nz/.repo/addons.xml</info>
+      <checksum>http://kodi.matthuisman.nz/.repo/addons.xml.md5</checksum>
+      <datadir zip="true">http://kodi.matthuisman.nz/.repo/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en">Addons by MattHuisman.nz</description>
+    <license>GNU General Public License, v2</license>
+    <language></language>
+    <website>http://www.matthuisman.nz</website>
+  </extension>
+</addon>
+
 <addon id="repository.mdrepo" name="Mucky Ducks Repo" version="1.0.2" provider-name="Mucky Duck">
 	<extension point="xbmc.addon.repository" name="Mucky Ducks Repo">
 		<info compressed="false">https://raw.githubusercontent.com/mucky-duck/mdrepo/master/addons.xml</info>
@@ -4622,6 +4639,21 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     </extension>
+</addon>
+
+<addon id="service.gpio.monitor" name="GPIO Monitor" version="0.0.2" provider-name="MattHuisman.nz">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="virtual.rpi-tools" version="7.0.100" optional="true"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <platform>linux</platform>
+    <description lang="en">Monitors a GPIO pin and runs a KODI function (eg. Shutdown) when it changes (Raspberry Pi Only)</description>
+    <license>GNU General Public License, v2</license>
+    <language></language>
+    <website>http://www.matthuisman.nz</website>
+  </extension>
 </addon>
 
 <addon

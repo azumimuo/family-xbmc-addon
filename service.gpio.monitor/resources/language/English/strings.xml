@@ -1,0 +1,9 @@
+<strings>
+    <string id="30000">Pin (0 = Disable)</string>
+    <string id="30001">Edge</string>
+    <string id="30002">Function</string>
+    <string id="30003">No Notifications</string>
+
+    <string id="30100">Rising (Pin going high)</string>
+    <string id="30101">Falling (Pin going low)</string>
+</strings>
