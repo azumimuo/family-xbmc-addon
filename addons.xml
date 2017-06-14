@@ -1718,6 +1718,38 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.genesisreborn" version="2017.05.01" name="Genesis Reborn" provider-name="Genesis Reborn">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.genesisreborn.artwork" />
+		<import addon="script.module.urlresolver" version="3.0.0"/>
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup" />
+		<import addon="script.module.jesusboxmedia.common" />
+		<import addon="script.module.futures" version="2.2.0"/>
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="genesisreborn.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Genesis Reborn Fork Movies/TV Shows</summary>
+		<description lang="en">Genesis Reborn...Fork of Genesis-Specto-Exodus-Zen. Original Source code by Lambda, Schism, and Mashed. Website http://jesusboxmedia.tv Big Thanks to head developper JP Hightek for helping in making this addon come to life. Watch Movies and TV Shows in High quality! Please note that this addon is not an official part of the Kodi media player , and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The Author does not host or share any content, nor is affiliated with the content providers.</disclaimer>
+		<platform>all</platform>
+		<website>http://jesusboxmedia.tv</website>
+		<news>Update Providers - Added Ability to Disable Captcha hosts - Extended Quality of source to 4k</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/01.jpg</screenshot>
+			<screenshot>resources/screenshots/02.jpg</screenshot>
+			<screenshot>resources/screenshots/03.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="plugin.video.hive" version="0.4.1" name="Hive" provider-name="ddurdle">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -2487,6 +2519,43 @@ http://www.hometheater.co.il</description>
     <description>Watch Movies and TVShows on Showbox</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.showboxarize" version="4.5.17" name="Showbox Arize" provider-name="Showbox Arize">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="repository.jesusboxtv" version="1.0.0" />
+		<import addon="script.showboxarize.artwork" version="1.0.4" />
+		<import addon="script.showboxarize.metadata" version="1.0.0" />
+		<import addon="script.module.urlresolver" version="3.0.0" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="showboxarize.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Watch Free Movies and TV Shows on Showbox Arize</summary>
+		<description lang="en">Created by developer [COLOR yellow]JP Hightek[/COLOR] for Jesus Box Media. Please visit [COLOR yellow]www.jesusboxmedia.tv[/COLOR] for Showbox Arize support and assistance! Please remember that Showbox Arize is not an official part of the Kodi media player you are running, and therefore is not to be mentioned within official support channels of Kodi, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<description lang="de">Bitte besuche [COLOR red]www.jesusboxmedia.tv[/COLOR] für Unterstützung und Fragen zu Showbox Arize! Beachte dabei, dass Showbox Arize nicht offizieller Teil des Media Players ist den du gerade verwendest und daher nicht von dem offiziellen Support-Kanäle abgedeckt wird, dieses Addon hat nichts zu tun mit dem Media-Player selbst, noch ist es dafür beabsichtigt, es handelt sich hierbei lediglich um ein Drittanbieter-Anwendung die dem System hinzugefügt wurde.</description>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
+		<description lang="fr">SVP visitez [COLOR red]www.jesusboxmedia.tv[/COLOR] pour avoir de l'aide sur Showbox Arize. Prenez note que Showbox Arize n'est pas une partie intégrante de votre outil de visionnement multimedia et SVP ne le mentionnez pas dans les media sociaux officiels, cet addiciel n'a rien a voir avec votre lecteur multimedia lui même, c'est simplement un addiciel qui a été ajouté à votre système.</description>
+		<disclaimer lang="fr">L'auteur n'héberge pas ou ne distribue pas le contenu qui vous est affiché avec cet addiciel. L'auteur n'a pas d'alliance avec les distributeurs de contenu.</disclaimer>
+		<platform>all</platform>
+		<forum>https://www.jesusboxmedia.tv</forum>
+		<website>https://www.jesusboxmedia.tv/</website>
+		<source>https://jesusboxrepo.xyz/repo</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+		</assets>
+		<news>- Initial release
+- Free movies
+- Free TV Shows</news>
+	</extension>
 </addon>
 
 <addon id="plugin.video.sparky" name="Sparkys Streams" version="2.0.0" provider-name="MetalKettle">
@@ -3334,6 +3403,19 @@ Enjoy!</description>
 	<extension point="xbmc.addon.metadata">
 		<summary>iSTREAM XBMC Addons and Extensions</summary>
 		<description>iSTREAM XBMC Addons and Extensions</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.jesusboxtv" name="Jesusbox Repository" version="1.0.0" provider-name="Playonmonkey">
+	<extension point="xbmc.addon.repository" name="Jesusbox Repository">
+		<info compressed="false">http://www.jesusboxrepo.xyz/Plugins/addons.xml</info>
+		<checksum>http://www.jesusboxrepo.xyz/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://www.jesusboxrepo.xyz/Plugins</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Welcome to the Jesusbox Repository where you will find all Jesusbox produced Addon-ons and wizards</summary>
+		<description>The Best Media Center Box Available</description>
 		<platform>all</platform>
 	</extension>
 </addon>
