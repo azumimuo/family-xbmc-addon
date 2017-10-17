@@ -1,4 +1,7 @@
 
+[B]2.0.0 (2017.06.12)[/B]
+- Moved to the new servers.
+
 [B]1.4.0 (2017.05.12)[/B]
 - Fixed version numbering.
 

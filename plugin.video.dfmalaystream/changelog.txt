@@ -1,3 +1,17 @@
+[[B]Version 3.3.0[/B]
+- Add pairing system
+- Add new menu//categories
+
+B]Version 3.2.0[/B]
+- Fix some bug
+- Add Gdrive link
+- Add new menu//categories
+
+[B]Version 3.1.4[/B]
+- Fix some bug
+- Add Fb link
+- New menu
+
 [B]Version 3.1.0[/B]
 - Fix some bug
 
